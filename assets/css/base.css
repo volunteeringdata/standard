@@ -1,5 +1,5 @@
 :root {
-  --background-color: rgb(29, 50, 78);
+  --background-color: rgb(15, 75, 105);
   --color: #fff;
   --main-link-background-color: #bce7d3;
   --main-link-color: #0a121c;
@@ -24,6 +24,15 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+a {
+  color: #3056a9;
+}
+
+a:hover {
+  color: #386fc4;
+  transition: color 0.3s ease;
 }
 
 img {
@@ -51,6 +60,7 @@ header a, footer a {
 
 header a:hover, footer a:hover,
 header a:focus, footer a:focus {
+  color: #fff;
   transition: opacity 0.3s ease;
   opacity: 1;
 }
@@ -69,7 +79,7 @@ main > article :is(p, ul, ol) {
 
 /** Max content width */
 @media (min-width: 1280px) {
-    header, main > *, footer {
+    header, .breadcrumb ol, main > *, footer {
         margin: 0 auto;
         max-width: calc(1280px - 6.2rem);
     }
@@ -85,6 +95,11 @@ main > article :is(p, ul, ol) {
 .left-block {
   display: block;
   max-width: 36rem;
+}
+
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .section-separated {

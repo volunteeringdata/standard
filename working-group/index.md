@@ -1,6 +1,9 @@
 ---
+permalink: /working-group/
 layout: default
 title: Volunteering Data Standards Working Group
+breadcrumbs:
+  - title: "Working Group"
 ---
 
 ## Help develop open standards for volunteering data.
@@ -9,7 +12,7 @@ The Volunteering Data Standards Working Group is a community of subject matter e
 
 The group is open to all and will provide the real-world context and technical advice necessary to ensure the data standards and infrastructure we develop are robust, practical, and directly meet the needs of the volunteering community.
 
-The groups [Terms of Reference](volunteering_data_standards_working_group_terms_of_reference.pdf) provide an overview of the Working Group and provide information on the management of intellectual property.
+The groups [Terms of Reference](./terms-of-reference) provide an overview of the Working Group and provide information on the management of intellectual property.
 
 
 ## What commitment am I making?
@@ -32,45 +35,21 @@ We will then ensure you are invited to working group meetings and receive workin
 If you have any questions please contact us via research@theodi.org
 
 
-## Forthcoming Meetings
+## Next Meetings
 
-### Meeting 5 04/03/26 3-4pm
+### Meeting 5: 04/03/26 3-4pm
 We will focus on describing the value of volunteering as data, this will include the value to people volunteering and the value to the volunteer involving organisation.
 
-### Meeting 6 18/03/26 3-4pm
+### Meeting 6: 18/03/26 3-4pm
 This will be a retrospective, we will present the work of the working group and our achievements and seek your views on what went well, what didn’t go well and your ideas for the future.
 
 
 ## Previous Meetings
 
-### Meeting 1 2025-11-14
-
-The first working group meeting introducing the project, and the role and purpose of the standards working group. It explored the very first version of the [data model](./version/) and members were invited to discuss what was missing.
-
-* Meeting Note (PDF): [View the note of the meeting](20251114_working_group_meeting_notes.pdf)  
-* Slides (PDF): [View the slides from the meeting](20251114_working_group_meeting_slides.pdf)  
-* Whiteboard (Miro): [View the whiteboard created at the working group meeting](https://miro.com/app/board/uXjVJrEfNMw=/?share_link_id=599623925654)
-
-
-### Meeting 2 2025-11-26
-
-The second working group meeting provided an update on the development of the data model and workshopped data access requirements, to inform the design of an API (APIs are computer to computer messaging services) and started to consider the pros and cons of opportunity data being published as open data (Open data is data that anyone can access, use or share).
-
-* Meeting Notes (PDF): [View the note of the meeting](20251126_working_group_meeting_notes.pdf)
-* Slides (PDF): [View the slides from the meeting](20251126_working_group_meeting_slides.pdf)
-* Whiteboard (Miro): [View the whiteboard created at the working group meeting](https://miro.com/app/board/uXjVJldYfOU=/)
-
-
-### Meeting 3 2025-12-10
-
-The third working group meeting was more retrospective, the working group reviewed what had been achieved so far, explored the outputs from [the hackathon](https://theodi.org/news-and-events/blog/connecting-volunteers-what-we-learned-from-our-hackathon/) and continued the discussion about open data.
-
-* Meeting Notes (PDF): [View the note of the meeting](20251210_working_group_meeting_notes.pdf)
-* Slides (PDF): [View the slides from the meeting](20251210_working_group_meeting_slides.pdf)  
-* Whiteboard (Miro): [View the whiteboard created at the working group meeting](https://miro.com/app/board/uXjVGd58Ecw=/?share_link_id=112346054045)
-
-
-### Meeting 4 18/02/26 3-4pm
-
-We will present our data models for accessibility and crisis response, we will demonstrate how to log suggestions, issues and questions on the data models. We will also look at sharing volunteering opportunities data, and what information needs to be recorded to enable data sharing.
+<ul>
+    <li><a href="/article/2026-02-26">2026-02-26: Meeting 4</a></li>
+    <li><a href="/article/2025-12-10">2025-12-10: Meeting 3</a></li>
+    <li><a href="/article/2025-11-26">2025-11-26: Meeting 2</a></li>
+    <li><a href="/article/2025-11-14">2025-11-14: Meeting 1</a></li>
+</ul>
 

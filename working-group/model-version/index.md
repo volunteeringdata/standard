@@ -70,7 +70,8 @@ Incorporate feedback from the first Volunteering Standards Working Group session
 Incorporate feedback from data mapping sessions ([v3](https://github.com/openvolunteering/data-model/tree/v3)).
 
 
+<!--
 ## Version 4
 
 Refine data model taking into account feedback and conversations with various stakeholders at [The Gathering (SCVO)](https://scvo.scot/the-gathering) ([v4](https://github.com/openvolunteering/data-model/tree/v4)).
-
+-->

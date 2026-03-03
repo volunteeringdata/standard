@@ -1,6 +1,9 @@
 ---
+permalink: /use-cases/
 layout: default
-title: Use Cases
+title: Volunteering and Social Action Use Cases
+breadcrumbs:
+  - title: "Use Cases"
 ---
 
 <ol class="use-case-list">
