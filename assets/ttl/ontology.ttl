@@ -246,14 +246,6 @@ id:schema
     rdfs:label "allows remote participation" ;
 .
 
-:beginning
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:subPropertyOf time:hasBeginning ;
-    rdfs:domain :Time ;
-    rdfs:label "has beginning"@en ;
-.
-
 :dayOfWeek
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy id:schema ;
@@ -291,14 +283,6 @@ id:schema
     rdfs:isDefinedBy id:schema ;
     rdfs:subPropertyOf vcard:hasEmail ;
     rdfs:label "has email"@en ;
-.
-
-:end
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:subPropertyOf time:hasEnd ;
-    rdfs:domain :Time ;
-    rdfs:label "has end"@en ;
 .
 
 :label
@@ -420,84 +404,6 @@ id:schema
     rdfs:domain :Organisation ;
     rdfs:subPropertyOf :url ;
     rdfs:label "has website"@en ;
-.
-
-
-## Time
-:DayOfWeek
-    a owl:Class ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:subClassOf time:DayOfWeek ;
-    owl:oneOf (
-        :Monday
-        :Tuesday
-        :Wednesday
-        :Thursday
-        :Friday
-        :Saturday
-        :Sunday
-    ) ;
-    rdfs:label "Day of the Week"@en ;
-.
-:Monday
-    a :DayOfWeek ;
-    rdfs:label "Monday"@en ;
-.
-:Tuesday
-    a :DayOfWeek ;
-    rdfs:label "Tuesday"@en ;
-.
-:Wednesday
-    a :DayOfWeek ;
-    rdfs:label "Wednesday"@en ;
-.
-:Thursday
-    a :DayOfWeek ;
-    rdfs:label "Thursday"@en ;
-.
-:Friday
-    a :DayOfWeek ;
-    rdfs:label "Friday"@en ;
-.
-:Saturday
-    a :DayOfWeek ;
-    rdfs:label "Saturday"@en ;
-.
-:Sunday
-    a :DayOfWeek ;
-    rdfs:label "Sunday"@en ;
-.
-:TimeOfDay
-    a owl:Class ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:subClassOf time:DayOfWeek ;
-    owl:oneOf (
-        :Morning
-        :Afternoon
-        :Evening
-        :Night
-    ) ;
-    rdfs:label "Time of Day"@en ;
-.
-:Morning
-    a :TimeOfDay ;
-    rdfs:subClassOf time:Interval ;
-    rdfs:comment "The interval of time between 8AM and 1PM."@en ;
-.
-:Afternoon
-    a :TimeOfDay ;
-    rdfs:subClassOf time:Interval ;
-    rdfs:comment "The interval of time between 1PM and 6PM."@en ;
-.
-:Evening
-    a :TimeOfDay ;
-    rdfs:subClassOf time:Interval ;
-    rdfs:comment "The interval of time between 6PM and 11PM."@en
-.
-:Night
-    a :TimeOfDay ;
-    rdfs:subClassOf time:Interval ;
-    rdfs:comment "The interval of time between 11PM and 8AM."@en ;
 .
 
 

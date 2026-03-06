@@ -1,67 +1,44 @@
-@prefix time: <http://www.w3.org> .
-@prefix xsd: <http://www.w3.org> .
+# Volunteering vocabulary
+
+## Namespaces
+### Ontology Base URI
+prefix :                <https://id.volunteeringdata.io/schema/>
+
+### Core W3C ontologies (OWL 2 reserved vocabulary)
+prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:             <http://www.w3.org/2002/07/owl#>
+prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
+
+### Other namespaces used
+prefix dc:              <http://purl.org/dc/terms/>
+prefix skos:            <http://www.w3.org/2004/02/skos/core#>
+prefix time:            <http://www.w3.org/2006/time#>
+prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
+prefix vann:            <http://purl.org/vocab/vann/>
 
 
-:MorningBeginning
-    a time:Instant ;
-    time:inTimePosition [
-        time:nominalPosition "06:00:00"^^xsd:time ;
-        time:hasTRS <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ;
-    ] ;
+# Class
+:Time rdfs:subClassOf time:TemporalEntity .
+
+# Properties
+:beginning
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy id:schema ;
+    rdfs:subPropertyOf time:hasBeginning ;
+    rdfs:domain :Time ;
+    rdfs:label "has beginning"@en ;
 .
 
-:AfternoonBeginning
-    a time:Instant ;
-    time:inTimePosition [
-        time:nominalPosition "12:00:00"^^xsd:time ;
-        time:hasTRS <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ;
-    ] ;
+:end
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy id:schema ;
+    rdfs:subPropertyOf time:hasEnd ;
+    rdfs:domain :Time ;
+    rdfs:label "has end"@en ;
 .
 
-:EveningBeginning
-    a time:Instant ;
-    time:inTimePosition [
-        time:nominalPosition "18:00:00"^^xsd:time ;
-        time:hasTRS <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> ;
-    ] ;
-.
-
-:MondayMorning
-    a time:DateTimeInterval ;
-    time:hasBeginning :MorningBeginning ;
-    time:hasEnd :AfternoonBeginning ;
-    time:hasDateTimeDescription [
-        a time:GeneralDateTimeDescription ;
-        time:dayOfWeek :Monday ;
-    ] ;
-.
-
-:MondayMorning
-    a time:ProperInterval ;
-    time:hasBeginning [
-        a time:Instant ;
-        time:inDateTime [
-            a time:GeneralDateTimeDescription ;
-            time:dayOfWeek time:Monday ;
-            time:hour "6"^^xsd:nonNegativeInteger ;
-            time:minute "0"^^xsd:nonNegativeInteger ;
-            time:second "0"^^xsd:nonNegativeInteger ;
-        ] ;
-    ] ;
-    time:hasEnd [
-        a time:Instant ;
-        time:inDateTime [
-            a time:GeneralDateTimeDescription ;
-            time:dayOfWeek time:Monday ;
-            time:hour "12"^^xsd:nonNegativeInteger ;
-            time:minute "0"^^xsd:nonNegativeInteger ;
-            time:second "0"^^xsd:nonNegativeInteger ;
-        ] ;
-    ] ;
-.
-
-
-
+# Defined Temporal Entities
 :MondayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     time:hasBeginning [
@@ -80,6 +57,486 @@
             a time:GeneralDateTimeDescription ;
             time:dayOfWeek time:Monday ;
             time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:MondayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Monday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Monday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:MondayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Monday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Monday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:TuesdayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:TuesdayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:TuesdayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Tuesday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:WednesdayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:WednesdayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:WednesdayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Wednesday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:ThursdayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:ThursdayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:ThursdayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Thursday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:FridayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:FridayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:FridayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Friday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SaturdayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SaturdayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SaturdayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Saturday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SundayMorning
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "6"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SundayAfternoon
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "12"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+.
+
+:SundayEvening
+    a time:TemporalEntity, :WeekDayTimePeriod ;
+    time:hasBeginning [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "18"^^xsd:nonNegativeInteger ;
+            time:minute "0"^^xsd:nonNegativeInteger ;
+            time:second "0"^^xsd:nonNegativeInteger ;
+        ] ;
+    ] ;
+    time:hasEnd [
+        a time:Instant ;
+        time:inDateTime [
+            a time:GeneralDateTimeDescription ;
+            time:dayOfWeek time:Sunday ;
+            time:hour "24"^^xsd:nonNegativeInteger ;
             time:minute "0"^^xsd:nonNegativeInteger ;
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
