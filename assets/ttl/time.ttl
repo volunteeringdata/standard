@@ -2,7 +2,7 @@
 
 ## Namespaces
 ### Ontology Base URI
-prefix :                <https://id.volunteeringdata.io/schema/>
+prefix :                <https://ns.volunteeringdata.io/>
 
 ### Core W3C ontologies (OWL 2 reserved vocabulary)
 prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
@@ -14,9 +14,25 @@ prefix time:            <http://www.w3.org/2006/time#>
 
 
 # Class
-:Time rdfs:subClassOf time:TemporalEntity .
+:Time
+    a owl:Class ;
+    rdfs:subClassOf time:TemporalEntity ;
+    rdfs:isDefinedBy id:schema ;
+    rdfs:label "Volunteering Activity Time Information"@en ;
+    rdfs:label "Time"@en ;
+    rdfs:comment "Any time information related to volunteering activities."@en ;
+.
 
-# Properties
+# Object Properties
+:time
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy id:schema ;
+    rdfs:domain :Session ;
+    rdfs:range :Time ;
+    rdfs:label "has time"@en ;
+.
+
+# Datatype Properties
 :beginning
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy id:schema ;
@@ -33,11 +49,11 @@ prefix time:            <http://www.w3.org/2006/time#>
     rdfs:label "has end"@en ;
 .
 
-# Defined Temporal Entities
+# Predefined Temporal Entities
 :MondayMorning
-    a time:TemporalEntity, :WeekDayTimePeriod ;
+    a time:TemporalEntity, :Time, :WeekDayTimePeriod ;
     rdfs:label "Monday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -47,7 +63,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -62,7 +78,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :MondayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Monday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -72,7 +88,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -87,7 +103,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :MondayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Monday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -97,7 +113,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -112,7 +128,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :TuesdayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Tuesday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -122,7 +138,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -137,7 +153,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :TuesdayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Tuesday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -147,7 +163,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -162,7 +178,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :TuesdayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Tuesday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -172,7 +188,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -187,7 +203,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :WednesdayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Wednesday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -197,7 +213,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -212,7 +228,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :WednesdayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Wednesday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -222,7 +238,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -237,7 +253,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :WednesdayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Wednesday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -247,7 +263,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -262,7 +278,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :ThursdayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Thursday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -272,7 +288,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -287,7 +303,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :ThursdayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Thursday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -297,7 +313,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -312,7 +328,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :ThursdayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Thursday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -322,7 +338,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -337,7 +353,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :FridayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Friday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -347,7 +363,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -362,7 +378,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :FridayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Friday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -372,7 +388,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -387,7 +403,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :FridayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Friday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -397,7 +413,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -412,7 +428,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SaturdayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Saturday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -422,7 +438,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -437,7 +453,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SaturdayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Saturday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -447,7 +463,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -462,7 +478,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SaturdayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Saturday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -472,7 +488,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -487,7 +503,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SundayMorning
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Sunday morning"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -497,7 +513,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -512,7 +528,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SundayAfternoon
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Sunday afternoon"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -522,7 +538,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -537,7 +553,7 @@ prefix time:            <http://www.w3.org/2006/time#>
 :SundayEvening
     a time:TemporalEntity, :WeekDayTimePeriod ;
     rdfs:label "Sunday evening"@en ;
-    time:hasBeginning [
+    :beginning [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
@@ -547,7 +563,7 @@ prefix time:            <http://www.w3.org/2006/time#>
             time:second "0"^^xsd:nonNegativeInteger ;
         ] ;
     ] ;
-    time:hasEnd [
+    :end [
         a time:Instant ;
         time:inDateTime [
             a time:GeneralDateTimeDescription ;
