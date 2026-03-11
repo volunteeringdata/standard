@@ -6,7 +6,7 @@ title: Volunteering Data
 <section class="left-block">
     <p>Standardise how volunteering opportunities are described to make them easily discoverable, governable, and usable across tools and platforms.</p>
     <p><a href="https://share.hsforms.com/17sQpFOMLTvK_7SpLL6dn8gg1jy" class="main-link">Join the Working Group</a></p>
-    <p>Contribute to the standard: <a href="https://github.com/volunteeringdata/schema" title="Volunteering Data schema on GitHub"><img src="/assets/img/icon/github.svg" alt="GitHub" class="icon-text"></a></p>
+    <p>Contribute to the standard: <a href="https://github.com/volunteeringdata/standard" title="Volunteering Data schema on GitHub"><img src="/assets/img/icon/github.svg" alt="GitHub" class="icon-text"></a></p>
 </section>
 
 <section class="section-separated">
@@ -32,5 +32,5 @@ title: Volunteering Data
 <section>
     <h2 id="license">License</h2>
     <p>Unless otherwise specified, all content in this website and any copies are subject to <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">Crown Copyright</a> under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License v3</a>.</p>
-    <p>Any code is dual licensed under the <a href="https://raw.githubusercontent.com/volunteeringdata/schema/refs/heads/main/LICENSE.MIT">MIT license</a> and the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License v3</a>.</p>
+    <p>Any code is dual licensed under the <a href="https://raw.githubusercontent.com/volunteeringdata/standard/refs/heads/main/LICENSE.MIT">MIT license</a> and the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License v3</a>.</p>
 </section>
