@@ -27,6 +27,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     vann:preferredNamespacePrefix "volunteering" ;
     vann:preferredNamespaceUri "https://ns.volunteeringdata.io/"^^xsd:anyURI ;
     rdfs:label "Volunteering and Social Action Ontology"@en ;
+    rdfs:seeAlso <https://standard.volunteeringdata.io/ontology/> ;
     dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
 .
 

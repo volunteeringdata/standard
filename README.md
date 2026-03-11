@@ -2,7 +2,7 @@
 
 The volunteering and social action ontology aims to standardise the representation of volunteering opportunities and volunteer-involving organisations so that data and associated tooling become reusable and can be shared across the Voluntary, Community, and Social Enterprise (VCSE) sector.
 
-This repository is published at [schema.volunteeringdata.io](https://schema.volunteeringdata.io/).
+This repository is published at [standard.volunteeringdata.io](https://standard.volunteeringdata.io/).
 
 
 ## Standards Working Group

@@ -3,7 +3,7 @@
 ## Namespaces
 ### Ontology Base URI
 prefix id:              <https://id.volunteeringdata.io/>
-prefix :                <https://id.volunteeringdata.io/schema/>
+prefix :                <https://ns.volunteeringdata.io/>
 
 ### Core W3C ontologies (OWL 2 reserved vocabulary)
 prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
