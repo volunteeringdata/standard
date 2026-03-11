@@ -1,0 +1,47 @@
+# Volunteering vocabulary
+
+## Namespaces
+### Ontology Base URI
+prefix :                <https://ns.volunteeringdata.io/>
+
+### Core W3C ontologies (OWL 2 reserved vocabulary)
+prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:             <http://www.w3.org/2002/07/owl#>
+prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
+
+### Other namespaces used
+prefix dc:              <http://purl.org/dc/terms/>
+prefix skos:            <http://www.w3.org/2004/02/skos/core#>
+prefix time:            <http://www.w3.org/2006/time#>
+prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
+prefix vann:            <http://purl.org/vocab/vann/>
+
+
+## Taxonomy top concept
+:Cause
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:topConceptOf :Taxonomy ;
+    skos:prefLabel "Cause"@en ;
+    skos:definition "Any charitable cause related to volunteering activities."@en ;
+.
+
+
+### Object Properties
+:cause
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :relatedConcept ;
+    rdfs:label "has cause"@en ;
+.
+
+:causeOrganisation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :organisation ;
+    owl:inverseOf :organisationCause ;
+    rdfs:domain :Cause ;
+    rdfs:range :Organisation ;
+    rdfs:label "charitable cause has organisation"@en ;
+.

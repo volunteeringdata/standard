@@ -2,7 +2,6 @@
 
 ## Namespaces
 ### Ontology Base URI
-prefix id:              <https://id.volunteeringdata.io/>
 prefix :                <https://ns.volunteeringdata.io/>
 
 ### Core W3C ontologies (OWL 2 reserved vocabulary)
@@ -36,6 +35,16 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has role"@en ;
 .
 
+:roleAccessibility
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :accessibility ;
+    owl:inverseOf :accessibilityRole ;
+    rdfs:domain :Role ;
+    rdfs:range :Accessibility ;
+    rdfs:label "role has accessibility"@en ;
+.
+
 :roleActivity
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -64,16 +73,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:domain :Role ;
     rdfs:range :Requirement ;
     rdfs:label "role has requirement"@en ;
-.
-
-:roleAccessibility
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :accessibility ;
-    owl:inverseOf :accessibilityRole ;
-    rdfs:domain :Role ;
-    rdfs:range :Accessibility ;
-    rdfs:label "role has accessibility"@en ;
 .
 
 
