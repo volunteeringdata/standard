@@ -28,17 +28,8 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "Taxonomy"@en ;
 .
 
-:Concept
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf skos:Concept ;
-    dc:description "Volunteering Concept"@en ;
-    rdfs:comment "Any concept related to volunteering activities."@en ;
-    rdfs:label "Concept"@en ;
-.
 
-
-### Object Properties
+### Super property
 :relatedConcept
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -46,11 +37,20 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has related concept"@en ;
 .
 
-:accessibility
+
+### Object Properties
+:accessbibility
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf :relatedConcept ;
     rdfs:label "has accessibility information"@en ;
+.
+
+:cause
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :relatedConcept ;
+    rdfs:label "has cause"@en ;
 .
 
 :requirement
@@ -60,51 +60,16 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has requirement"@en ;
 .
 
+:reward
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :relatedConcept ;
+    rdfs:label "has reward"@en ;
+.
+
 :skill
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf :relatedConcept ;
     rdfs:label "has skill"@en ;
-.
-
-
-### Object Properties
-:Accessibility
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Concept ;
-    :conceptLabel "Accessibility"@en ;
-    :description "Any accessibility information related to volunteering activities."@en ;
-.
-
-:Cause
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Concept ;
-    :conceptLabel "Charitable Cause"@en ;
-    :description "Any charitable cause related to volunteering activities."@en ;
-.
-
-:Requirement
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Concept ;
-    :conceptLabel "Requirement"@en ;
-    :description "Any requirement related to volunteering activities."@en ;
-.
-
-:Reward
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Concept ;
-    :conceptLabel "Reward"@en ;
-    :description "Any reward related to volunteering activities."@en ;
-.
-
-:Skill
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Concept ;
-    :conceptLabel "Skill"@en ;
-    :description "Any skill related to volunteering activities."@en ;
 .

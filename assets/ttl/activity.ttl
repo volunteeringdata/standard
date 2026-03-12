@@ -28,13 +28,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 ### Object Properties
-:activity
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Activity ;
-    rdfs:label "has activity"@en ;
-.
-
 :activityOrganisation
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

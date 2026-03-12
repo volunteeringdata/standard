@@ -27,14 +27,8 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "Organisation"@en ;
 .
 
-# Object Properties
-:organisation
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Organisation ;
-    rdfs:label "has organisation"@en ;
-.
 
+# Object Properties
 :organisationActivity
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

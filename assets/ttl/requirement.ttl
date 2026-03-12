@@ -29,13 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Object Properties
-:requirement
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :relatedConcept ;
-    rdfs:label "has requirement"@en ;
-.
-
 :requirementRole
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

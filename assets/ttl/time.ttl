@@ -36,14 +36,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 ### Object Properties
-:time
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Session ;
-    rdfs:range :Time ;
-    rdfs:label "has time"@en ;
-.
-
 :timeSession
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

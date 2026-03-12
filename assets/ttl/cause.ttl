@@ -29,13 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Object Properties
-:cause
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :relatedConcept ;
-    rdfs:label "has cause"@en ;
-.
-
 :causeOrganisation
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

@@ -28,13 +28,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 ### Object Properties
-:role
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Role ;
-    rdfs:label "has role"@en ;
-.
-
 :roleAccessibility
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

@@ -29,13 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Object Properties
-:skill
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :relatedConcept ;
-    rdfs:label "has skill"@en ;
-.
-
 :skillRole
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

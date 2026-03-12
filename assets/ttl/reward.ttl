@@ -29,13 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Object Properties
-:reward
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :relatedConcept ;
-    rdfs:label "has reward"@en ;
-.
-
 :rewardRole
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

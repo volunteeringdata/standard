@@ -29,13 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Object Properties
-:accessbibility
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :relatedConcept ;
-    rdfs:label "has accessibility information"@en ;
-.
-
 :accessibilityRole
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -45,4 +38,3 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:range :Role ;
     rdfs:label "accessibility information has role"@en ;
 .
-

@@ -28,13 +28,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 ### Object Properties
-:session
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Session ;
-    rdfs:label "has session"@en ;
-.
-
 :sessionActivity
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

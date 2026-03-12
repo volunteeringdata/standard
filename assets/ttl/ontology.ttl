@@ -31,6 +31,57 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 
+### Object Properties
+:activity
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Activity ;
+    rdfs:label "has activity"@en ;
+.
+
+:location
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Location ;
+    rdfs:label "has location"@en ;
+.
+
+:organisation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Organisation ;
+    rdfs:label "has organisation"@en ;
+.
+
+:relatedConcept
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range skos:Concept ;
+    rdfs:label "has related concept"@en ;
+.
+
+:role
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Role ;
+    rdfs:label "has role"@en ;
+.
+
+:session
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Session ;
+    rdfs:label "has session"@en ;
+.
+
+:time
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :Time ;
+    rdfs:label "has time"@en ;
+.
+
+
 ## Datatype Properties
 :address
     a owl:DatatypeProperty ;
