@@ -22,12 +22,15 @@ prefix vann:            <http://purl.org/vocab/vann/>
 <https://ns.volunteeringdata.io/>
     a owl:Ontology ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    dc:title "Volunteering and Social Action Ontology"@en ;
+    rdfs:label "Volunteering and Social Action Ontology"@en ;
+    dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
     dc:issued "2025-11-20"^^xsd:date ;
+    owl:versionIRI <https://ns.volunteeringdata.io/> ;
+    owl:versionInfo "2026-03-12" ;
     vann:preferredNamespacePrefix "volunteering" ;
     vann:preferredNamespaceUri "https://ns.volunteeringdata.io/"^^xsd:anyURI ;
-    rdfs:label "Volunteering and Social Action Ontology"@en ;
     rdfs:seeAlso <https://standard.volunteeringdata.io/ontology/> ;
-    dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
 .
 
 
