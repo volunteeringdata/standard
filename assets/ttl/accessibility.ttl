@@ -23,6 +23,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a skos:Concept ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:topConceptOf :Taxonomy ;
+    skos:inScheme :Taxonomy ;
     skos:prefLabel "Accessibility"@en ;
     skos:definition "Any accessibility information related to volunteering activities."@en ;
 .
@@ -37,4 +38,145 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:domain :Accessibility ;
     rdfs:range :Role ;
     rdfs:label "accessibility information has role"@en ;
+.
+
+
+### Taxonomy Hierarchy
+:AgeRequirements
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :Taxonomy ;
+    skos:prefLabel "Age Requirements" ;
+    skos:definition "Any information regarding specific ages or ranges of ages required or disallowed from a activity." ;
+.
+
+:DigitalAccessibility
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :Taxonomy ;
+    skos:prefLabel "Digital Accessibility"@en ;
+    skos:definition "Any accessbility information regarding digital requirements for an activity"@en ;
+.
+
+:ExpensesPaid
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :Taxonomy ;
+    skos:prefLabel "Expenses Paid" ;
+    skos:definition "Any information regarding reimbursement for activity or role-related expenses.";
+.
+
+:LanguageRequirements
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :Taxonomy ;
+    skos:prefLabel "Language Requirements" ;
+    skos:definition "Any language information for an activity, including required language(s) and translation services available." ;
+.
+
+:PhysicalAccessibility
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :Taxonomy ;
+    skos:prefLabel "Physical Accessibility"@en ;
+    skos:definition "Any accessbibility information regarding physical ability required for an activity" ;
+.
+
+
+##Digital Accessibility Concepts
+:WifiUsage
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :DigitalAccessibility ;
+    skos:prefLabel "Wifi Usage" ;
+    skos:definition "Any information on wifi usage necessary for a activity." ;
+.
+
+:TechnologyRequirements
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :DigitalAccessibility ;
+    skos:prefLabel "Technology Requirements" ;
+    skos:definition "Any information on devices (laptop, phone, smartphone) and software required for a activity." ;
+.
+
+:TechnologyAvailability
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :DigitalAccessibility ;
+    skos:prefLabel "Technology Availability" ;
+    skos:definition "Any information on supplementory accessiblity software available in activities (screen readers, captioning)." ;
+.
+
+
+##Physical Accessibility Concepts
+:RemoteAccessibility
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Remote Accessibility" ;
+    skos:definition "Any accomodations available for remote participation in an activity." ;
+.
+
+:BuildingAccessibilityFeatures
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Building Accessibility Features" ;
+    skos:definition "Any information on building accessibility features for mobility aid users and accessible gender, faith, etc. rooms." ;
+.
+
+:PublicTransportAccess
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Public Transport Access" ;
+    skos:definition "Any information on venue access via public transport lines." ;
+.
+
+:ParkingAvailability
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Parking Availability" ;
+    skos:definition "Any information on parking availability and accessibility at the venue." ;
+.
+
+:ServiceAnimals
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Service Animals" ;
+    skos:definition "Accessiblity information regarding usage of service animals in and around venue." ;
+.
+
+:VisualImpairment
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Visual Impairment" ;
+    skos:definition "Any information on activities wherin visual impairments may be affected or accommodated." ;
+.
+
+:CareProfessionals
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    skos:broader :Accessibility ;
+    skos:inScheme :PhysicalAccessibility ;
+    skos:prefLabel "Care Professionals" ;
+    skos:definition "Any accommodations available for volunteers assisted by care professionals." ;
 .
