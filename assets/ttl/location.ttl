@@ -13,6 +13,7 @@ prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
 ### Other namespaces used
 prefix dc:              <http://purl.org/dc/terms/>
 prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
+prefix geosparql:       <http://www.opengis.net/ont/geosparql#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
@@ -22,7 +23,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
 ## Location Class
 :Location
     a owl:Class ;
-    rdfs:subClassOf geo:SpatialThing ;
+    rdfs:subClassOf geo:SpatialThing, geosparql:SpatialObject ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:label "Location"@en ;
     rdfs:comment "Any location related to volunteering activities."@en ;
@@ -55,6 +56,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:subPropertyOf :address ;
     rdfs:domain :Location ;
     rdfs:label "location has address"@en ;
+.
+
+:locationGeometry
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :geometry ;
+    rdfs:domain :Location ;
+    rdfs:label "location has Geometry"@en ;
 .
 
 :locationLatitude

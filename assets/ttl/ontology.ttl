@@ -13,6 +13,7 @@ prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
 ### Other namespaces used
 prefix dc:              <http://purl.org/dc/terms/>
 prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
+prefix geosparql:       <http://www.opengis.net/ont/geosparql#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
@@ -126,11 +127,23 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has description"@en ;
 .
 
+:geometry
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf geosparql:hasGeometry ;
+    rdfs:domain :Location ;
+    rdfs:label "location has Geometry"@en ;
+    rdfs:comment "A geometry represents the spatial extent of a location (see OGC GeoSPARQL)."@en ;
+    rdfs:seeAlso <https://opengeospatial.github.io/ogc-geosparql/> ;
+.
+
 :latitude
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf geo:lat ;
     rdfs:label "has latitude"@en ;
+    rdfs:comment "The WGS84 latitude of a SpatialThing in decimal degrees (see WGS84 Geo Positioning)."@en ;
+    rdfs:seeAlso <https://www.w3.org/2003/01/geo/wgs84_pos> ;
 .
 
 :longitude
@@ -138,6 +151,8 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf geo:long ;
     rdfs:label "has longitude"@en ;
+    rdfs:comment "The WGS84 longitude of a SpatialThing in decimal degrees (see WGS84 Geo Positioning)."@en ;
+    rdfs:seeAlso <https://www.w3.org/2003/01/geo/wgs84_pos> ;
 .
 
 :maximumAge
