@@ -23,7 +23,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a skos:Concept ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:topConceptOf :Taxonomy ;
-    skos:inScheme :Taxonomy ;
     skos:prefLabel "Accessibility"@en ;
     skos:definition "Any accessibility information related to volunteering activities."@en ;
 .

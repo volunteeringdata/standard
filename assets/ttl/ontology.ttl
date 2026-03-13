@@ -110,6 +110,13 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has charity number"@en ;
 .
 
+:commitment
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has commitment"@en ;
+    rdfs:comment "Free text description of the expected commitment to the role (e.g. 4 hours per week)."@en ;
+.
+
 :description
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

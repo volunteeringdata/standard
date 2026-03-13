@@ -22,9 +22,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :Organisation
     a owl:Class ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteer-Involving Organisation"@en ;
-    rdfs:comment "Any organisation running activities that involve volunteers."@en ;
     rdfs:label "Organisation"@en ;
+    rdfs:comment "Any organisation running activities that involve volunteers."@en ;
+    dc:description "Volunteer-Involving Organisation"@en ;
 .
 
 

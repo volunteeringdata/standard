@@ -22,9 +22,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :Activity
     a owl:Class ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteering Activity"@en ;
-    rdfs:comment "Any kind of activity that involves volunteers."@en ;
     rdfs:label "Activity"@en ;
+    rdfs:comment "Any kind of activity that involves volunteers."@en ;
+    dc:description "Volunteering Activity"@en ;
 .
 
 ### Object Properties

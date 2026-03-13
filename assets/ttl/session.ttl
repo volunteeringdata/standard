@@ -22,9 +22,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :Session
     a owl:Class ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteering Activity Session"@en ;
-    rdfs:comment "A session describes a time and place for an activity that involves volunteers."@en ;
     rdfs:label "Session"@en ;
+    rdfs:comment "A session describes a time and place for an activity that involves volunteers."@en ;
+    dc:description "Volunteering Activity Session"@en ;
 .
 
 ### Object Properties

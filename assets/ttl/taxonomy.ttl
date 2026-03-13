@@ -23,9 +23,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a skos:ConceptScheme ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:hasTopConcept :Accessibility, :Cause, :Requirement, :Reward, :Skill ;
+    rdfs:label "Taxonomy"@en ;
     dc:title "Volunteering Taxonomy"@en ;
     dc:description "The taxonomy of concepts related to volunteering activities."@en ;
-    rdfs:label "Taxonomy"@en ;
 .
 
 

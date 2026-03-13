@@ -22,9 +22,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:Class ;
     rdfs:subClassOf time:TemporalEntity ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteering Activity Time Information"@en ;
-    rdfs:comment "Any time information related to volunteering activities modeled as a OWL time temporal entity."@en ;
     rdfs:label "Time"@en ;
+    rdfs:comment "Any time information related to volunteering activities modeled as a OWL time temporal entity."@en ;
+    dc:description "Volunteering Activity Time Information"@en ;
 .
 
 :WeekdayTimePeriod
