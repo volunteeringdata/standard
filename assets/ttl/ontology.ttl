@@ -14,6 +14,7 @@ prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
 prefix dc:              <http://purl.org/dc/terms/>
 prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
 prefix geosparql:       <http://www.opengis.net/ont/geosparql#>
+prefix og:              <http://ogp.me/ns#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
@@ -131,9 +132,17 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf geosparql:hasGeometry ;
-    rdfs:domain :Location ;
-    rdfs:label "location has Geometry"@en ;
+    rdfs:label "has Geometry"@en ;
     rdfs:comment "A geometry represents the spatial extent of a location (see OGC GeoSPARQL)."@en ;
+    rdfs:seeAlso <https://opengeospatial.github.io/ogc-geosparql/> ;
+.
+
+:image
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf og:image ;
+    rdfs:label "has Image"@en ;
+    rdfs:comment "An image URL which can be used to present something related to volunteering."@en ;
     rdfs:seeAlso <https://opengeospatial.github.io/ogc-geosparql/> ;
 .
 

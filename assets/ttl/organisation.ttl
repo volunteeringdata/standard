@@ -67,6 +67,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "organisation has description"@en ;
 .
 
+:organisationImage
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :image ;
+    rdfs:domain :Organisation ;
+    rdfs:label "organisation has image"@en ;
+.
+
 :organisationWebsite
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
