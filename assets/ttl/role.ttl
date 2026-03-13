@@ -80,22 +80,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ### Datatype Properties
-:roleTitle
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :title ;
-    rdfs:domain :Role ;
-    rdfs:label "role has title"@en ;
-.
-
-:roleDescription
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :description ;
-    rdfs:domain :Role ;
-    rdfs:label "role has description"@en ;
-.
-
 :roleAllowsRemoteParticipation
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -111,4 +95,36 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:subPropertyOf :applyLink ;
     rdfs:domain :Role ;
     rdfs:label "role has apply link"@en ;
+.
+
+:roleDescription
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :description ;
+    rdfs:domain :Role ;
+    rdfs:label "role has description"@en ;
+.
+
+:roleMaximumAge
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :maximumAge ;
+    rdfs:domain :Role ;
+    rdfs:label "role has maximum age"@en ;
+.
+
+:roleMinimumAge
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :minimumAge ;
+    rdfs:domain :Role ;
+    rdfs:label "role has minimum age"@en ;
+.
+
+:roleTitle
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :title ;
+    rdfs:domain :Role ;
+    rdfs:label "role has title"@en ;
 .

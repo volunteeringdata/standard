@@ -29,64 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ## Requirement Category Concepts
-### Age Category
-:Age
-    a skos:Concept ;
-    skos:prefLabel "Age"@en ;
-    skos:definition "Age group requirements for volunteering activities."@en ;
-    skos:broader :Requirement ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Between11And25
-    a skos:Concept ;
-    skos:prefLabel "Between 11 and 25 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Over11
-    a skos:Concept ;
-    skos:prefLabel "Over 11 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Over14
-    a skos:Concept ;
-    skos:prefLabel "Over 14 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Over16
-    a skos:Concept ;
-    skos:prefLabel "Over 16 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Over18
-    a skos:Concept ;
-    skos:prefLabel "Over 18 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Under18
-    a skos:Concept ;
-    skos:prefLabel "Under 18 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
-:Under25
-    a skos:Concept ;
-    skos:prefLabel "Under 25 years old"@en ;
-    skos:broader :Age ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-.
-
 ### Assets & Equipment Category
 :AssetsEquipment
     a skos:Concept ;

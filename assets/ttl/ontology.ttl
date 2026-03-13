@@ -129,6 +129,18 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has longitude"@en ;
 .
 
+:maximumAge
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has maximum age"@en ;
+.
+
+:minimumAge
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has minimum age"@en ;
+.
+
 :name
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
