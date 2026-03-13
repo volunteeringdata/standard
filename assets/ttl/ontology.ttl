@@ -12,6 +12,7 @@ prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
 
 ### Other namespaces used
 prefix dc:              <http://purl.org/dc/terms/>
+prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
@@ -22,8 +23,8 @@ prefix vann:            <http://purl.org/vocab/vann/>
 <https://ns.volunteeringdata.io/>
     a owl:Ontology ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:title "Volunteering and Social Action Ontology"@en ;
     rdfs:label "Volunteering and Social Action Ontology"@en ;
+    dc:title "Volunteering and Social Action Ontology"@en ;
     dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
     dc:issued "2025-11-20"^^xsd:date ;
     owl:versionIRI <https://ns.volunteeringdata.io/> ;
@@ -45,6 +46,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :location
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf geo:location ;
     rdfs:range :Location ;
     rdfs:label "has location"@en ;
 .
@@ -127,12 +129,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :latitude
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf geo:lat ;
     rdfs:label "has latitude"@en ;
 .
 
 :longitude
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf geo:long ;
     rdfs:label "has longitude"@en ;
 .
 

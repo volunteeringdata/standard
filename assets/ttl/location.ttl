@@ -12,6 +12,7 @@ prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
 
 ### Other namespaces used
 prefix dc:              <http://purl.org/dc/terms/>
+prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
@@ -21,11 +22,11 @@ prefix vann:            <http://purl.org/vocab/vann/>
 ## Location Class
 :Location
     a owl:Class ;
-    rdfs:subClassOf time:TemporalEntity ;
+    rdfs:subClassOf geo:SpatialThing ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteering Activity Location"@en ;
-    rdfs:comment "Any location related to volunteering activities."@en ;
     rdfs:label "Time"@en ;
+    rdfs:comment "Any location related to volunteering activities."@en ;
+    dc:description "Volunteering Activity Location"@en ;
 .
 
 
