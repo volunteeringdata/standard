@@ -24,7 +24,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:Class ;
     rdfs:subClassOf geo:SpatialThing ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "Time"@en ;
+    rdfs:label "Location"@en ;
     rdfs:comment "Any location related to volunteering activities."@en ;
     dc:description "Volunteering Activity Location"@en ;
 .
