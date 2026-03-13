@@ -26,15 +26,3 @@ prefix vann:            <http://purl.org/vocab/vann/>
     skos:prefLabel "Reward"@en ;
     skos:definition "Any reward related to volunteering activities."@en ;
 .
-
-
-### Object Properties
-:rewardRole
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :role ;
-    owl:inverseOf :roleReward ;
-    rdfs:domain :Reward ;
-    rdfs:range :Role ;
-    rdfs:label "reward has role"@en ;
-.

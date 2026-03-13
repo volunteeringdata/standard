@@ -46,11 +46,31 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has accessibility information"@en ;
 .
 
+:accessibilityRole
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :role ;
+    owl:inverseOf :roleAccessibility ;
+    rdfs:domain :Accessibility ;
+    rdfs:range :Role ;
+    rdfs:label "accessibility information has role"@en ;
+.
+
 :cause
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf :relatedConcept ;
     rdfs:label "has cause"@en ;
+.
+
+:causeOrganisation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :organisation ;
+    owl:inverseOf :organisationCause ;
+    rdfs:domain :Cause ;
+    rdfs:range :Organisation ;
+    rdfs:label "charitable cause has organisation"@en ;
 .
 
 :requirement
@@ -60,6 +80,16 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has requirement"@en ;
 .
 
+:requirementRole
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :role ;
+    owl:inverseOf :roleRequirement ;
+    rdfs:domain :Requirement ;
+    rdfs:range :Role ;
+    rdfs:label "requirement has role"@en ;
+.
+
 :reward
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -67,9 +97,29 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has reward"@en ;
 .
 
+:rewardRole
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :role ;
+    owl:inverseOf :roleReward ;
+    rdfs:domain :Reward ;
+    rdfs:range :Role ;
+    rdfs:label "reward has role"@en ;
+.
+
 :skill
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:subPropertyOf :relatedConcept ;
     rdfs:label "has skill"@en ;
+.
+
+:skillRole
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :role ;
+    owl:inverseOf :roleSkill ;
+    rdfs:domain :Skill ;
+    rdfs:range :Role ;
+    rdfs:label "skill has role"@en ;
 .

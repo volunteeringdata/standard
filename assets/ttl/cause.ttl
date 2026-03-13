@@ -28,18 +28,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 
-### Object Properties
-:causeOrganisation
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :organisation ;
-    owl:inverseOf :organisationCause ;
-    rdfs:domain :Cause ;
-    rdfs:range :Organisation ;
-    rdfs:label "charitable cause has organisation"@en ;
-.
-
-
 ## Cause Concepts
 :AnimalWelfare
     a skos:Concept ;

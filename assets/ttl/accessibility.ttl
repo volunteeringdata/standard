@@ -29,18 +29,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 
-### Object Properties
-:accessibilityRole
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :role ;
-    owl:inverseOf :roleAccessibility ;
-    rdfs:domain :Accessibility ;
-    rdfs:range :Role ;
-    rdfs:label "accessibility information has role"@en ;
-.
-
-
 ### Taxonomy Hierarchy
 :AgeRequirements
     a skos:Concept ;

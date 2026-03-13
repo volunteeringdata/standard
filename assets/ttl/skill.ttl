@@ -26,15 +26,3 @@ prefix vann:            <http://purl.org/vocab/vann/>
     skos:prefLabel "Skill"@en ;
     skos:definition "Any skill related to volunteering activities."@en ;
 .
-
-
-### Object Properties
-:skillRole
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :role ;
-    owl:inverseOf :roleSkill ;
-    rdfs:domain :Skill ;
-    rdfs:range :Role ;
-    rdfs:label "skill has role"@en ;
-.
