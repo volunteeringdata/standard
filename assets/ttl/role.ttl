@@ -22,9 +22,9 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :Role
     a owl:Class ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    dc:description "Volunteering Role"@en ;
-    rdfs:comment "Any kind of role related to a volunteering activity."@en ;
     rdfs:label "Role"@en ;
+    rdfs:comment "Any kind of role related to a volunteering activity."@en ;
+    dc:description "Volunteering Role"@en ;
 .
 
 ### Object Properties
@@ -95,6 +95,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:subPropertyOf :applyLink ;
     rdfs:domain :Role ;
     rdfs:label "role has apply link"@en ;
+.
+
+:roleCommitment
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :commitment ;
+    rdfs:domain :Role ;
+    rdfs:label "role has commitment"@en ;
 .
 
 :roleDescription
