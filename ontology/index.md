@@ -47,6 +47,28 @@ breadcrumbs:
 </dl>
 
 
+<h2 id="activity">Activity</h2>
+
+<h3 id="activity-properties">Properties</h3>
+
+<dl>
+  <dt id="activity-title">title</dt>
+  <dd>The activity's title.</dd>
+  <dt id="activity-description">description</dt>
+  <dd>A description of the activity.</dd>
+  <dt id="activity-requires-emergency-participation">requiresEmergencyParticipation</dt>
+  <dd>Whether the activity requires emergency participation (boolean).</dd>
+  <dt id="activity-image">image</dt>
+  <dd>An image representing the activity.</dd>
+  <dt id="activity-organisation">organisation</dt>
+  <dd>The organisation running the activity.</dd>
+  <dt id="activity-role">role</dt>
+  <dd>A volunteer role associated with the activity.</dd>
+  <dt id="activity-session">session</dt>
+  <dd>A session when the activity takes place.</dd>
+</dl>
+
+
 <h2 id="time">Time</h2>
 
 <h3 id="time-properties">Properties</h3>
