@@ -6,6 +6,56 @@ breadcrumbs:
   - title: "Ontology"
 ---
 
+<nav id="toc" class="toc">
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+  <li><a href="#introduction"><span class="secno">1. </span><span class="content">Introduction</span></a></li>
+  <li><a href="#volunteering-data-model"><span class="secno">2. </span><span class="content">Volunteering Data Model</span></a>
+    <ol>
+      <li><a href="#organisation"><span class="secno">2.1 </span><span class="content">Organisation</span></a>
+        <ol>
+          <li><a href="#organisation-properties"><span class="secno">2.1.1 </span><span class="content">Properties</span></a></li>
+        </ol>
+      </li>
+      <li><a href="#activity"><span class="secno">2.2 </span><span class="content">Activity</span></a>
+        <ol>
+          <li><a href="#activity-properties"><span class="secno">2.2.1 </span><span class="content">Properties</span></a></li>
+        </ol>
+      </li>
+      <li><a href="#role"><span class="secno">2.3 </span><span class="content">Role</span></a>
+        <ol>
+          <li><a href="#role-properties"><span class="secno">2.3.1 </span><span class="content">Properties</span></a></li>
+        </ol>
+      </li>
+      <li><a href="#session"><span class="secno">2.4 </span><span class="content">Session</span></a>
+        <ol>
+          <li><a href="#session-properties"><span class="secno">2.4.1 </span><span class="content">Properties</span></a></li>
+        </ol>
+      </li>
+      <li><a href="#location"><span class="secno">2.5 </span><span class="content">Location</span></a>
+        <ol>
+          <li><a href="#location-properties"><span class="secno">2.5.1 </span><span class="content">Properties</span></a></li>
+        </ol>
+      </li>
+      <li><a href="#time"><span class="secno">2.6 </span><span class="content">Time</span></a>
+        <ol>
+          <li><a href="#time-properties"><span class="secno">2.6.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#time-defined-temporal-entities"><span class="secno">2.6.2 </span><span class="content">Defined temporal entities</span></a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#taxonomies"><span class="secno">3. </span><span class="content">Taxonomies</span></a></li>
+  <li><a href="#contributing-knowledge"><span class="secno">4. </span><span class="content">Contributing Knowledge</span></a>
+    <ol>
+      <li><a href="#discussion-topics"><span class="secno">4.1 </span><span class="content">Discussion Topics</span></a></li>
+    </ol>
+  </li>
+  <li><a href="#standardisation-history"><span class="secno">5. </span><span class="content">Standardisation History</span></a></li>
+</ol>
+</nav>
+
+
 <h2 id="introduction">Introduction</h2>
 
 
@@ -14,16 +64,16 @@ breadcrumbs:
 <p>The volunteering and social action ontology is implemented using RDF, a native data format for the semantic web. RDF enables the <a href="https://5stardata.info/en/">5-star</a> deployment scheme for Open Data; a scheme suggested by Tim Berners-Lee, the inventor of the Web and <a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a> initiator.</p>
 
 
-<h3 id="data-model">Data Model</h3>
+<h2 id="volunteering-data-model">Volunteering Data Model</h2>
 
 <p>The following diagram illustrates the main elements of the Volunteering and Social Action Ontology.</p>
 
-<img src="../assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" />
+<p class="data-model-diagram"><img src="../assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" /></p>
 
 
-<h2 id="organisation">Organisation</h2>
+<h3 id="organisation">Organisation</h3>
 
-<h3 id="organisation-properties">Properties</h3>
+<h4 id="organisation-properties">Properties</h4>
 
 <dl>
   <dt id="organisation-name">name</dt>
@@ -47,9 +97,9 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="activity">Activity</h2>
+<h3 id="activity">Activity</h3>
 
-<h3 id="activity-properties">Properties</h3>
+<h4 id="activity-properties">Properties</h4>
 
 <dl>
   <dt id="activity-title">title</dt>
@@ -69,9 +119,9 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="role">Role</h2>
+<h3 id="role">Role</h3>
 
-<h3 id="role-properties">Properties</h3>
+<h4 id="role-properties">Properties</h4>
 
 <dl>
   <dt id="role-title">title</dt>
@@ -101,9 +151,9 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="session">Session</h2>
+<h3 id="session">Session</h3>
 
-<h3 id="session-properties">Properties</h3>
+<h4 id="session-properties">Properties</h4>
 
 <dl>
   <dt id="session-activity">activity</dt>
@@ -115,9 +165,9 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="location">Location</h2>
+<h3 id="location">Location</h3>
 
-<h3 id="location-properties">Properties</h3>
+<h4 id="location-properties">Properties</h4>
 
 <dl>
   <dt id="location-name">name</dt>
@@ -135,9 +185,9 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="time">Time</h2>
+<h3 id="time">Time</h3>
 
-<h3 id="time-properties">Properties</h3>
+<h4 id="time-properties">Properties</h4>
 
 <dl>
   <dt id="time-label">rdfs:label</dt>
@@ -148,7 +198,7 @@ breadcrumbs:
   <dd>The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.</dd>
 </dl>
 
-<h3 id="time-defined-temporal-entities">Defined temporal entities</h3>
+<h4 id="time-defined-temporal-entities">Defined temporal entities</h4>
 
 <dl>
   <dt id="time-monday-morning">MondayMorning</dt>

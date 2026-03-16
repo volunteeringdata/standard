@@ -1,10 +1,12 @@
 :root {
   --background-color: rgb(15, 75, 105);
   --color: #fff;
+  --main-text-color: #152336;
   --main-link-background-color: #bce7d3;
   --main-link-color: #0a121c;
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
   --article-text-max-width: 50rem;
+  --article-main-image-max-width: 70rem;
 }
 
 /* Defaults */
@@ -91,6 +93,10 @@ main > article :is(p, ul, ol, dl) {
 
 
 /* Classes */
+.data-model-diagram {
+  max-width: var(--article-main-image-max-width);
+}
+
 .icon-text {
   vertical-align: top;
   width: 1.6rem;
