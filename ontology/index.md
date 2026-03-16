@@ -69,6 +69,38 @@ breadcrumbs:
 </dl>
 
 
+<h2 id="role">Role</h2>
+
+<h3 id="role-properties">Properties</h3>
+
+<dl>
+  <dt id="role-title">title</dt>
+  <dd>The role's title.</dd>
+  <dt id="role-description">description</dt>
+  <dd>A description of the role.</dd>
+  <dt id="role-commitment">commitment</dt>
+  <dd>The time commitment expected for the role.</dd>
+  <dt id="role-apply-link">applyLink</dt>
+  <dd>A link to apply for the role.</dd>
+  <dt id="role-allows-remote-participation">allowsRemoteParticipation</dt>
+  <dd>Whether the role allows remote participation (boolean).</dd>
+  <dt id="role-minimum-age">minimumAge</dt>
+  <dd>The minimum age requirement for the role.</dd>
+  <dt id="role-maximum-age">maximumAge</dt>
+  <dd>The maximum age requirement for the role.</dd>
+  <dt id="role-activity">activity</dt>
+  <dd>The activity this role is part of.</dd>
+  <dt id="role-accessibility">accessibility</dt>
+  <dd>Accessibility information for the role.</dd>
+  <dt id="role-requirement">requirement</dt>
+  <dd>A requirement for the role. See the <a href="./requirement">Requirement Taxonomy</a>.</dd>
+  <dt id="role-reward">reward</dt>
+  <dd>A reward associated with the role.</dd>
+  <dt id="role-skill">skill</dt>
+  <dd>A skill associated with the role. See the <a href="./skill">Skill Taxonomy</a>.</dd>
+</dl>
+
+
 <h2 id="session">Session</h2>
 
 <h3 id="session-properties">Properties</h3>

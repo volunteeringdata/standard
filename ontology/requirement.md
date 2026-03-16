@@ -10,17 +10,6 @@ breadcrumbs:
 
 ## Terms
 
-### Age
-
-- Between 11 and 25 years old
-- Over 11 years old
-- Over 14 years old
-- Over 16 years old
-- Over 18 years old
-- Under 18 years old
-- Under 25 years old
-
-
 ### Assets & equipment
 
 - Useful items or capabilities that strengthen crisis response.
