@@ -24,6 +24,8 @@ excerpt_separator: "<!--more-->"
 include: 
   - _redirects
 exclude:
+  - scripts
   - docker-compose.yml
-  - LICENSE.md
+  - LICENSE
+  - LICENSE.MIT
   - README.md
