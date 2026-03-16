@@ -38,8 +38,10 @@ breadcrumbs:
     <a href="https://www.oscr.org.uk/about-charities/search-the-register/">Office of the Scottish Charity Regulator (OSCR)</a>;
     <a href="https://www.charitycommissionni.org.uk/charity-search">The Charity Commission for Northern Ireland</a>.
   </dd>
+  <dt id="organisation-image">image</dt>
+  <dd>An image representing the organisation (e.g. logo or photo).</dd>
   <dt id="organisation-activity">activity</dt>
-  <dd>An volunteering opportunity offered by the organisation.</dd>
+  <dd>A volunteering opportunity offered by the organisation.</dd>
   <dt id="organisation-cause">cause</dt>
   <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a></dd>
 </dl>
