@@ -69,6 +69,20 @@ breadcrumbs:
 </dl>
 
 
+<h2 id="session">Session</h2>
+
+<h3 id="session-properties">Properties</h3>
+
+<dl>
+  <dt id="session-activity">activity</dt>
+  <dd>The activity this session is for.</dd>
+  <dt id="session-location">location</dt>
+  <dd>The location where the session takes place.</dd>
+  <dt id="session-time">time</dt>
+  <dd>The time when the session occurs.</dd>
+</dl>
+
+
 <h2 id="time">Time</h2>
 
 <h3 id="time-properties">Properties</h3>
