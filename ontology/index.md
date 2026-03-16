@@ -43,7 +43,7 @@ breadcrumbs:
   <dt id="organisation-activity">activity</dt>
   <dd>A volunteering opportunity offered by the organisation.</dd>
   <dt id="organisation-cause">cause</dt>
-  <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a></dd>
+  <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a>.</dd>
 </dl>
 
 
@@ -80,6 +80,26 @@ breadcrumbs:
   <dd>The location where the session takes place.</dd>
   <dt id="session-time">time</dt>
   <dd>The time when the session occurs.</dd>
+</dl>
+
+
+<h2 id="location">Location</h2>
+
+<h3 id="location-properties">Properties</h3>
+
+<dl>
+  <dt id="location-name">name</dt>
+  <dd>A name for the location.</dd>
+  <dt id="location-address">address</dt>
+  <dd>The location's address as free text. This can be a partial (e.g. postcode) or full address.</dd>
+  <dt id="location-geometry">geometry</dt>
+  <dd>A generic geometry object to support interfaces common to all geographically referenced geometric objects. Sub-property of <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html#_property_geohasgeometry">geosparql:hasGeometry</a>. See the <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">GeoSPARQL standard</a>.</dd>
+  <dt id="location-latitude">latitude</dt>
+  <dd>The location's latitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.</dd>
+  <dt id="location-longitude">longitude</dt>
+  <dd>The location's longitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.</dd>
+  <dt id="location-session">session</dt>
+  <dd>A session that takes place at this location.</dd>
 </dl>
 
 
