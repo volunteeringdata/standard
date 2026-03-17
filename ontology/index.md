@@ -105,14 +105,17 @@ breadcrumbs:
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
   <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Organisation"</span>,
   <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"https://example.org/organisation/oxfam-gb"</span>,
-  <span class="hljs-attr">"organisationName"</span>: <span class="hljs-string">"Oxfam GB"</span>,
-  <span class="hljs-attr">"organisationDescription"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
-  <span class="hljs-attr">"organisationWebsite"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
-  <span class="hljs-attr">"organisationCharityNumber"</span>: <span class="hljs-string">"202918"</span>,
-  <span class="hljs-attr">"organisationImage"</span>: <span class="hljs-string">"https://example.org/images/oxfam-logo.png"</span>,
-  <span class="hljs-attr">"organisationCause"</span>: [
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam GB"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
+  <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
+  <span class="hljs-attr">"charityNumber"</span>: <span class="hljs-string">"202918"</span>,
+  <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://example.org/images/oxfam-logo.png"</span>,
+  <span class="hljs-attr">"cause"</span>: [
     <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>,
     <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
+  ],
+  <span class="hljs-attr">"activity"</span>: [
+    ... (see activity example)
   ]
 }</pre>
 </div>
