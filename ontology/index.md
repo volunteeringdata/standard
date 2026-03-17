@@ -100,6 +100,7 @@ breadcrumbs:
 <h4 id="organisation-example"><span class="secno">2.1.2 </span>Example</h4>
 
 <div class="example">
+  <h5 id="example-1">Example 1</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
   <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Organisation"</span>,
@@ -114,6 +115,18 @@ breadcrumbs:
     <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
   ]
 }</pre>
+</div>
+
+<div class="note">
+  <h5 id="note-1">Note 1</h5>
+  <p>One charity can register with multiple charity number registries.</p>
+  <p>For example, Oxfam is registered with:</p>
+  <ul>
+    <li>The Charity commission for England and Wales as <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/202918">202918</a></li>
+    <li>The OSCR as <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC039042">SC039042</a></li>
+    <li>The Charity commission for Northern Ireland as <a href="https://www.charitycommissionni.org.uk/charity-search/charity-details-page/?regId=100848&subId=0">100848</a></li>
+  </ul>
+  <p>The model should accomodate a way to express that or simply use full URIs pointing to the corresponding registrar.</p>
 </div>
 
 <h3 id="activity"><span class="secno">2.2 </span>Activity</h3>
