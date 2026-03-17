@@ -187,10 +187,17 @@ main > article :is(p, ul, ol, dl) {
 
 .example h5, .note h5 {
   display: block;
-  color: #574b0f;
   font-size: 1rem;
   font-weight: bold;
   margin: 0.5em 0 0.5em 0;
+}
+
+.example h5 {
+  color: rgb(87, 75, 15);
+}
+
+.note h5 {
+  color: rgb(23, 130, 23);
 }
 
 .example .example-title .marker {
