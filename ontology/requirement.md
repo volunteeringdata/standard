@@ -12,7 +12,8 @@ breadcrumbs:
 
 ### Assets & equipment
 
-- Useful items or capabilities that strengthen crisis response.
+#### Useful items or capabilities that strengthen crisis response
+
 - Personal Equipment
 - Sturdy footwear (e.g., boots)
 - Waterproofs and warm layers
@@ -22,7 +23,9 @@ breadcrumbs:
 - Phone + power bank
 - Small personal first aid kit
 - Water bottle
-- Transport & Mobility Assets
+
+#### Transport & Mobility Assets
+
 - 4x4 vehicle (personal or organisational)
 - SUV or off-road capable vehicle
 - Vehicle with tow capability
@@ -31,7 +34,9 @@ breadcrumbs:
 - Access to bicycles or cargo bikes (urban crises)
 - Boat
 - Hovercraft
-- Specialist or Useful Assets
+
+#### Specialist or Useful Assets
+
 - Walkie-talkies or radios
 - Portable generator or power station
 - Water pump (for localised flooding help)
