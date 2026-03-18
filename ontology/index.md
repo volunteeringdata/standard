@@ -170,14 +170,18 @@ breadcrumbs:
     <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"16"</span>
   },
   <span class="hljs-attr">"session"</span>: {
-    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/s686e542f7734eb69b0ec1516"</span>,
-    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Session"</span>,
     <span class="hljs-attr">"location"</span>: [
       {
         <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
         <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
         <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
       }
+    ]
+    <span class="hljs-attr">"time"</span>: [
+      <span class="hljs-string">"volunteering:MondayAfternoon"</span>,
+      <span class="hljs-string">"volunteering:TuesdayAfternoon"</span>,
+      <span class="hljs-string">"volunteering:SaturdayMorning"</span>,
+      <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayAfternoon"</span>
     ]
   }
 }</pre>
