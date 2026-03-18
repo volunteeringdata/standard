@@ -37,10 +37,8 @@ If you have any questions please contact us via research@theodi.org
 
 ## Next Meetings
 
-### Meeting 5: 04/03/26 3-4pm
-We will focus on describing the value of volunteering as data, this will include the value to people volunteering and the value to the volunteer involving organisation.
-
 ### Meeting 6: 18/03/26 3-4pm
+
 This will be a retrospective, we will present the work of the working group and our achievements and seek your views on what went well, what didn’t go well and your ideas for the future.
 
 
