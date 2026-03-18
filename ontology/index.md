@@ -176,7 +176,7 @@ breadcrumbs:
         <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
         <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
       }
-    ]
+    ],
     <span class="hljs-attr">"time"</span>: [
       <span class="hljs-string">"volunteering:MondayAfternoon"</span>,
       <span class="hljs-string">"volunteering:TuesdayAfternoon"</span>,
