@@ -190,7 +190,7 @@ breadcrumbs:
 <div class="note">
   <h5 id="note-2">Note 2</h5>
   <p>In example 2, the organisation is referred to through its identifier. It is also possible to embed the organisation details in the activity representation.</p>
-  <p>Time standard-defined <a href="#time-defined-temporal-entities">temporal entities</a> "volunteering:TuesdayMorning" is equivalent to "https://ns.volunteeringdata.io/TuesdayMorning".</p>
+  <p>Standard-defined <a href="#time-defined-temporal-entities">temporal entities</a> can be referred to via their <a href="https://en.wikipedia.org/wiki/CURIE">compact URI</a> (using the "volunteering" prefix). That is: "volunteering:TuesdayMorning" is equivalent to "https://ns.volunteeringdata.io/TuesdayMorning".</p>
   <p>New temporal entities can be defined using the <a href="https://www.w3.org/TR/owl-time/">Time ontology in OWL</a>. See for example <a href="https://api.volunteeringdata.io/describe.ttl?id=https://ns.volunteeringdata.io/TuesdayMorning">Tuesday Morning</a>.</p>
 </div>
 
