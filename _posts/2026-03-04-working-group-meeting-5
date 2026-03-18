@@ -12,8 +12,84 @@ breadcrumbs:
 
 <p>The fith working group meeting provided an update on the development of the data model and workshopped data access requirements, to inform the design of an API (APIs are computer to computer messaging services) and started to consider the pros and cons of opportunity data being published as open data (Open data is data that anyone can access, use or share).</p>
 
-<ul>
-  <li>Meeting Notes (PDF): <a href="../working-group/20251126_working_group_meeting_notes.pdf">View the note of the meeting</a></li>
-  <li>Slides (PDF): <a href="../working-group/20251126_working_group_meeting_slides.pdf">View the slides from the meeting</a></li>
-  <li>Whiteboard (Miro): <a href="https://miro.com/app/board/uXjVJldYfOU=/">View the whiteboard created at the working group meeting</a></li>
-</ul>
+# MINUTES: Volunteering Data Standards Working Group 5 04 March 2026
+
+## Documents: 
+
+* [Slide Deck](.../standard/blob/main/working-group/20260218_working_group_meeting_slides.pdf)  
+* Miro \- [https://miro.com/app/board/uXjVG\_TGKwY=/](https://miro.com/app/board/uXjVG_TGKwY=/)
+
+## Documents: 
+
+* [Slide Deck](http://www.test.test/standard/blob/main/working-group/20260304_working_group_meeting_slides.pdf)  
+* Miro \- [https://miro.com/app/board/uXjVG3P3KQk=/](https://miro.com/app/board/uXjVG3P3KQk=/)
+
+## Agenda
+
+1. [Welcome & Project Overview](#welcome-and-project-overview)  
+2. [Data Model Updates](#data-model-update)  
+3. [Describing the value of volunteering](#describing-the-value-of-volunteering)  
+4. [Next Steps](https://docs.google.com/document/d/1sDAenDvQchf41zq3FPAg_MxH6PGBxsQSwhxNwu1zoUU/edit?tab=t.0#heading=h.1c45337jn6q1)
+
+## Attendee profile
+
+The working group was attended by 20 people, including 3 members of the ODI project team (Andrew, Julie and Matthieu).
+
+There was representation from a range of organisation types, including:
+
+* Volunteering Involving Organisations (National)  
+* Volunteering Infrastructure Organisation (National)  
+* Volunteering Infrastructure Organisation (Local)  
+* Local Gov.  
+* General Gov.  
+* Consultancy/Advisory
+
+## Welcome and Project Overview {#welcome-and-project-overview}
+
+Andrew Newman (chair) presented an overview of the project and the role of the standards working group, explaining that the Volunteering Data Standards Project is DCMS-funded and is a fast-tracked initiative designed to bridge the data infrastructure gap between communities and available volunteering opportunities.
+
+The project follows a standard three-stage development cycle:
+
+* **Discovery:** Identified seven key use cases focused on increasing participation, improving volunteer experiences, and evidencing impact.  
+* **Alpha:** Developed a formal data standard for volunteering opportunities and the technical infrastructure to support it.  
+* **Beta (Current):** Moving into real-world implementation through three specific pilots.
+
+### **The Three Beta Pilots**
+
+1. **National Interoperability:** Partnering with major stakeholders to ensure data can be shared seamlessly across large platforms.  
+2. **Grassroots Inclusion:** Testing the standards to ensure they are accessible and functional for smaller, local organisations.  
+3. **AI Readiness:** Developing an agentic search bot to test how standardised data can power AI-driven opportunity searches.
+
+### **Timeline & Next Steps**
+
+The project is currently working toward a March deadline to complete the pilot phases. While the AI and grassroots pilots are on track for significant progress. Findings will be shared in future working group meetings to determine the project's long-term trajectory.
+
+## Data Model Update {#data-model-update}
+
+This phase of the volunteering data standards project focuses on refining the core data model and expanding its functionality.
+
+### Matthieu presented an overview of the Volunteering Standards website [https://standard.volunteeringdata.io/ontology/](https://standard.volunteeringdata.io/ontology/)
+
+### The refactored data model includes core elements such as an activity with a title, description, organisation link, and session details. Explaining that the significant new elements are the introduction of a \*Role\* concept, which accommodates different requirements linked to the existing requirement taxonomy, and the addition of \*Skills\*, which uses a taxonomy iterated during a December hackathon.
+
+## Discussion and questions
+
+**Q:** Are we covering the Volunteer Application as well in the Data Model? **A**: A discussion confirmed that the current data model represents volunteer applications through an \`apply link\` property available for each \*Role\*. The model focuses primarily on opportunities data, and while it supports both internal and external application mechanisms, it has not defined the specific data that must be contained within an application.
+
+**Q:** What user research will be done for the data values?  Organisations have been mentioned, have volunteers been considered? **A**: Andrew explained that the working group of experts had been used for initial rapid development, including a workshop on accessibility, but acknowledged that they have not yet tested the model's descriptive values with actual end-users for interpretation.
+
+The group agreed that taking the data model back to end-users would be valuable for future development. Standards are viewed as a continuously evolving process rather than a final product, and further user testing would benefit the development of taxonomies that define the language of volunteering.
+
+## Describing the value of volunteering {#describing-the-value-of-volunteering}
+
+The conversation shifted to the enduring question of how to help organisations understand and demonstrate the value of volunteering. Initial discovery research identified eight use cases for data in the voluntary sector, including a category focused on evidencing impact, which requires standardised approaches for management decisions and reporting to donors**.**
+
+The chair introduced a typology for value in the not-for-profit sector developed by Dr Amy Bernett from Middlesex University (a Steering Group Member). The typology aims to provide a basis for standardised reporting on the value of community services and volunteering. The typology includes nine broad categories of value, such as monetary value, recognition, appreciative value, impact on various capitals (social, human, infrastructure, environmental), and personal value.
+
+The next activity was a "Miro" Exercise to explore value, organised around four core questions: challenges in proving value, questions organisations aim to answer about value, necessary data points, and prioritisation of data collection. Participants were divided into three breakout rooms, with an ODI representative in each, to discuss and interact with the Miro board on the topics for 20 minutes, spending five minutes on each of the four areas.
+
+Next Steps
+
+**Meeting 6** (18/03/26)
+
+* This will be a retrospective. We will present the work of the working group and our achievements, and seek your views on what went well, what didn’t go well, and your ideas for the future.
