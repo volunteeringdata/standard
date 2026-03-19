@@ -39,6 +39,7 @@ breadcrumbs:
       <li><a href="#location"><span class="secno">2.5 </span><span class="content">Location</span></a>
         <ol>
           <li><a href="#location-properties"><span class="secno">2.5.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#location-example"><span class="secno">2.5.2 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
       <li><a href="#time"><span class="secno">2.6 </span><span class="content">Time</span></a>
@@ -323,6 +324,25 @@ breadcrumbs:
   <dt id="location-session">session</dt>
   <dd>A session that takes place at this location.</dd>
 </dl>
+
+<h4 id="location-example"><span class="secno">2.5.2 </span>Example</h4>
+
+<div class="example">
+  <h5 id="example-5">Example 5</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Location"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
+  <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
+  <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
+  <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+}</pre>
+</div>
+
+<div class="note">
+  <h5 id="note-4">Note 4</h5>
+  <p>Locations could be predefined and reused. For example, a council's boundary can be serialised as <a href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry">Well-Known Text (WKT)</a> and linked to via the <code>geometry</code> property. The <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">GeoSPARQL standard</a> defines how to link geometries to <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html#C.1.1.2.2">WKT literals</a>. For an example of such a boundary, see the <a href="https://mapit.mysociety.org/area/2508.html">geometry of the Hackney Borough Council</a>.</p>
+</div>
 
 
 <h3 id="time"><span class="secno">2.6 </span>Time</h3>
