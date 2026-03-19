@@ -27,6 +27,7 @@ breadcrumbs:
       <li><a href="#role"><span class="secno">2.3 </span><span class="content">Role</span></a>
         <ol>
           <li><a href="#role-properties"><span class="secno">2.3.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#role-example"><span class="secno">2.3.2 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
       <li><a href="#session"><span class="secno">2.4 </span><span class="content">Session</span></a>
@@ -225,6 +226,35 @@ breadcrumbs:
   <dt id="role-skill">skill</dt>
   <dd>A skill associated with the role. See the <a href="./skill">Skill Taxonomy</a>.</dd>
 </dl>
+
+<h4 id="role-example"><span class="secno">2.3.2 </span>Example</h4>
+
+<div class="example">
+  <h5 id="example-3">Example 3</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
+  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Role"</span>,
+  <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"https://example.org/role/outreach-volunteer"</span>,
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Outreach Volunteer"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services."</span>,
+  <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"One evening per week, 3-hour shift"</span>,
+  <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,
+  <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"18"</span>,
+  <span class="hljs-attr">"activity"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
+  <span class="hljs-attr">"requirement"</span>: [
+    <span class="hljs-string">"https://ns.volunteeringdata.io/DBSCheck"</span>
+  ],
+  <span class="hljs-attr">"reward"</span>: [
+    <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>,
+    <span class="hljs-string">"https://ns.volunteeringdata.io/ExpensesReimbursed"</span>
+  ],
+  <span class="hljs-attr">"skill"</span>: [
+    <span class="hljs-string">"https://ns.volunteeringdata.io/Communication"</span>,
+    <span class="hljs-string">"https://ns.volunteeringdata.io/EmpathyAndCompassion"</span>
+  ]
+}</pre>
+</div>
 
 
 <h3 id="session"><span class="secno">2.4 </span>Session</h3>
