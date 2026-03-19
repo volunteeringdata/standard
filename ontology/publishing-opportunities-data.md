@@ -16,7 +16,7 @@ breadcrumbs:
 <p>The top-level document is a JSON-LD array of <a href="/ontology/#organisation">Organisation</a> objects. Each organisation embeds its <a href="/ontology/#activity">activities</a>, which in turn embed their <a href="/ontology/#role">roles</a> and <a href="/ontology/#session">sessions</a> (with <a href="/ontology/#location">location</a> and <a href="/ontology/#time">time</a> details).</p>
 
 <div class="example">
-  <h5 id="example-1">Example</h5>
+  <h5 id="example-1">Example 1</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
   <span class="hljs-attr">"graph"</span>: [
@@ -138,13 +138,18 @@ breadcrumbs:
 }</pre>
 </div>
 
+<div class="note">
+  <h5 id="note-1">Note 1</h5>
+  <p>The <code>graph</code> property (mapped to <a href="https://www.w3.org/TR/json-ld11/#named-graphs">@graph</a> in JSON-LD) is used to group multiple top-level objects under a single shared <code>@context</code>. This avoids repeating the context in every organisation object. Each item in the <code>graph</code> array is an independent node in the linked data graph.</p>
+</div>
+
 
 <h2 id="multiple-organisations">Sharing one organisations' opportunities</h2>
 
 <p>A single organisation can publish its own opportunities as one object with multiple activities.</p>
 
 <div class="example">
-  <h5 id="example-2">Example</h5>
+  <h5 id="example-2">Example 2</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
