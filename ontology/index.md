@@ -108,7 +108,7 @@ breadcrumbs:
   <h5 id="example-1">Example 1</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Organisation"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
   <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"https://example.org/organisation/oxfam-gb"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam GB"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
@@ -240,7 +240,7 @@ breadcrumbs:
   <h5 id="example-3">Example 3</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Role"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Role"</span>,
   <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"https://example.org/role/outreach-volunteer"</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Outreach Volunteer"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services."</span>,
@@ -285,7 +285,7 @@ breadcrumbs:
   <h5 id="example-4">Example 4</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Session"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Session"</span>,
   <span class="hljs-attr">"activity"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
   <span class="hljs-attr">"location"</span>: {
     <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
