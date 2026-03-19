@@ -26,6 +26,8 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:Ontology ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:label "Volunteering and Social Action Ontology"@en ;
+    dc:creator "Matthieu Bosquet" ;
+    dc:contributor "Volunteering Data Standard Working Group" ;
     dc:title "Volunteering and Social Action Ontology"@en ;
     dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
     dc:issued "2025-11-20"^^xsd:date ;
