@@ -297,6 +297,11 @@ breadcrumbs:
 }</pre>
 </div>
 
+<div class="note">
+  <h5 id="note-3">Note 3</h5>
+  <p>Sessions typically do not have an <code>id</code> attribute of their own, as they will generally be presented embedded within the context of an activity (see <a href="#activity-example">Example 2</a>).</p>
+</div>
+
 
 <h3 id="location"><span class="secno">2.5 </span>Location</h3>
 
