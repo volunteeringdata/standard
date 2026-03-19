@@ -26,3 +26,393 @@ prefix vann:            <http://purl.org/vocab/vann/>
     skos:prefLabel "Skill"@en ;
     skos:definition "Any skill related to volunteering activities."@en ;
 .
+
+
+## Skill Concepts
+
+### Communication
+:Communication
+    a skos:Concept ;
+    skos:prefLabel "Communication"@en ;
+    skos:definition "Skills related to verbal, written, and interpersonal communication in volunteering contexts."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ClearSpokenCommunication
+    a skos:Concept ;
+    skos:prefLabel "Clear spoken communication"@en ;
+    skos:definition "Ability to speak clearly and convey information effectively."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ActiveListening
+    a skos:Concept ;
+    skos:prefLabel "Active listening"@en ;
+    skos:definition "Ability to listen attentively and respond appropriately."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:RelayAccurateInformation
+    a skos:Concept ;
+    skos:prefLabel "Ability to relay accurate information"@en ;
+    skos:definition "Ability to pass on information accurately and without distortion."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:PhoneOnlineSupport
+    a skos:Concept ;
+    skos:prefLabel "Supporting people via phone/online"@en ;
+    skos:definition "Ability to provide support and assistance remotely via phone or online channels."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:RadioUse
+    a skos:Concept ;
+    skos:prefLabel "Use of radios / walkie-talkies"@en ;
+    skos:definition "Ability to operate radios and walkie-talkies for communication."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:PublicEngagement
+    a skos:Concept ;
+    skos:prefLabel "Confidence engaging with the public or groups"@en ;
+    skos:definition "Confidence and ability to engage with members of the public or groups."@en ;
+    skos:broader :Communication ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+
+### Digital & Technology
+:DigitalAndTechnology
+    a skos:Concept ;
+    skos:prefLabel "Digital & technology"@en ;
+    skos:definition "Skills related to digital tools, technology, and IT in volunteering contexts."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:BasicITSkills
+    a skos:Concept ;
+    skos:prefLabel "Basic IT skills"@en ;
+    skos:definition "Fundamental computer and information technology skills."@en ;
+    skos:broader :DigitalAndTechnology ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:SmartphoneUse
+    a skos:Concept ;
+    skos:prefLabel "Confident smartphone use (maps, messaging, camera)"@en ;
+    skos:definition "Confident use of smartphone features including maps, messaging, and camera."@en ;
+    skos:broader :DigitalAndTechnology ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:RemoteCommunicationTools
+    a skos:Concept ;
+    skos:prefLabel "Familiarity with remote communication tools"@en ;
+    skos:definition "Familiarity with video conferencing, messaging platforms, and other remote communication tools."@en ;
+    skos:broader :DigitalAndTechnology ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:DataEntryAndReporting
+    a skos:Concept ;
+    skos:prefLabel "Simple data entry and reporting"@en ;
+    skos:definition "Ability to perform simple data entry and produce basic reports."@en ;
+    skos:broader :DigitalAndTechnology ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:SocialMediaHandling
+    a skos:Concept ;
+    skos:prefLabel "Responsible handling of social media"@en ;
+    skos:definition "Ability to use social media responsibly and appropriately in a volunteering context."@en ;
+    skos:broader :DigitalAndTechnology ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+
+### Personal & Interpersonal
+:PersonalAndInterpersonal
+    a skos:Concept ;
+    skos:prefLabel "Personal & interpersonal"@en ;
+    skos:definition "Personal qualities and interpersonal skills relevant to volunteering."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:EmpathyAndCompassion
+    a skos:Concept ;
+    skos:prefLabel "Empathy and compassion"@en ;
+    skos:definition "Ability to understand and share the feelings of others with care and concern."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:CalmnessUnderPressure
+    a skos:Concept ;
+    skos:prefLabel "Calmness under pressure"@en ;
+    skos:definition "Ability to remain calm and composed in stressful or high-pressure situations."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:PatienceAndUnderstanding
+    a skos:Concept ;
+    skos:prefLabel "Patience and understanding"@en ;
+    skos:definition "Ability to be patient and show understanding towards others."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ReliabilityAndTrustworthiness
+    a skos:Concept ;
+    skos:prefLabel "Reliability and trustworthiness"@en ;
+    skos:definition "Being dependable, consistent, and worthy of trust."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ProfessionalBoundaries
+    a skos:Concept ;
+    skos:prefLabel "Respect for professional boundaries"@en ;
+    skos:definition "Ability to maintain appropriate professional boundaries in volunteering relationships."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:CulturalSensitivity
+    a skos:Concept ;
+    skos:prefLabel "Cultural sensitivity"@en ;
+    skos:definition "Awareness of and respect for cultural differences and diversity."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:TraumaInformedAwareness
+    a skos:Concept ;
+    skos:prefLabel "Trauma-informed awareness"@en ;
+    skos:definition "Understanding of trauma and its effects, and ability to respond sensitively."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ConflictDeescalation
+    a skos:Concept ;
+    skos:prefLabel "Conflict de-escalation"@en ;
+    skos:definition "Ability to reduce tension and resolve conflicts calmly."@en ;
+    skos:broader :PersonalAndInterpersonal ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+
+### Practical & Operational
+:PracticalAndOperational
+    a skos:Concept ;
+    skos:prefLabel "Practical & operational"@en ;
+    skos:definition "Practical and operational skills for hands-on volunteering tasks."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:Logistics
+    a skos:Concept ;
+    skos:prefLabel "Logistics (sorting, packing, distributing supplies)"@en ;
+    skos:definition "Ability to sort, pack, and distribute supplies and materials."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ShelterSupport
+    a skos:Concept ;
+    skos:prefLabel "Shelter support (setting up spaces, helping evacuees)"@en ;
+    skos:definition "Ability to set up shelter spaces and support evacuees or displaced individuals."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:BasicRecordKeeping
+    a skos:Concept ;
+    skos:prefLabel "Basic record keeping"@en ;
+    skos:definition "Ability to maintain basic records and documentation."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:BasicEquipmentUse
+    a skos:Concept ;
+    skos:prefLabel "Use of basic equipment (sandbags, barriers, tools)"@en ;
+    skos:definition "Ability to use basic equipment such as sandbags, barriers, and hand tools."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:NavigationAndOrientation
+    a skos:Concept ;
+    skos:prefLabel "Navigation and orientation"@en ;
+    skos:definition "Ability to navigate and orient oneself using maps, compasses, or GPS."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:Driving
+    a skos:Concept ;
+    skos:prefLabel "Driving (car, van, off-road vehicles)"@en ;
+    skos:definition "Ability to drive cars, vans, or off-road vehicles."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:CrowdQueueManagement
+    a skos:Concept ;
+    skos:prefLabel "Crowd/queue management"@en ;
+    skos:definition "Ability to manage crowds and queues safely and efficiently."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:PilotLicense
+    a skos:Concept ;
+    skos:prefLabel "Pilot License"@en ;
+    skos:definition "Holder of a valid pilot license for aircraft operation."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:HGVCategoryD
+    a skos:Concept ;
+    skos:prefLabel "HGV/Category D"@en ;
+    skos:definition "Holder of an HGV or Category D driving licence for large vehicles."@en ;
+    skos:broader :PracticalAndOperational ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+
+### Safety & Emergency Awareness
+:SafetyAndEmergencyAwareness
+    a skos:Concept ;
+    skos:prefLabel "Safety & emergency awareness"@en ;
+    skos:definition "Skills related to safety procedures and emergency awareness in volunteering contexts."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:EmergencyBriefings
+    a skos:Concept ;
+    skos:prefLabel "Understanding emergency briefings and instructions"@en ;
+    skos:definition "Ability to understand and follow emergency briefings and instructions."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:BasicSafeguarding
+    a skos:Concept ;
+    skos:prefLabel "Basic safeguarding knowledge"@en ;
+    skos:definition "Understanding of basic safeguarding principles and practices."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:RiskAwareness
+    a skos:Concept ;
+    skos:prefLabel "Risk awareness (water, fire, structure, debris)"@en ;
+    skos:definition "Awareness of environmental risks including water, fire, structural, and debris hazards."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:SafeManualHandling
+    a skos:Concept ;
+    skos:prefLabel "Safe manual handling"@en ;
+    skos:definition "Knowledge of safe lifting and manual handling techniques."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:IncidentReporting
+    a skos:Concept ;
+    skos:prefLabel "Incident reporting"@en ;
+    skos:definition "Ability to accurately report incidents and safety concerns."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:BasicFirstAid
+    a skos:Concept ;
+    skos:prefLabel "Basic first aid knowledge"@en ;
+    skos:definition "Basic knowledge of first aid procedures and techniques."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:FireSafetyAwareness
+    a skos:Concept ;
+    skos:prefLabel "Fire safety awareness"@en ;
+    skos:definition "Awareness of fire safety procedures and prevention measures."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:WaterSafetyAwareness
+    a skos:Concept ;
+    skos:prefLabel "Water safety awareness"@en ;
+    skos:definition "Awareness of water safety procedures and drowning prevention."@en ;
+    skos:broader :SafetyAndEmergencyAwareness ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+
+### Teamwork & Leadership
+:TeamworkAndLeadership
+    a skos:Concept ;
+    skos:prefLabel "Teamwork & leadership"@en ;
+    skos:definition "Skills related to working in teams and providing leadership in volunteering contexts."@en ;
+    skos:broader :Skill ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:CooperativeWork
+    a skos:Concept ;
+    skos:prefLabel "Ability to work cooperatively"@en ;
+    skos:definition "Ability to collaborate and work effectively as part of a team."@en ;
+    skos:broader :TeamworkAndLeadership ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:IndependentWork
+    a skos:Concept ;
+    skos:prefLabel "Ability to work independently"@en ;
+    skos:definition "Ability to work autonomously and take initiative without close supervision."@en ;
+    skos:broader :TeamworkAndLeadership ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:LeadingSmallGroups
+    a skos:Concept ;
+    skos:prefLabel "Leading small groups or tasks"@en ;
+    skos:definition "Ability to lead small groups of people or manage specific tasks."@en ;
+    skos:broader :TeamworkAndLeadership ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:ManagingTeamConflict
+    a skos:Concept ;
+    skos:prefLabel "Managing conflict within teams"@en ;
+    skos:definition "Ability to identify and resolve conflicts within a team setting."@en ;
+    skos:broader :TeamworkAndLeadership ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
+
+:MentoringVolunteers
+    a skos:Concept ;
+    skos:prefLabel "Supporting or mentoring new volunteers"@en ;
+    skos:definition "Ability to support, guide, and mentor new or less experienced volunteers."@en ;
+    skos:broader :TeamworkAndLeadership ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+.
