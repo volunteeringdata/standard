@@ -76,6 +76,8 @@ breadcrumbs:
 
 <h3 id="organisation"><span class="secno">2.1 </span>Organisation</h3>
 
+<p>Any organisation running activities that involve volunteers.</p>
+
 <h4 id="organisation-properties"><span class="secno">2.1.1 </span>Properties</h4>
 
 <dl>
@@ -135,6 +137,8 @@ breadcrumbs:
 </div>
 
 <h3 id="activity"><span class="secno">2.2 </span>Activity</h3>
+
+<p>Any kind of activity that involves volunteers.</p>
 
 <h4 id="activity-properties"><span class="secno">2.2.1 </span>Properties</h4>
 
@@ -198,6 +202,8 @@ breadcrumbs:
 
 <h3 id="role"><span class="secno">2.3 </span>Role</h3>
 
+<p>Any kind of role related to a volunteering activity.</p>
+
 <h4 id="role-properties"><span class="secno">2.3.1 </span>Properties</h4>
 
 <dl>
@@ -259,6 +265,8 @@ breadcrumbs:
 
 <h3 id="session"><span class="secno">2.4 </span>Session</h3>
 
+<p>A session describes a time and place for an activity that involves volunteers.</p>
+
 <h4 id="session-properties"><span class="secno">2.4.1 </span>Properties</h4>
 
 <dl>
@@ -272,6 +280,8 @@ breadcrumbs:
 
 
 <h3 id="location"><span class="secno">2.5 </span>Location</h3>
+
+<p>Any location related to volunteering activities.</p>
 
 <h4 id="location-properties"><span class="secno">2.5.1 </span>Properties</h4>
 
@@ -292,6 +302,8 @@ breadcrumbs:
 
 
 <h3 id="time"><span class="secno">2.6 </span>Time</h3>
+
+<p>Any time information related to volunteering activities modeled as a OWL time temporal entity.</p>
 
 <h4 id="time-properties"><span class="secno">2.6.1 </span>Properties</h4>
 
