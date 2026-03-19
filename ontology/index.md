@@ -46,6 +46,7 @@ breadcrumbs:
         <ol>
           <li><a href="#time-properties"><span class="secno">2.6.1 </span><span class="content">Properties</span></a></li>
           <li><a href="#time-defined-temporal-entities"><span class="secno">2.6.2 </span><span class="content">Defined temporal entities</span></a></li>
+          <li><a href="#time-example"><span class="secno">2.6.3 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
     </ol>
@@ -406,6 +407,35 @@ breadcrumbs:
   <dt id="time-sunday-evening">SundayEvening</dt>
   <dd>The time period between 6pm and 12am on Sunday.</dd>
 </dl>
+
+<h4 id="time-example"><span class="secno">2.6.3 </span>Example</h4>
+
+<div class="example">
+  <h5 id="example-6">Example 6</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Time"</span>,
+  <span class="hljs-attr">"rdfs:label"</span>: <span class="hljs-string">"Tuesday 2 to 4 pm"</span>,
+  <span class="hljs-attr">"time:hasBeginning"</span>: {
+    <span class="hljs-attr">"time:inDateTime"</span>: {
+      <span class="hljs-attr">"time:dayOfWeek"</span>: <span class="hljs-string">"time:Tuesday"</span>,
+      <span class="hljs-attr">"time:hour"</span>: <span class="hljs-number">14</span>
+    }
+  },
+  <span class="hljs-attr">"time:hasEnd"</span>: {
+    <span class="hljs-attr">"time:inDateTime"</span>: {
+      <span class="hljs-attr">"time:dayOfWeek"</span>: <span class="hljs-string">"time:Tuesday"</span>,
+      <span class="hljs-attr">"time:hour"</span>: <span class="hljs-number">16</span>
+    }
+  }
+}</pre>
+</div>
+
+<div class="note">
+  <h5 id="note-5">Note 5</h5>
+  <p>User research shows that volunteering opportunities generally have flexible schedules. The predefined <a href="#time-defined-temporal-entities">temporal entities</a> defined in section 2.6.2 should be reused where possible.</p>
+  <p>See for example the availability filter on <a href="https://volunteer.scot/search?keywords=clean&amp;location=&amp;lat=&amp;lon=&amp;display=list&amp;sort=relevance&amp;availability=monday-morning&amp;availability=wednesday-morning&amp;availability=tuesday-afternoon&amp;availability=wednesday-afternoon&amp;availability=friday-afternoon&amp;availability=saturday-afternoon&amp;availability=friday-evening">Volunteer Scotland's search</a>, which uses morning, afternoon, and evening slots per day of the week.</p>
+</div>
 
 
 <h2 id="taxonomies"><span class="secno">3. </span>Taxonomies</h2>
