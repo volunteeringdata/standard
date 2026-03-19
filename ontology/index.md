@@ -33,6 +33,7 @@ breadcrumbs:
       <li><a href="#session"><span class="secno">2.4 </span><span class="content">Session</span></a>
         <ol>
           <li><a href="#session-properties"><span class="secno">2.4.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#session-example"><span class="secno">2.4.2 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
       <li><a href="#location"><span class="secno">2.5 </span><span class="content">Location</span></a>
@@ -277,6 +278,24 @@ breadcrumbs:
   <dt id="session-time">time</dt>
   <dd>The time when the session occurs.</dd>
 </dl>
+
+<h4 id="session-example"><span class="secno">2.4.2 </span>Example</h4>
+
+<div class="example">
+  <h5 id="example-4">Example 4</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
+  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Session"</span>,
+  <span class="hljs-attr">"activity"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
+  <span class="hljs-attr">"location"</span>: {
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
+    <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
+    <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
+    <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+  },
+  <span class="hljs-attr">"time"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>
+}</pre>
+</div>
 
 
 <h3 id="location"><span class="secno">2.5 </span>Location</h3>
