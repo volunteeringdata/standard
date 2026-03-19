@@ -128,7 +128,7 @@
     "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "38",
     "type" : "rdfs:Literal"
   }, {
     "id" : "50",
@@ -221,13 +221,13 @@
     "id" : "67",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "74",
+    "id" : "108",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "108",
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "74",
     "type" : "rdfs:Literal"
   }, {
     "id" : "112",
@@ -338,6 +338,38 @@
         "IRI-based" : "FirstAidKit"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/EmpathyAndCompassion",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Empathy and compassion",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to understand and share the feelings of others with care and concern.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EmpathyAndCompassion"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/InCare",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -353,7 +385,18 @@
           "value" : "In Care",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in care institutions, care homes, foster care, and supporting those in state care.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Care Homes",
+          "type" : "label"
+        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Hospitalised",
@@ -366,28 +409,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Care Homes",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Leaving Care",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Children Social Care",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Existing",
           "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
+        }, {
+          "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Volunteering in care institutions, care homes, foster care, and supporting those in state care.",
+          "value" : "Children Social Care",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -419,12 +451,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Gender Identity",
+          "value" : "Sexual Orientation",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Sexual Orientation",
+          "value" : "Gender Identity",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -511,6 +543,38 @@
       },
       "labels" : {
         "IRI-based" : "Boat"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Personal & interpersonal",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Personal qualities and interpersonal skills relevant to volunteering.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Skill",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PersonalAndInterpersonal"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/LearningDisabilities",
@@ -646,6 +710,38 @@
         "IRI-based" : "CommunityEnvironmentKnowledge"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/TraumaInformedAwareness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Trauma-informed awareness",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Understanding of trauma and its effects, and ability to respond sensitively.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TraumaInformedAwareness"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/LoneParents",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -664,6 +760,11 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Single Fathers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Single Parent Families",
           "type" : "label"
         }, {
@@ -674,17 +775,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "One Parent Families",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Single Fathers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Single Parents",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "One Parent Families",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -702,6 +798,38 @@
       },
       "labels" : {
         "IRI-based" : "LoneParents"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/IncidentReporting",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Incident reporting",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to accurately report incidents and safety concerns.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IncidentReporting"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/IDCheck",
@@ -756,7 +884,7 @@
         "IRI-based" : "DiverseNeedsAwareness"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/WaterPump",
+      "iri" : "https://ns.volunteeringdata.io/VictimsOfCrime",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -768,71 +896,45 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Water pump (for localised flooding help)",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WaterPump"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/EducationLanguages",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Education & languages",
+          "value" : "Victims of Crime",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Volunteering in education programmes, language support, literacy, and educational development.",
+          "value" : "Volunteering supporting crime victims, victim advocacy, witness support, and survivor services.",
           "type" : "label"
         } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Schooling",
+          "value" : "Victim Counselling",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Tongues",
+          "value" : "Witness Support",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Dialects",
+          "value" : "Survivors",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Further Education",
+          "value" : "Victim Support",
           "type" : "label"
         } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
+          "value" : "https://ns.volunteeringdata.io/CrimeSafety",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "EducationLanguages"
+        "IRI-based" : "VictimsOfCrime"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/Kitchen",
@@ -861,7 +963,7 @@
         "IRI-based" : "Kitchen"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/VictimsOfCrime",
+      "iri" : "https://ns.volunteeringdata.io/EducationLanguages",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -873,45 +975,71 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Victims of Crime",
+          "value" : "Education & languages",
           "type" : "label"
         } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Witness Support",
+          "value" : "Dialects",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Survivors",
+          "value" : "Further Education",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Victim Support",
+          "value" : "Tongues",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Victim Counselling",
+          "value" : "Schooling",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Volunteering supporting crime victims, victim advocacy, witness support, and survivor services.",
+          "value" : "Volunteering in education programmes, language support, literacy, and educational development.",
           "type" : "label"
         } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/CrimeSafety",
+          "value" : "https://ns.volunteeringdata.io/Cause",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "VictimsOfCrime"
+        "IRI-based" : "EducationLanguages"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WaterPump",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Water pump (for localised flooding help)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WaterPump"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/VisualImpairment",
@@ -1016,6 +1144,38 @@
         "IRI-based" : "PublicTransportAccess"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/EmergencyBriefings",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Understanding emergency briefings and instructions",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to understand and follow emergency briefings and instructions.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EmergencyBriefings"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/WalkieTalkiesRadios",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1060,22 +1220,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Out of work",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Joblessness",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Without Work",
+          "value" : "Redundancy",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Job Loss",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Joblessness",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1090,7 +1245,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Nonemployment",
+          "value" : "Unemployed",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1100,17 +1255,22 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Unemployed",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Redundancy",
+          "value" : "Out of work",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Jobless",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Nonemployment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Without Work",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1166,6 +1326,38 @@
       },
       "labels" : {
         "IRI-based" : "ParkingAvailability"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WaterSafetyAwareness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Water safety awareness",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Awareness of water safety procedures and drowning prevention.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WaterSafetyAwareness"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/DigitalAccessibility",
@@ -1224,12 +1416,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Young folks & kids",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Toddlers",
+          "value" : "Youths",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1239,27 +1426,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Kids",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Babies",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Young Adults",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Youths",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Minors",
+          "value" : "Young folks & kids",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1269,7 +1436,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Younger Generation",
+          "value" : "Toddlers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Kids",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Children",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1279,12 +1456,27 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Babies",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Minors",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Young Adults",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Young People and Kids",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Children",
+          "value" : "Younger Generation",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1330,6 +1522,113 @@
         "IRI-based" : "HighVisibilityVest"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/BasicFirstAid",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Basic first aid knowledge",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Basic knowledge of first aid procedures and techniques.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BasicFirstAid"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/BasicEquipmentUse",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of basic equipment (sandbags, barriers, tools)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to use basic equipment such as sandbags, barriers, and hand tools.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BasicEquipmentUse"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/CrimeExOffenders",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Crime & ex-offenders",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Criminal Justice System",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Prisons",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting offenders, ex-offenders, rehabilitation programmes, and the criminal justice system.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/CrimeSafety",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CrimeExOffenders"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/Hovercraft",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1354,49 +1653,6 @@
       },
       "labels" : {
         "IRI-based" : "Hovercraft"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/CrimeExOffenders",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Crime & ex-offenders",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting offenders, ex-offenders, rehabilitation programmes, and the criminal justice system.",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Prisons",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Criminal Justice System",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/CrimeSafety",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "CrimeExOffenders"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/BuildingAccessibilityFeatures",
@@ -1437,7 +1693,7 @@
         "IRI-based" : "BuildingAccessibilityFeatures"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/ServiceAnimals",
+      "iri" : "https://ns.volunteeringdata.io/ActiveListening",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -1446,33 +1702,27 @@
           "value" : "https://ns.volunteeringdata.io/",
           "type" : "iri"
         } ],
-        "inScheme" : [ {
-          "identifier" : "inScheme",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/PhysicalAccessibility",
-          "type" : "iri"
-        } ],
         "prefLabel" : [ {
           "identifier" : "prefLabel",
-          "language" : "undefined",
-          "value" : "Service Animals",
+          "language" : "en",
+          "value" : "Active listening",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
-          "language" : "undefined",
-          "value" : "Accessiblity information regarding usage of service animals in and around venue.",
+          "language" : "en",
+          "value" : "Ability to listen attentively and respond appropriately.",
           "type" : "label"
         } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Accessibility",
+          "value" : "https://ns.volunteeringdata.io/Communication",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "ServiceAnimals"
+        "IRI-based" : "ActiveListening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/VanOrPeopleCarrier",
@@ -1527,6 +1777,44 @@
         "IRI-based" : "PortableShelterGazebo"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/ServiceAnimals",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "inScheme" : [ {
+          "identifier" : "inScheme",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PhysicalAccessibility",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "Service Animals",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "Accessiblity information regarding usage of service animals in and around venue.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Accessibility",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ServiceAnimals"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/WomensGroups",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1550,12 +1838,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Female Groups",
+          "value" : "Female Peer Suport",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Female Peer Suport",
+          "value" : "Female Groups",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1599,6 +1887,70 @@
       },
       "labels" : {
         "IRI-based" : "VehicleTowCapability"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/IndependentWork",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ability to work independently",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to work autonomously and take initiative without close supervision.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IndependentWork"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/Driving",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Driving (car, van, off-road vehicles)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to drive cars, vans, or off-road vehicles.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Driving"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TechnologyRequirements",
@@ -1691,6 +2043,38 @@
         "IRI-based" : "ThermalBlankets"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/RelayAccurateInformation",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ability to relay accurate information",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to pass on information accurately and without distortion.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Communication",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RelayAccurateInformation"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/Housing",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1706,23 +2090,7 @@
           "value" : "Housing",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting housing provision, homelessness prevention, and accommodation services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Accommodation",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Displacement",
-          "type" : "label"
-        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Sheltered Housing",
@@ -1735,7 +2103,23 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Accommodation",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Housing Associations",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Displacement",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting housing provision, homelessness prevention, and accommodation services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -1747,6 +2131,38 @@
       },
       "labels" : {
         "IRI-based" : "Housing"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/RemoteCommunicationTools",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Familiarity with remote communication tools",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Familiarity with video conferencing, messaging platforms, and other remote communication tools.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RemoteCommunicationTools"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/LGBT",
@@ -1767,7 +2183,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Bisexual",
+          "value" : "LGBTQ",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1777,12 +2193,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Lesbian",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "LGBTQ",
+          "value" : "Gay",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1792,7 +2203,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Gay",
+          "value" : "Lesbian",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Bisexual",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1844,6 +2260,70 @@
         "IRI-based" : "PhysicalPracticalReadiness"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/PhoneOnlineSupport",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Supporting people via phone/online",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to provide support and assistance remotely via phone or online channels.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Communication",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PhoneOnlineSupport"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ShelterSupport",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Shelter support (setting up spaces, helping evacuees)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to set up shelter spaces and support evacuees or displaced individuals.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ShelterSupport"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/Venue",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1885,12 +2365,6 @@
           "value" : "Sport & Outdoor Activities",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in sports, recreational activities, outdoor experiences, and physical activity promotion.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
@@ -1907,6 +2381,12 @@
           "value" : "Sports Clubs",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in sports, recreational activities, outdoor experiences, and physical activity promotion.",
+          "type" : "label"
+        } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
@@ -1916,6 +2396,38 @@
       },
       "labels" : {
         "IRI-based" : "SportOutdoorActivities"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/BasicITSkills",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Basic IT skills",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Fundamental computer and information technology skills.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BasicITSkills"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/BicyclesCargoBikes",
@@ -1967,17 +2479,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Culture",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Dance",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Humanities",
+          "value" : "Theatre",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1987,17 +2489,27 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Crafts",
+          "value" : "Culture",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Theatre",
+          "value" : "Humanities",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Dance",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Graphic Arts",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Crafts",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2043,6 +2555,38 @@
         "IRI-based" : "LifeJacket"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/ReliabilityAndTrustworthiness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Reliability and trustworthiness",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Being dependable, consistent, and worthy of trust.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ReliabilityAndTrustworthiness"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/SUVOffRoad",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2069,6 +2613,38 @@
         "IRI-based" : "SUVOffRoad"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/ConflictDeescalation",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Conflict de-escalation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to reduce tension and resolve conflicts calmly.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ConflictDeescalation"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/Illness",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2087,17 +2663,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Patients",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Sufferers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Sick People",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Patients",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2148,6 +2724,38 @@
         "IRI-based" : "LocalSupportServicesAwareness"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/DataEntryAndReporting",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Simple data entry and reporting",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to perform simple data entry and produce basic reports.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DataEntryAndReporting"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/ReligionFaith",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2166,12 +2774,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ideology",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Belief",
+          "value" : "Religious",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2181,7 +2784,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Religious",
+          "value" : "Belief",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Ideology",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2219,7 +2827,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Carers",
+          "value" : "Care Providers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2229,17 +2837,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Addiction Support",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Care Providers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Caregivers",
+          "value" : "Counselling Support",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2249,12 +2847,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Social Care",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Counselling Support",
+          "value" : "Live in carers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2264,7 +2857,22 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Live in carers",
+          "value" : "Social Care",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Caregivers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Carers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Addiction Support",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2282,6 +2890,38 @@
       },
       "labels" : {
         "IRI-based" : "Care"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/BasicSafeguarding",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Basic safeguarding knowledge",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Understanding of basic safeguarding principles and practices.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "BasicSafeguarding"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WaterproofsWarmLayers",
@@ -2310,6 +2950,70 @@
         "IRI-based" : "WaterproofsWarmLayers"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/HGVCategoryD",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "HGV/Category D",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Holder of an HGV or Category D driving licence for large vehicles.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "HGVCategoryD"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/CooperativeWork",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ability to work cooperatively",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to collaborate and work effectively as part of a team.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CooperativeWork"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/LowIncomeHouseholds",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2328,7 +3032,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Low Earnings",
+          "value" : "Family Poverty",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2338,7 +3042,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Family Poverty",
+          "value" : "Low Earnings",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2356,6 +3060,102 @@
       },
       "labels" : {
         "IRI-based" : "LowIncomeHouseholds"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ProfessionalBoundaries",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Respect for professional boundaries",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to maintain appropriate professional boundaries in volunteering relationships.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ProfessionalBoundaries"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/MentoringVolunteers",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Supporting or mentoring new volunteers",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to support, guide, and mentor new or less experienced volunteers.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MentoringVolunteers"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/RiskAwareness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Risk awareness (water, fire, structure, debris)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Awareness of environmental risks including water, fire, structural, and debris hazards.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RiskAwareness"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SubstanceAbuse",
@@ -2376,12 +3176,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Addiction",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Alcohol Dependency",
+          "value" : "Drugs",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2391,12 +3186,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Addiction",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Alcohol Issues",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Drugs",
+          "value" : "Alcohol Dependency",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2448,6 +3248,38 @@
         "IRI-based" : "PersonalEquipment"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/RadioUse",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Use of radios / walkie-talkies",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to operate radios and walkie-talkies for communication.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Communication",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "RadioUse"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/LocalCommunity",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2463,16 +3295,15 @@
           "value" : "Local Community",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting local community development, neighbourhood initiatives, and village services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Neighbourhood",
+          "value" : "Community Centres",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Local Population",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2482,12 +3313,13 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Community Centres",
+          "value" : "Neighbourhood",
           "type" : "label"
-        }, {
-          "identifier" : "altLabel",
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
           "language" : "en",
-          "value" : "Local Population",
+          "value" : "Volunteering supporting local community development, neighbourhood initiatives, and village services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -2596,15 +3428,21 @@
           "value" : "Older People",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting elderly and older people, senior citizens, and age-related services.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Old",
+          "value" : "Senior Citizens",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Pensioners",
+          "value" : "Elderly",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2619,7 +3457,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Senior Citizens",
+          "value" : "Pensioners",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2629,18 +3467,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Seniors",
+          "value" : "Old",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Elderly",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting elderly and older people, senior citizens, and age-related services.",
+          "value" : "Seniors",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -2678,32 +3510,6 @@
       },
       "labels" : {
         "IRI-based" : "FourByFourVehicle"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/TransportEquipmentSupplies",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Ability to transport equipment or supplies",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/TransportMobilityAssets",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "TransportEquipmentSupplies"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/CivilRights",
@@ -2759,6 +3565,96 @@
         "IRI-based" : "CivilRights"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/SmartphoneUse",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Confident smartphone use (maps, messaging, camera)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Confident use of smartphone features including maps, messaging, and camera.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SmartphoneUse"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/TransportEquipmentSupplies",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Ability to transport equipment or supplies",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TransportMobilityAssets",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TransportEquipmentSupplies"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ManagingTeamConflict",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Managing conflict within teams",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to identify and resolve conflicts within a team setting.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ManagingTeamConflict"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/DevelopmentEmergencyRelief",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2774,12 +3670,6 @@
           "value" : "Development & emergency relief",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in emergency response, disaster relief, humanitarian aid, and crisis management.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
@@ -2788,7 +3678,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Tragedy",
+          "value" : "Accidents",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Responders",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2803,22 +3698,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Accidents",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Urgent problem",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Responders",
+          "value" : "Natural Disasters",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Crisis",
+          "value" : "Tragedy",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2828,7 +3718,13 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Natural Disasters",
+          "value" : "Crisis",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in emergency response, disaster relief, humanitarian aid, and crisis management.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -2840,6 +3736,38 @@
       },
       "labels" : {
         "IRI-based" : "DevelopmentEmergencyRelief"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/PublicEngagement",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Confidence engaging with the public or groups",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Confidence and ability to engage with members of the public or groups.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Communication",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PublicEngagement"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SturgyFootwear",
@@ -2912,47 +3840,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Conservation",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Climate Change",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Sustainability",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Natural World",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Surroundings",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Natural Environment",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Clean",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Atmosphere",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Nature",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2962,7 +3850,47 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Sustainability",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Atmosphere",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Natural Environment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Natural World",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Ecosystem",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Surroundings",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Nature",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Conservation",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Clean",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2997,21 +3925,15 @@
           "value" : "Crime / Safety",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting crime prevention, public safety, victim support, and protection services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Security",
+          "value" : "Protection",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Protection",
+          "value" : "Security",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3024,6 +3946,12 @@
           "value" : "Offences",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting crime prevention, public safety, victim support, and protection services.",
+          "type" : "label"
+        } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
@@ -3033,6 +3961,38 @@
       },
       "labels" : {
         "IRI-based" : "CrimeSafety"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/Logistics",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Logistics (sorting, packing, distributing supplies)",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to sort, pack, and distribute supplies and materials.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Logistics"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/Community",
@@ -3050,12 +4010,13 @@
           "value" : "Community",
           "type" : "label"
         } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
+        "definition" : [ {
+          "identifier" : "definition",
           "language" : "en",
-          "value" : "Community groups",
+          "value" : "Volunteering supporting community development, local initiatives, and strengthening of community groups.",
           "type" : "label"
-        }, {
+        } ],
+        "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Local Public",
@@ -3063,13 +4024,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Society",
+          "value" : "Community groups",
           "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
+        }, {
+          "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Volunteering supporting community development, local initiatives, and strengthening of community groups.",
+          "value" : "Society",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3101,12 +4061,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ethnic Communities",
+          "value" : "Racial Minorities",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Racial Minorities",
+          "value" : "Ethnic Groups",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3116,7 +4076,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ethnic Groups",
+          "value" : "Ethnic Communities",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3134,6 +4094,38 @@
       },
       "labels" : {
         "IRI-based" : "EthnicMinorities"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/NavigationAndOrientation",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Navigation and orientation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to navigate and orient oneself using maps, compasses, or GPS.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NavigationAndOrientation"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/LocalAuthority",
@@ -3154,17 +4146,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Council Office",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Local Government",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Local Council",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Council Office",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3187,6 +4179,70 @@
       },
       "labels" : {
         "IRI-based" : "LocalAuthority"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ClearSpokenCommunication",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Clear spoken communication",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to speak clearly and convey information effectively.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Communication",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ClearSpokenCommunication"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/PatienceAndUnderstanding",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Patience and understanding",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to be patient and show understanding towards others.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PatienceAndUnderstanding"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TechnologyAvailability",
@@ -3225,6 +4281,86 @@
       },
       "labels" : {
         "IRI-based" : "TechnologyAvailability"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/MensGroups",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Mens Groups",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in men's groups, male peer support, and male-focused community services.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Mens Support Groups",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Male Peer Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Male Groups",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Cause",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MensGroups"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Safety & emergency awareness",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Skills related to safety procedures and emergency awareness in volunteering contexts.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Skill",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SafetyAndEmergencyAwareness"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/Disability",
@@ -3275,54 +4411,6 @@
         "IRI-based" : "Disability"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/MensGroups",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Mens Groups",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Male Peer Support",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Male Groups",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Mens Support Groups",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in men's groups, male peer support, and male-focused community services.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MensGroups"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/GeneralPublic",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -3338,7 +4426,18 @@
           "value" : "General Public",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering serving the general public and broader populations.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Local Community",
+          "type" : "label"
+        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "General Population",
@@ -3347,17 +4446,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "People",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Local Community",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering serving the general public and broader populations.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3369,6 +4457,38 @@
       },
       "labels" : {
         "IRI-based" : "GeneralPublic"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/SafeManualHandling",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Safe manual handling",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Knowledge of safe lifting and manual handling techniques.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SafeManualHandling"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/PersonalPreparedness",
@@ -3395,6 +4515,38 @@
       },
       "labels" : {
         "IRI-based" : "PersonalPreparedness"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Practical & operational",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Practical and operational skills for hands-on volunteering tasks.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Skill",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PracticalAndOperational"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/MapsWaterproofMapCases",
@@ -3441,11 +4593,6 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Psychological Health",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Emotional Health",
           "type" : "label"
         }, {
@@ -3457,6 +4604,11 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Behavioral Health",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Psychological Health",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3500,17 +4652,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Wellbeing",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Health Providers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Health Service",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Wellbeing",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3520,12 +4667,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Hospital",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Wellness",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Hospital",
+          "value" : "Health Providers",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3537,6 +4689,38 @@
       },
       "labels" : {
         "IRI-based" : "Health"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/LeadingSmallGroups",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Leading small groups or tasks",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to lead small groups of people or manage specific tasks.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LeadingSmallGroups"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/DBSCheck",
@@ -3565,7 +4749,7 @@
         "IRI-based" : "DBSCheck"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/SensoryImpairment",
+      "iri" : "https://ns.volunteeringdata.io/Communication",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -3577,40 +4761,24 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Sensory Impairment",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Visual Impairment",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Hearing Impairment",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Blind and Partially Sighted",
+          "value" : "Communication",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Volunteering supporting people with sensory impairments, hearing loss, visual impairment, and blindness.",
+          "value" : "Skills related to verbal, written, and interpersonal communication in volunteering contexts.",
           "type" : "label"
         } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Disability",
+          "value" : "https://ns.volunteeringdata.io/Skill",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "SensoryImpairment"
+        "IRI-based" : "Communication"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/AnimalWelfare",
@@ -3631,6 +4799,11 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Creatures",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Pets",
           "type" : "label"
         }, {
@@ -3642,11 +4815,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Wildlife",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Creatures",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3664,6 +4832,54 @@
       },
       "labels" : {
         "IRI-based" : "AnimalWelfare"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/SensoryImpairment",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Sensory Impairment",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Hearing Impairment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Blind and Partially Sighted",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Visual Impairment",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting people with sensory impairments, hearing loss, visual impairment, and blindness.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Disability",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SensoryImpairment"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/PhysicalStamina",
@@ -3690,6 +4906,38 @@
       },
       "labels" : {
         "IRI-based" : "PhysicalStamina"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/CulturalSensitivity",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Cultural sensitivity",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Awareness of and respect for cultural differences and diversity.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CulturalSensitivity"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/RemoteAccessibility",
@@ -3753,22 +5001,22 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Exhibitions",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "History",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Galleries",
+          "value" : "Institutions",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Institutions",
+          "value" : "Exhibitions",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Galleries",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3852,6 +5100,70 @@
         "IRI-based" : "OutdoorWorkAbility"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/PilotLicense",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Pilot License",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Holder of a valid pilot license for aircraft operation.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PilotLicense"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/TeamworkAndLeadership",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Teamwork & leadership",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Skills related to working in teams and providing leadership in volunteering contexts.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Skill",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TeamworkAndLeadership"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/PortableGenerator",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -3893,13 +5205,12 @@
           "value" : "Overseas Aid / Developing World",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in international development, overseas aid, and support to developing nations.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "International Aid",
+          "type" : "label"
+        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Developing Nations",
@@ -3912,12 +5223,13 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "International Aid",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Foreign Aid",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in international development, overseas aid, and support to developing nations.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3929,6 +5241,38 @@
       },
       "labels" : {
         "IRI-based" : "OverseasAidDevelopingWorld"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/CalmnessUnderPressure",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Calmness under pressure",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to remain calm and composed in stressful or high-pressure situations.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PersonalAndInterpersonal",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CalmnessUnderPressure"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/LanguageRequirements",
@@ -3969,6 +5313,91 @@
         "IRI-based" : "LanguageRequirements"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/CrowdQueueManagement",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Crowd/queue management",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to manage crowds and queues safely and efficiently.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CrowdQueueManagement"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/OffendersAndExOffenders",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Offenders and Ex-Offenders",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Criminals",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Prisoners",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Former Offenders",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Offender Rehabilitation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering with offenders, ex-offenders, prisoners, and offender rehabilitation programmes.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/CrimeExOffenders",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "OffendersAndExOffenders"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/ResidentsDisadvantagedNeighbourhoods",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -4003,12 +5432,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Vulerable groups",
+          "value" : "Deprived Areas",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Deprived Areas",
+          "value" : "Vulerable groups",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4020,112 +5449,6 @@
       },
       "labels" : {
         "IRI-based" : "ResidentsDisadvantagedNeighbourhoods"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/OffendersAndExOffenders",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Offenders and Ex-Offenders",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Offender Rehabilitation",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Criminals",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Prisoners",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Former Offenders",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering with offenders, ex-offenders, prisoners, and offender rehabilitation programmes.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/CrimeExOffenders",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "OffendersAndExOffenders"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/Families",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Families",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Households",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Relatives",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Loved Ones",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Family Members",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting families, household welfare, and family services.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Families"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/HeadtorchFlashlight",
@@ -4152,6 +5475,59 @@
       },
       "labels" : {
         "IRI-based" : "HeadtorchFlashlight"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/Families",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Families",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Loved Ones",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Households",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Family Members",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Relatives",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting families, household welfare, and family services.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Cause",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Families"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/PhonePowerBank",
@@ -4204,6 +5580,38 @@
       },
       "labels" : {
         "IRI-based" : "LocalRoadsFacilitiesKnowledge"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/FireSafetyAwareness",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Fire safety awareness",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Awareness of fire safety procedures and prevention measures.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FireSafetyAwareness"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/AntiPoverty",
@@ -4267,26 +5675,6 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Reading",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Literacy Support",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Literacy Difficulties",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Training",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Literacy Skills",
           "type" : "label"
         }, {
@@ -4297,7 +5685,27 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Reading",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Writing",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Literacy Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Training",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Literacy Difficulties",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -4315,6 +5723,38 @@
       },
       "labels" : {
         "IRI-based" : "LiteracyNeeds"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/SocialMediaHandling",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Responsible handling of social media",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Ability to use social media responsibly and appropriately in a volunteering context.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SocialMediaHandling"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WifiUsage",
@@ -4393,6 +5833,64 @@
         "IRI-based" : "PhysicalDisability"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/Parents",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Parents",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Fathers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Grandparents",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Mothers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Foster Parents",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Adoptive Parents",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting parents, parenting support services, and parental care roles.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Families",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Parents"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/PhysicalAccessibility",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -4431,7 +5929,7 @@
         "IRI-based" : "PhysicalAccessibility"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/Parents",
+      "iri" : "https://ns.volunteeringdata.io/BasicRecordKeeping",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -4443,50 +5941,56 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Parents",
+          "value" : "Basic record keeping",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Volunteering supporting parents, parenting support services, and parental care roles.",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Fathers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Foster Parents",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Grandparents",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Mothers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Adoptive Parents",
+          "value" : "Ability to maintain basic records and documentation.",
           "type" : "label"
         } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Families",
+          "value" : "https://ns.volunteeringdata.io/PracticalAndOperational",
           "type" : "iri"
         } ]
       },
       "labels" : {
-        "IRI-based" : "Parents"
+        "IRI-based" : "BasicRecordKeeping"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/DigitalAndTechnology",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Digital & technology",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Skills related to digital tools, technology, and IT in volunteering contexts.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Skill",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DigitalAndTechnology"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
@@ -4519,6 +6023,38 @@
       },
       "labels" : {
         "IRI-based" : "SpecialistUsefulAssets"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/TransportMobilityAssets",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Transport & Mobility Assets",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Vehicles and transportation capabilities for volunteering.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/AssetsEquipment",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TransportMobilityAssets"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/ExpensesPaid",
@@ -4557,38 +6093,6 @@
       },
       "labels" : {
         "IRI-based" : "ExpensesPaid"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/TransportMobilityAssets",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Transport & Mobility Assets",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Vehicles and transportation capabilities for volunteering.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/AssetsEquipment",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "TransportMobilityAssets"
       }
     } ],
     "attributes" : [ "external" ],
@@ -4755,7 +6259,7 @@
     "id" : "49"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "41",
+    "id" : "38",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -5015,7 +6519,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "74",
+    "id" : "108",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -5049,13 +6553,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43634",
+          "value" : "_:genid13749",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43632",
+          "value" : "_:genid13747",
           "type" : "label"
         } ]
       },
@@ -5076,13 +6580,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43562",
+          "value" : "_:genid13677",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43560",
+          "value" : "_:genid13675",
           "type" : "label"
         } ]
       },
@@ -5103,13 +6607,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43610",
+          "value" : "_:genid13725",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43608",
+          "value" : "_:genid13723",
           "type" : "label"
         } ]
       },
@@ -5130,13 +6634,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43582",
+          "value" : "_:genid13697",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43580",
+          "value" : "_:genid13695",
           "type" : "label"
         } ]
       },
@@ -5157,13 +6661,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43598",
+          "value" : "_:genid13713",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43596",
+          "value" : "_:genid13711",
           "type" : "label"
         } ]
       },
@@ -5184,46 +6688,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43622",
+          "value" : "_:genid13737",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43620",
+          "value" : "_:genid13735",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SaturdayMorning",
         "en" : "Saturday morning"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/TuesdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43578",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43576",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "TuesdayAfternoon",
-        "en" : "Tuesday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
@@ -5238,19 +6715,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43594",
+          "value" : "_:genid13709",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43592",
+          "value" : "_:genid13707",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "WednesdayEvening",
         "en" : "Wednesday evening"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/TuesdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13693",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13691",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "TuesdayAfternoon",
+        "en" : "Tuesday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SaturdayEvening",
@@ -5265,13 +6769,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43630",
+          "value" : "_:genid13745",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43628",
+          "value" : "_:genid13743",
           "type" : "label"
         } ]
       },
@@ -5292,46 +6796,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43638",
+          "value" : "_:genid13753",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43636",
+          "value" : "_:genid13751",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SundayAfternoon",
         "en" : "Sunday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/ThursdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43602",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43600",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ThursdayAfternoon",
-        "en" : "Thursday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/ThursdayEvening",
@@ -5346,19 +6823,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43606",
+          "value" : "_:genid13721",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43604",
+          "value" : "_:genid13719",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "ThursdayEvening",
         "en" : "Thursday evening"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ThursdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13717",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13715",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ThursdayAfternoon",
+        "en" : "Thursday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WednesdayMorning",
@@ -5373,13 +6877,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43586",
+          "value" : "_:genid13701",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43584",
+          "value" : "_:genid13699",
           "type" : "label"
         } ]
       },
@@ -5400,13 +6904,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43626",
+          "value" : "_:genid13741",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43624",
+          "value" : "_:genid13739",
           "type" : "label"
         } ]
       },
@@ -5427,13 +6931,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43570",
+          "value" : "_:genid13685",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43568",
+          "value" : "_:genid13683",
           "type" : "label"
         } ]
       },
@@ -5454,13 +6958,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43574",
+          "value" : "_:genid13689",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43572",
+          "value" : "_:genid13687",
           "type" : "label"
         } ]
       },
@@ -5481,73 +6985,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43566",
+          "value" : "_:genid13681",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43564",
+          "value" : "_:genid13679",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "MondayAfternoon",
         "en" : "Monday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43618",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43616",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "FridayEvening",
-        "en" : "Friday evening"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43590",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43588",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayAfternoon",
-        "en" : "Wednesday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/FridayAfternoon",
@@ -5562,19 +7012,73 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43614",
+          "value" : "_:genid13729",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43612",
+          "value" : "_:genid13727",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "FridayAfternoon",
         "en" : "Friday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13705",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13703",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayAfternoon",
+        "en" : "Wednesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13733",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13731",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FridayEvening",
+        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SundayEvening",
@@ -5589,13 +7093,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43642",
+          "value" : "_:genid13757",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43640",
+          "value" : "_:genid13755",
           "type" : "label"
         } ]
       },
@@ -5607,11 +7111,11 @@
     "comment" : {
       "en" : "A predefined time period within a specific day of the week (morning, afternoon or evening)."
     },
-    "id" : "108",
+    "id" : "109",
     "superClasses" : [ "94" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "109",
+    "id" : "74",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -5700,6 +7204,16 @@
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Reward",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Requirement",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
           "value" : "https://ns.volunteeringdata.io/Cause",
           "type" : "iri"
         }, {
@@ -5711,16 +7225,6 @@
           "identifier" : "hasTopConcept",
           "language" : "undefined",
           "value" : "https://ns.volunteeringdata.io/Accessibility",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Reward",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Requirement",
           "type" : "iri"
         } ],
         "title" : [ {
@@ -5766,13 +7270,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43634",
+          "value" : "_:genid13749",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43632",
+          "value" : "_:genid13747",
           "type" : "label"
         } ]
       },
@@ -5793,13 +7297,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43562",
+          "value" : "_:genid13677",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43560",
+          "value" : "_:genid13675",
           "type" : "label"
         } ]
       },
@@ -5820,13 +7324,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43610",
+          "value" : "_:genid13725",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43608",
+          "value" : "_:genid13723",
           "type" : "label"
         } ]
       },
@@ -5847,13 +7351,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43582",
+          "value" : "_:genid13697",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43580",
+          "value" : "_:genid13695",
           "type" : "label"
         } ]
       },
@@ -5874,13 +7378,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43598",
+          "value" : "_:genid13713",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43596",
+          "value" : "_:genid13711",
           "type" : "label"
         } ]
       },
@@ -5901,13 +7405,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43622",
+          "value" : "_:genid13737",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43620",
+          "value" : "_:genid13735",
           "type" : "label"
         } ]
       },
@@ -5928,13 +7432,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43594",
+          "value" : "_:genid13709",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43592",
+          "value" : "_:genid13707",
           "type" : "label"
         } ]
       },
@@ -5955,13 +7459,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43578",
+          "value" : "_:genid13693",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43576",
+          "value" : "_:genid13691",
           "type" : "label"
         } ]
       },
@@ -5982,13 +7486,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43630",
+          "value" : "_:genid13745",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43628",
+          "value" : "_:genid13743",
           "type" : "label"
         } ]
       },
@@ -6009,13 +7513,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43638",
+          "value" : "_:genid13753",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43636",
+          "value" : "_:genid13751",
           "type" : "label"
         } ]
       },
@@ -6036,13 +7540,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43602",
+          "value" : "_:genid13717",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43600",
+          "value" : "_:genid13715",
           "type" : "label"
         } ]
       },
@@ -6063,13 +7567,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43606",
+          "value" : "_:genid13721",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43604",
+          "value" : "_:genid13719",
           "type" : "label"
         } ]
       },
@@ -6090,13 +7594,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43586",
+          "value" : "_:genid13701",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43584",
+          "value" : "_:genid13699",
           "type" : "label"
         } ]
       },
@@ -6117,13 +7621,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43626",
+          "value" : "_:genid13741",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43624",
+          "value" : "_:genid13739",
           "type" : "label"
         } ]
       },
@@ -6144,46 +7648,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43570",
+          "value" : "_:genid13685",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43568",
+          "value" : "_:genid13683",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "MondayEvening",
         "en" : "Monday evening"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/MondayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43566",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43564",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MondayAfternoon",
-        "en" : "Monday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TuesdayMorning",
@@ -6198,19 +7675,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43574",
+          "value" : "_:genid13689",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43572",
+          "value" : "_:genid13687",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "TuesdayMorning",
         "en" : "Tuesday morning"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/MondayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13681",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13679",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MondayAfternoon",
+        "en" : "Monday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/FridayAfternoon",
@@ -6225,46 +7729,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43614",
+          "value" : "_:genid13729",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43612",
+          "value" : "_:genid13727",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "FridayAfternoon",
         "en" : "Friday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43618",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43616",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "FridayEvening",
-        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
@@ -6279,19 +7756,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43590",
+          "value" : "_:genid13705",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43588",
+          "value" : "_:genid13703",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "WednesdayAfternoon",
         "en" : "Wednesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13733",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13731",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FridayEvening",
+        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SundayEvening",
@@ -6306,13 +7810,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43642",
+          "value" : "_:genid13757",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43640",
+          "value" : "_:genid13755",
           "type" : "label"
         } ]
       },
@@ -6321,7 +7825,7 @@
         "en" : "Sunday evening"
       }
     } ],
-    "subClasses" : [ "108" ],
+    "subClasses" : [ "109" ],
     "comment" : {
       "en" : "Any time information related to volunteering activities modeled as a OWL time temporal entity."
     },
@@ -6364,7 +7868,7 @@
   }, {
     "instances" : 0,
     "union" : [ "43", "3" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "138"
   }, {
     "iri" : "https://ns.volunteeringdata.io/Role",
@@ -6504,13 +8008,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43634",
+          "value" : "_:genid13749",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43632",
+          "value" : "_:genid13747",
           "type" : "label"
         } ]
       },
@@ -6531,13 +8035,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43562",
+          "value" : "_:genid13677",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43560",
+          "value" : "_:genid13675",
           "type" : "label"
         } ]
       },
@@ -6558,13 +8062,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43610",
+          "value" : "_:genid13725",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43608",
+          "value" : "_:genid13723",
           "type" : "label"
         } ]
       },
@@ -6585,13 +8089,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43582",
+          "value" : "_:genid13697",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43580",
+          "value" : "_:genid13695",
           "type" : "label"
         } ]
       },
@@ -6612,13 +8116,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43598",
+          "value" : "_:genid13713",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43596",
+          "value" : "_:genid13711",
           "type" : "label"
         } ]
       },
@@ -6639,13 +8143,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43622",
+          "value" : "_:genid13737",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43620",
+          "value" : "_:genid13735",
           "type" : "label"
         } ]
       },
@@ -6666,13 +8170,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43594",
+          "value" : "_:genid13709",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43592",
+          "value" : "_:genid13707",
           "type" : "label"
         } ]
       },
@@ -6693,13 +8197,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43578",
+          "value" : "_:genid13693",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43576",
+          "value" : "_:genid13691",
           "type" : "label"
         } ]
       },
@@ -6720,13 +8224,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43630",
+          "value" : "_:genid13745",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43628",
+          "value" : "_:genid13743",
           "type" : "label"
         } ]
       },
@@ -6747,46 +8251,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43638",
+          "value" : "_:genid13753",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43636",
+          "value" : "_:genid13751",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SundayAfternoon",
         "en" : "Sunday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/ThursdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43602",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43600",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ThursdayAfternoon",
-        "en" : "Thursday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/ThursdayEvening",
@@ -6801,19 +8278,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43606",
+          "value" : "_:genid13721",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43604",
+          "value" : "_:genid13719",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "ThursdayEvening",
         "en" : "Thursday evening"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ThursdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13717",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13715",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ThursdayAfternoon",
+        "en" : "Thursday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WednesdayMorning",
@@ -6828,13 +8332,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43586",
+          "value" : "_:genid13701",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43584",
+          "value" : "_:genid13699",
           "type" : "label"
         } ]
       },
@@ -6855,13 +8359,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43626",
+          "value" : "_:genid13741",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43624",
+          "value" : "_:genid13739",
           "type" : "label"
         } ]
       },
@@ -6882,46 +8386,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43570",
+          "value" : "_:genid13685",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43568",
+          "value" : "_:genid13683",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "MondayEvening",
         "en" : "Monday evening"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/MondayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43566",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43564",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "MondayAfternoon",
-        "en" : "Monday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TuesdayMorning",
@@ -6936,13 +8413,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43574",
+          "value" : "_:genid13689",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43572",
+          "value" : "_:genid13687",
           "type" : "label"
         } ]
       },
@@ -6951,7 +8428,7 @@
         "en" : "Tuesday morning"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
+      "iri" : "https://ns.volunteeringdata.io/MondayAfternoon",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -6963,46 +8440,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43618",
+          "value" : "_:genid13681",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43616",
+          "value" : "_:genid13679",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "FridayEvening",
-        "en" : "Friday evening"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid43590",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid43588",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayAfternoon",
-        "en" : "Wednesday afternoon"
+        "IRI-based" : "MondayAfternoon",
+        "en" : "Monday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/FridayAfternoon",
@@ -7017,19 +8467,73 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43614",
+          "value" : "_:genid13729",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43612",
+          "value" : "_:genid13727",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "FridayAfternoon",
         "en" : "Friday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13705",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13703",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayAfternoon",
+        "en" : "Wednesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid13733",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid13731",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FridayEvening",
+        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SundayEvening",
@@ -7044,13 +8548,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid43642",
+          "value" : "_:genid13757",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid43640",
+          "value" : "_:genid13755",
           "type" : "label"
         } ]
       },
@@ -7085,11 +8589,11 @@
     "id" : "33",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "31",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "42",
     "type" : "owl:datatypeProperty"
@@ -7157,11 +8661,11 @@
     "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "100",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "13",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "104",
     "type" : "owl:objectProperty"
@@ -7169,10 +8673,10 @@
     "id" : "107",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "38",
+    "id" : "40",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "39",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
     "id" : "105",
@@ -7199,7 +8703,7 @@
     "id" : "45",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "101",
+    "id" : "100",
     "type" : "owl:objectProperty"
   }, {
     "id" : "96",
@@ -7247,7 +8751,7 @@
     "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "37",
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "35",
@@ -7460,48 +8964,9 @@
     "attributes" : [ "object" ],
     "id" : "33"
   }, {
-    "iri" : "https://ns.volunteeringdata.io/role",
-    "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "10",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://ns.volunteeringdata.io/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "role",
-      "en" : "has role"
-    },
-    "domain" : "25",
-    "subproperty" : [ "12", "37", "35", "38", "39" ],
-    "attributes" : [ "object" ],
-    "id" : "31"
-  }, {
-    "iri" : "https://ns.volunteeringdata.io/organisationCharityNumber",
-    "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "41",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://ns.volunteeringdata.io/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "organisationCharityNumber",
-      "en" : "organisation has charity number"
-    },
-    "domain" : "6",
-    "attributes" : [ "datatype" ],
-    "id" : "40"
-  }, {
     "iri" : "https://ns.volunteeringdata.io/latitude",
     "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "26",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7524,6 +8989,45 @@
     "comment" : {
       "en" : "The WGS84 latitude of a SpatialThing in decimal degrees (see WGS84 Geo Positioning)."
     },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://ns.volunteeringdata.io/role",
+    "baseIri" : "https://ns.volunteeringdata.io",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://ns.volunteeringdata.io/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "role",
+      "en" : "has role"
+    },
+    "domain" : "25",
+    "subproperty" : [ "12", "39", "35", "40", "41" ],
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://ns.volunteeringdata.io/organisationCharityNumber",
+    "baseIri" : "https://ns.volunteeringdata.io",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://ns.volunteeringdata.io/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "organisationCharityNumber",
+      "en" : "organisation has charity number"
+    },
+    "domain" : "6",
     "attributes" : [ "datatype" ],
     "id" : "42"
   }, {
@@ -7650,7 +9154,7 @@
       "IRI-based" : "long"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "63"
   }, {
     "iri" : "https://ns.volunteeringdata.io/maximumAge",
@@ -7769,28 +9273,9 @@
     "attributes" : [ "datatype" ],
     "id" : "73"
   }, {
-    "iri" : "https://ns.volunteeringdata.io/organisationName",
-    "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "85",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://ns.volunteeringdata.io/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "organisationName",
-      "en" : "organisation has name"
-    },
-    "domain" : "6",
-    "attributes" : [ "datatype" ],
-    "id" : "84"
-  }, {
     "iri" : "https://ns.volunteeringdata.io/organisationDescription",
     "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "87",
+    "range" : "85",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7805,6 +9290,25 @@
     },
     "domain" : "6",
     "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://ns.volunteeringdata.io/organisationName",
+    "baseIri" : "https://ns.volunteeringdata.io",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://ns.volunteeringdata.io/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "organisationName",
+      "en" : "organisation has name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
     "id" : "86"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
@@ -7814,11 +9318,11 @@
       "IRI-based" : "lat"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "89"
   }, {
     "iri" : "https://ns.volunteeringdata.io/roleAccessibility",
-    "inverse" : "37",
+    "inverse" : "39",
     "baseIri" : "https://ns.volunteeringdata.io",
     "range" : "49",
     "annotations" : {
@@ -7927,6 +9431,26 @@
     "attributes" : [ "datatype" ],
     "id" : "99"
   }, {
+    "iri" : "https://ns.volunteeringdata.io/activity",
+    "baseIri" : "https://ns.volunteeringdata.io",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://ns.volunteeringdata.io/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "activity",
+      "en" : "has activity"
+    },
+    "domain" : "72",
+    "subproperty" : [ "9", "92", "100" ],
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
     "iri" : "https://ns.volunteeringdata.io/organisationImage",
     "baseIri" : "https://ns.volunteeringdata.io",
     "range" : "75",
@@ -7944,27 +9468,7 @@
     },
     "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "100"
-  }, {
-    "iri" : "https://ns.volunteeringdata.io/activity",
-    "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "11",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://ns.volunteeringdata.io/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "activity",
-      "en" : "has activity"
-    },
-    "domain" : "72",
-    "subproperty" : [ "9", "92", "101" ],
-    "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "101"
   }, {
     "iri" : "https://ns.volunteeringdata.io/sessionLocation",
     "inverse" : "105",
@@ -8025,7 +9529,7 @@
     "superproperty" : [ "31" ],
     "domain" : "110",
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "40"
   }, {
     "iri" : "https://ns.volunteeringdata.io/requirementRole",
     "baseIri" : "https://ns.volunteeringdata.io",
@@ -8045,7 +9549,7 @@
     "superproperty" : [ "31" ],
     "domain" : "32",
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "41"
   }, {
     "iri" : "https://ns.volunteeringdata.io/locationSession",
     "baseIri" : "https://ns.volunteeringdata.io",
@@ -8086,7 +9590,7 @@
     "id" : "113"
   }, {
     "iri" : "https://ns.volunteeringdata.io/roleRequirement",
-    "inverse" : "39",
+    "inverse" : "41",
     "baseIri" : "https://ns.volunteeringdata.io",
     "range" : "32",
     "annotations" : {
@@ -8215,7 +9719,7 @@
     "superproperty" : [ "13" ],
     "domain" : "95",
     "attributes" : [ "object" ],
-    "id" : "101"
+    "id" : "100"
   }, {
     "iri" : "https://ns.volunteeringdata.io/sessionTime",
     "baseIri" : "https://ns.volunteeringdata.io",
@@ -8283,7 +9787,7 @@
       "IRI-based" : "hasGeometry"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "125"
   }, {
     "iri" : "https://ns.volunteeringdata.io/description",
@@ -8370,7 +9874,7 @@
       "IRI-based" : "image"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "129"
   }, {
     "iri" : "https://ns.volunteeringdata.io/accessbibility",
@@ -8394,13 +9898,13 @@
     "id" : "130"
   }, {
     "range" : "94",
-    "domain" : "108",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "131"
   }, {
     "range" : "80",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "132"
   }, {
     "iri" : "http://purl.org/dc/terms/description",
@@ -8410,17 +9914,17 @@
       "IRI-based" : "description"
     },
     "domain" : "15",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "133"
   }, {
     "range" : "124",
     "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "range" : "1",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "iri" : "https://ns.volunteeringdata.io/accessibilityRole",
@@ -8441,7 +9945,7 @@
     "superproperty" : [ "31" ],
     "domain" : "49",
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "39"
   }, {
     "iri" : "https://ns.volunteeringdata.io/rewardRole",
     "baseIri" : "https://ns.volunteeringdata.io",
@@ -8464,7 +9968,7 @@
     "id" : "35"
   }, {
     "domain" : "3",
-    "range" : "5",
+    "range" : "49",
     "id" : "139",
     "label" : {
       "IRI-based" : "2",
@@ -8472,7 +9976,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "110",
+    "range" : "5",
     "id" : "140",
     "label" : {
       "IRI-based" : "3",
@@ -8480,7 +9984,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "32",
+    "range" : "34",
     "id" : "141",
     "label" : {
       "IRI-based" : "4",
@@ -8488,7 +9992,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "49",
+    "range" : "110",
     "id" : "142",
     "label" : {
       "IRI-based" : "5",
@@ -8496,7 +10000,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "34",
+    "range" : "32",
     "id" : "143",
     "label" : {
       "IRI-based" : "6",
@@ -8505,7 +10009,7 @@
   }, {
     "iri" : "https://ns.volunteeringdata.io/name",
     "baseIri" : "https://ns.volunteeringdata.io",
-    "range" : "109",
+    "range" : "108",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
