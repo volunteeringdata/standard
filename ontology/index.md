@@ -201,6 +201,7 @@ breadcrumbs:
   <p>In example 2, the organisation is referred to through its identifier. It is also possible to embed the organisation details in the activity representation.</p>
   <p>Standard-defined <a href="#time-defined-temporal-entities">temporal entities</a> can be referred to via their <a href="https://en.wikipedia.org/wiki/CURIE">compact URI</a> (using the "volunteering" prefix). That is: "volunteering:TuesdayMorning" is equivalent to "https://ns.volunteeringdata.io/TuesdayMorning".</p>
   <p>New temporal entities can be defined using the <a href="https://www.w3.org/TR/owl-time/">Time ontology in OWL</a>. See for example <a href="https://api.volunteeringdata.io/describe.ttl?id=https://ns.volunteeringdata.io/TuesdayMorning">Tuesday Morning</a>.</p>
+  <p>While URLs are preferable for identifiers because the data is then authoritative and can be <a href="https://www.w3.org/wiki/LinkedData">dereferenced</a> at source, <a href="https://www.ietf.org/rfc/rfc4122.txt">urn:uuid:</a> identifiers can be used too.</p>
 </div>
 
 
