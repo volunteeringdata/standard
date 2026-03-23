@@ -277,5 +277,6 @@ breadcrumbs:
 
 <div class="note">
   <h5>Note</h5>
-  <p>The <code>license</code> property value <code>"CC-BY-NC-SA-4.0"</code> is an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. SPDX (System Package Data Exchange) provides a standardised list of license identifiers that can be used to communicate licensing information in a concise and unambiguous way.</p>
+  <p>The <code>license</code> property value <code>"CC-BY-NC-SA-4.0"</code> is an <a href="https://spdx.org/licenses/">SPDX license identifier</a>.</p>
+  <p>SPDX (System Package Data Exchange) provides a standardised list of license identifiers that can be used to communicate licensing information in a concise and unambiguous way.</p>
 </div>
