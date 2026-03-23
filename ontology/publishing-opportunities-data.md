@@ -260,6 +260,7 @@ breadcrumbs:
   <h5 id="example-3">Example 3</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"conformsTo"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
   <span class="hljs-attr">"license"</span>: <span class="hljs-string">"CC-BY-NC-SA-4.0"</span>,
   <span class="hljs-attr">"graph"</span>: [
     {
