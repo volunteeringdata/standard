@@ -201,6 +201,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has name"@en ;
 .
 
+:publisher
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf dc:publisher ;
+    rdfs:label "has publisher"@en ;
+    rdfs:comment "The publisher of the data about volunteering activities and volunteer involving organisations."@en ;
+.
+
 :requiresEmergencyParticipation
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
