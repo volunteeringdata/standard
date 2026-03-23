@@ -24,26 +24,33 @@
     },
     "iri" : "https://ns.volunteeringdata.io/",
     "version" : "2026-03-12",
+    "author" : [ "Matthieu Bosquet" ],
     "labels" : {
       "en" : "Volunteering and Social Action Ontology"
     },
     "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Matthieu Bosquet",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "https://ns.volunteeringdata.io/",
         "type" : "iri"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Volunteering Data Standard Working Group",
+        "type" : "label"
+      } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "volunteering",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "2026-03-12",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -52,16 +59,22 @@
         "value" : "https://ns.volunteeringdata.io/",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Volunteering and Social Action Ontology",
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "2026-03-12",
         "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
         "value" : "2025-11-20",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Volunteering and Social Action Ontology",
         "type" : "label"
       } ],
       "seeAlso" : [ {
@@ -385,13 +398,17 @@
           "value" : "In Care",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in care institutions, care homes, foster care, and supporting those in state care.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Children Social Care",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Existing",
+          "type" : "label"
+        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Care Homes",
@@ -404,22 +421,18 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Foster Care",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Leaving Care",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Existing",
+          "value" : "Foster Care",
           "type" : "label"
-        }, {
-          "identifier" : "altLabel",
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
           "language" : "en",
-          "value" : "Children Social Care",
+          "value" : "Volunteering in care institutions, care homes, foster care, and supporting those in state care.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -451,17 +464,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Sexual Orientation",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Gender Identity",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Sexual Identity",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Sexual Orientation",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -595,12 +608,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Learning Difficulties",
+          "value" : "Learning Impairment",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Learning Impairment",
+          "value" : "Learning Difficulties",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -678,38 +691,6 @@
         "IRI-based" : "Legal"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/CommunityEnvironmentKnowledge",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Community & Environment Knowledge",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Knowledge and awareness of local community, environment, and support systems.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Requirement",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "CommunityEnvironmentKnowledge"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/TraumaInformedAwareness",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -742,6 +723,38 @@
         "IRI-based" : "TraumaInformedAwareness"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/CommunityEnvironmentKnowledge",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Community & Environment Knowledge",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Knowledge and awareness of local community, environment, and support systems.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Requirement",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "CommunityEnvironmentKnowledge"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/LoneParents",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -760,17 +773,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Single Fathers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Single Parent Families",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Single Mothers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -780,7 +783,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Single Mothers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "One Parent Families",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Single Fathers",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -899,23 +912,7 @@
           "value" : "Victims of Crime",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting crime victims, victim advocacy, witness support, and survivor services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Victim Counselling",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Witness Support",
-          "type" : "label"
-        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Survivors",
@@ -923,7 +920,23 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Victim Counselling",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Victim Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Witness Support",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting crime victims, victim advocacy, witness support, and survivor services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -963,59 +976,6 @@
         "IRI-based" : "Kitchen"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/EducationLanguages",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Education & languages",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Dialects",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Further Education",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Tongues",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Schooling",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in education programmes, language support, literacy, and educational development.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "EducationLanguages"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/WaterPump",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1040,6 +1000,59 @@
       },
       "labels" : {
         "IRI-based" : "WaterPump"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/EducationLanguages",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Education & languages",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Schooling",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Dialects",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Further Education",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Tongues",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in education programmes, language support, literacy, and educational development.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Cause",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EducationLanguages"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/VisualImpairment",
@@ -1220,7 +1233,32 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Nonemployment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Without Work",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Out of work",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Tackling Unemployment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Redundancy",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Jobless",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1230,12 +1268,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Joblessness",
+          "value" : "Unemployed People",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Tackling Unemployment",
+          "value" : "Joblessness",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1246,31 +1284,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Unemployed",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Unemployed People",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Out of work",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Jobless",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Nonemployment",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Without Work",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1416,42 +1429,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Youths",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Young People",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Young folks & kids",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Teenagers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Toddlers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Kids",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Children",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Infants",
+          "value" : "Young People and Kids",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1461,7 +1439,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Minors",
+          "value" : "Youths",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -1471,12 +1449,47 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Young People and Kids",
+          "value" : "Children",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Toddlers",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Teenagers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Younger Generation",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Young folks & kids",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Minors",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Young People",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Infants",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Kids",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1604,12 +1617,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Criminal Justice System",
+          "value" : "Prisons",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Prisons",
+          "value" : "Criminal Justice System",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -1751,32 +1764,6 @@
         "IRI-based" : "VanOrPeopleCarrier"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/PortableShelterGazebo",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Portable shelter/gazebo",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "PortableShelterGazebo"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/ServiceAnimals",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1815,6 +1802,32 @@
         "IRI-based" : "ServiceAnimals"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/PortableShelterGazebo",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Portable shelter/gazebo",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "PortableShelterGazebo"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/WomensGroups",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -1838,12 +1851,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Female Peer Suport",
+          "value" : "Female Groups",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Female Groups",
+          "value" : "Female Peer Suport",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2043,6 +2056,64 @@
         "IRI-based" : "ThermalBlankets"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/Housing",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Housing",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Displacement",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Homeless People",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Sheltered Housing",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Housing Associations",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Accommodation",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting housing provision, homelessness prevention, and accommodation services.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Cause",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Housing"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/RelayAccurateInformation",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2073,64 +2144,6 @@
       },
       "labels" : {
         "IRI-based" : "RelayAccurateInformation"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/Housing",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Housing",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Sheltered Housing",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Homeless People",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Accommodation",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Housing Associations",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Displacement",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting housing provision, homelessness prevention, and accommodation services.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Housing"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/RemoteCommunicationTools",
@@ -2183,7 +2196,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "LGBTQ",
+          "value" : "Bisexual",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2193,22 +2206,22 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Gay",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Transgender",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Lesbian",
+          "value" : "LGBTQ",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Bisexual",
+          "value" : "Gay",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Lesbian",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2292,6 +2305,32 @@
         "IRI-based" : "PhoneOnlineSupport"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/Venue",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Venue",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Venue"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/ShelterSupport",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2324,32 +2363,6 @@
         "IRI-based" : "ShelterSupport"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/Venue",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Venue",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/SpecialistUsefulAssets",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Venue"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/SportOutdoorActivities",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -2373,12 +2386,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Outdoor experiences",
+          "value" : "Sports Clubs",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Sports Clubs",
+          "value" : "Outdoor experiences",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2471,10 +2484,26 @@
           "value" : "Arts and Culture",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in artistic and cultural domains including music, theatre, dance, visual arts, crafts, and heritage preservation.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Society",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Graphic Arts",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Crafts",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2500,22 +2529,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Dance",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Graphic Arts",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Crafts",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in artistic and cultural domains including music, theatre, dance, visual arts, crafts, and heritage preservation.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -2663,12 +2676,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Patients",
+          "value" : "People with Ill Health",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Sufferers",
+          "value" : "Patients",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2678,7 +2691,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "People with Ill Health",
+          "value" : "Sufferers",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -2771,15 +2784,21 @@
           "value" : "Religion & Faith",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in religious and faith-based organizations and spiritual community services.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Religious",
+          "value" : "Churches",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Churches",
+          "value" : "Religious",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2790,12 +2809,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Ideology",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in religious and faith-based organizations and spiritual community services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -2827,7 +2840,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Care Providers",
+          "value" : "Caregivers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2847,22 +2860,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Live in carers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Care Services",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Social Care",
+          "value" : "Live in carers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Caregivers",
+          "value" : "Care Providers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -2873,6 +2881,11 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Addiction Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Social Care",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3029,10 +3042,16 @@
           "value" : "Low Income Households",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering addressing low income household support, family poverty, and child poverty reduction.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Family Poverty",
+          "value" : "Low Earnings",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3042,13 +3061,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Low Earnings",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering addressing low income household support, family poverty, and child poverty reduction.",
+          "value" : "Family Poverty",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3176,17 +3189,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Drugs",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Drug Dependency",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Addiction",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3196,7 +3199,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Drugs",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Alcohol Dependency",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Addiction",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3298,6 +3311,11 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Neighbourhood",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Community Centres",
           "type" : "label"
         }, {
@@ -3309,11 +3327,6 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Village",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Neighbourhood",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3428,21 +3441,10 @@
           "value" : "Older People",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting elderly and older people, senior citizens, and age-related services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Senior Citizens",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Elderly",
+          "value" : "Pensioners",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3452,17 +3454,22 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ageing",
+          "value" : "Elderly",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Pensioners",
+          "value" : "Senior Citizens",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Old People",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Ageing",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3473,6 +3480,12 @@
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Seniors",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting elderly and older people, senior citizens, and age-related services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -3530,7 +3543,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Human Rights",
+          "value" : "Equality",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3540,12 +3553,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Equality",
+          "value" : "Justice",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Justice",
+          "value" : "Human Rights",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3673,12 +3686,32 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Disaster emergency relief",
+          "value" : "Urgent problem",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Accidents",
+          "value" : "Tragedy",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Emergency Services",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Natural Disasters",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Emergency Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Disaster emergency relief",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3693,27 +3726,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Emergency Support",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Urgent problem",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Natural Disasters",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Tragedy",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Emergency Services",
+          "value" : "Accidents",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3840,12 +3853,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Climate Change",
+          "value" : "Natural World",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Planet",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Surroundings",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3860,12 +3878,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Natural Environment",
+          "value" : "Clean",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Natural World",
+          "value" : "Natural Environment",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3875,12 +3893,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Surroundings",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Nature",
+          "value" : "Climate Change",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3890,7 +3903,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Clean",
+          "value" : "Nature",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -3928,7 +3941,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Protection",
+          "value" : "Wrongdoing",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -3938,7 +3951,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Wrongdoing",
+          "value" : "Protection",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4024,12 +4037,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Community groups",
+          "value" : "Society",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Society",
+          "value" : "Community groups",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4061,12 +4074,12 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Racial Minorities",
+          "value" : "Ethnic Communities",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ethnic Groups",
+          "value" : "Racial Minorities",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4076,7 +4089,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Ethnic Communities",
+          "value" : "Ethnic Groups",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -4146,17 +4159,17 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Local Government",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Local Council",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Council Office",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Local Government",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4283,7 +4296,7 @@
         "IRI-based" : "TechnologyAvailability"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/MensGroups",
+      "iri" : "https://ns.volunteeringdata.io/Disability",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -4295,29 +4308,29 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Mens Groups",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in men's groups, male peer support, and male-focused community services.",
+          "value" : "Disability",
           "type" : "label"
         } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Mens Support Groups",
+          "value" : "Diabled Groups",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Male Peer Support",
+          "value" : "Disabled People",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Male Groups",
+          "value" : "Impairment",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting people with disabilities, accessibility advocacy, and disability services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4328,7 +4341,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "MensGroups"
+        "IRI-based" : "Disability"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SafetyAndEmergencyAwareness",
@@ -4363,7 +4376,7 @@
         "IRI-based" : "SafetyAndEmergencyAwareness"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/Disability",
+      "iri" : "https://ns.volunteeringdata.io/MensGroups",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
         "isDefinedBy" : [ {
@@ -4375,29 +4388,29 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "en",
-          "value" : "Disability",
+          "value" : "Mens Groups",
           "type" : "label"
         } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Diabled Groups",
+          "value" : "Mens Support Groups",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Impairment",
+          "value" : "Male Peer Support",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Disabled People",
+          "value" : "Male Groups",
           "type" : "label"
         } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Volunteering supporting people with disabilities, accessibility advocacy, and disability services.",
+          "value" : "Volunteering in men's groups, male peer support, and male-focused community services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4408,7 +4421,7 @@
         } ]
       },
       "labels" : {
-        "IRI-based" : "Disability"
+        "IRI-based" : "MensGroups"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/GeneralPublic",
@@ -4426,18 +4439,7 @@
           "value" : "General Public",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering serving the general public and broader populations.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Local Community",
-          "type" : "label"
-        }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "General Population",
@@ -4445,7 +4447,18 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Local Community",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "People",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering serving the general public and broader populations.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4643,16 +4656,20 @@
           "value" : "Health",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in healthcare, health promotion, public health, and wellness services.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Health Service",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Hospital",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Health Providers",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4667,17 +4684,13 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Hospital",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Wellness",
           "type" : "label"
-        }, {
-          "identifier" : "altLabel",
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
           "language" : "en",
-          "value" : "Health Providers",
+          "value" : "Volunteering in healthcare, health promotion, public health, and wellness services.",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -4781,6 +4794,54 @@
         "IRI-based" : "Communication"
       }
     }, {
+      "iri" : "https://ns.volunteeringdata.io/SensoryImpairment",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Sensory Impairment",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Visual Impairment",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Blind and Partially Sighted",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Hearing Impairment",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting people with sensory impairments, hearing loss, visual impairment, and blindness.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Disability",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SensoryImpairment"
+      }
+    }, {
       "iri" : "https://ns.volunteeringdata.io/AnimalWelfare",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -4799,7 +4860,7 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Creatures",
+          "value" : "Mammals",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4809,7 +4870,7 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Mammals",
+          "value" : "Creatures",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -4832,54 +4893,6 @@
       },
       "labels" : {
         "IRI-based" : "AnimalWelfare"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/SensoryImpairment",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Sensory Impairment",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Hearing Impairment",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Blind and Partially Sighted",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Visual Impairment",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting people with sensory impairments, hearing loss, visual impairment, and blindness.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Disability",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "SensoryImpairment"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/PhysicalStamina",
@@ -4993,20 +5006,16 @@
           "value" : "Heritage",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in heritage preservation, museums, galleries, historical institutions, and cultural conservation.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Museums",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "History",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Institutions",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -5016,13 +5025,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Museums",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Galleries",
           "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
+        }, {
+          "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Volunteering in heritage preservation, museums, galleries, historical institutions, and cultural conservation.",
+          "value" : "Institutions",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -5205,10 +5218,16 @@
           "value" : "Overseas Aid / Developing World",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering in international development, overseas aid, and support to developing nations.",
+          "type" : "label"
+        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "International Aid",
+          "value" : "Developing Economies",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -5218,18 +5237,12 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Developing Economies",
+          "value" : "Foreign Aid",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Foreign Aid",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering in international development, overseas aid, and support to developing nations.",
+          "value" : "International Aid",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -5363,22 +5376,22 @@
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Criminals",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
           "value" : "Prisoners",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Former Offenders",
+          "value" : "Offender Rehabilitation",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
-          "value" : "Offender Rehabilitation",
+          "value" : "Criminals",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Former Offenders",
           "type" : "label"
         } ],
         "definition" : [ {
@@ -5413,12 +5426,6 @@
           "value" : "Residents of Disadvantaged Neighbourhoods",
           "type" : "label"
         } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting residents of disadvantaged neighbourhoods and deprived communities.",
-          "type" : "label"
-        } ],
         "altLabel" : [ {
           "identifier" : "altLabel",
           "language" : "en",
@@ -5440,6 +5447,12 @@
           "value" : "Vulerable groups",
           "type" : "label"
         } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting residents of disadvantaged neighbourhoods and deprived communities.",
+          "type" : "label"
+        } ],
         "broader" : [ {
           "identifier" : "broader",
           "language" : "undefined",
@@ -5449,6 +5462,59 @@
       },
       "labels" : {
         "IRI-based" : "ResidentsDisadvantagedNeighbourhoods"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/Families",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Families",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering supporting families, household welfare, and family services.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Loved Ones",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Family Members",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Households",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Relatives",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Cause",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Families"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/HeadtorchFlashlight",
@@ -5475,59 +5541,6 @@
       },
       "labels" : {
         "IRI-based" : "HeadtorchFlashlight"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/Families",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Families",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Loved Ones",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Households",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Family Members",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Relatives",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering supporting families, household welfare, and family services.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Cause",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "Families"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/PhonePowerBank",
@@ -5657,74 +5670,6 @@
         "IRI-based" : "AntiPoverty"
       }
     }, {
-      "iri" : "https://ns.volunteeringdata.io/LiteracyNeeds",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "prefLabel" : [ {
-          "identifier" : "prefLabel",
-          "language" : "en",
-          "value" : "Literacy Needs",
-          "type" : "label"
-        } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Literacy Skills",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Learning",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Reading",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Writing",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Literacy Support",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Training",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Literacy Difficulties",
-          "type" : "label"
-        } ],
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Volunteering addressing literacy support, reading and writing development, and literacy skills training.",
-          "type" : "label"
-        } ],
-        "broader" : [ {
-          "identifier" : "broader",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/EducationLanguages",
-          "type" : "iri"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "LiteracyNeeds"
-      }
-    }, {
       "iri" : "https://ns.volunteeringdata.io/SocialMediaHandling",
       "baseIri" : "https://ns.volunteeringdata.io",
       "annotations" : {
@@ -5755,6 +5700,74 @@
       },
       "labels" : {
         "IRI-based" : "SocialMediaHandling"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/LiteracyNeeds",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Literacy Needs",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Literacy Support",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Writing",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Training",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Literacy Skills",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Learning",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Literacy Difficulties",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Reading",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Volunteering addressing literacy support, reading and writing development, and literacy skills training.",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/EducationLanguages",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "LiteracyNeeds"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WifiUsage",
@@ -5810,16 +5823,16 @@
           "value" : "Physical Disability",
           "type" : "label"
         } ],
-        "altLabel" : [ {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Physical Impairment",
-          "type" : "label"
-        } ],
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
           "value" : "Volunteering supporting people with physical disabilities and physical impairments.",
+          "type" : "label"
+        } ],
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Physical Impairment",
           "type" : "label"
         } ],
         "broader" : [ {
@@ -5856,17 +5869,17 @@
         }, {
           "identifier" : "altLabel",
           "language" : "en",
+          "value" : "Foster Parents",
+          "type" : "label"
+        }, {
+          "identifier" : "altLabel",
+          "language" : "en",
           "value" : "Grandparents",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
           "language" : "en",
           "value" : "Mothers",
-          "type" : "label"
-        }, {
-          "identifier" : "altLabel",
-          "language" : "en",
-          "value" : "Foster Parents",
           "type" : "label"
         }, {
           "identifier" : "altLabel",
@@ -6553,13 +6566,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13749",
+          "value" : "_:genid6355",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13747",
+          "value" : "_:genid6353",
           "type" : "label"
         } ]
       },
@@ -6580,13 +6593,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13677",
+          "value" : "_:genid6283",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13675",
+          "value" : "_:genid6281",
           "type" : "label"
         } ]
       },
@@ -6607,13 +6620,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13725",
+          "value" : "_:genid6331",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13723",
+          "value" : "_:genid6329",
           "type" : "label"
         } ]
       },
@@ -6634,13 +6647,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13697",
+          "value" : "_:genid6303",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13695",
+          "value" : "_:genid6301",
           "type" : "label"
         } ]
       },
@@ -6661,13 +6674,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13713",
+          "value" : "_:genid6319",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13711",
+          "value" : "_:genid6317",
           "type" : "label"
         } ]
       },
@@ -6688,46 +6701,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13737",
+          "value" : "_:genid6343",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13735",
+          "value" : "_:genid6341",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SaturdayMorning",
         "en" : "Saturday morning"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13709",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13707",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayEvening",
-        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TuesdayAfternoon",
@@ -6742,19 +6728,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13693",
+          "value" : "_:genid6299",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13691",
+          "value" : "_:genid6297",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "TuesdayAfternoon",
         "en" : "Tuesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6315",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6313",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayEvening",
+        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SaturdayEvening",
@@ -6769,13 +6782,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13745",
+          "value" : "_:genid6351",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13743",
+          "value" : "_:genid6349",
           "type" : "label"
         } ]
       },
@@ -6796,46 +6809,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13753",
+          "value" : "_:genid6359",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13751",
+          "value" : "_:genid6357",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SundayAfternoon",
         "en" : "Sunday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/ThursdayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13721",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13719",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ThursdayEvening",
-        "en" : "Thursday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/ThursdayAfternoon",
@@ -6850,19 +6836,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13717",
+          "value" : "_:genid6323",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13715",
+          "value" : "_:genid6321",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "ThursdayAfternoon",
         "en" : "Thursday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/ThursdayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6327",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6325",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ThursdayEvening",
+        "en" : "Thursday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/WednesdayMorning",
@@ -6877,13 +6890,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13701",
+          "value" : "_:genid6307",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13699",
+          "value" : "_:genid6305",
           "type" : "label"
         } ]
       },
@@ -6904,13 +6917,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13741",
+          "value" : "_:genid6347",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13739",
+          "value" : "_:genid6345",
           "type" : "label"
         } ]
       },
@@ -6931,13 +6944,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13685",
+          "value" : "_:genid6291",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13683",
+          "value" : "_:genid6289",
           "type" : "label"
         } ]
       },
@@ -6958,13 +6971,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13689",
+          "value" : "_:genid6295",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13687",
+          "value" : "_:genid6293",
           "type" : "label"
         } ]
       },
@@ -6985,13 +6998,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13681",
+          "value" : "_:genid6287",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13679",
+          "value" : "_:genid6285",
           "type" : "label"
         } ]
       },
@@ -7012,13 +7025,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13729",
+          "value" : "_:genid6335",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13727",
+          "value" : "_:genid6333",
           "type" : "label"
         } ]
       },
@@ -7039,13 +7052,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13705",
+          "value" : "_:genid6311",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13703",
+          "value" : "_:genid6309",
           "type" : "label"
         } ]
       },
@@ -7066,13 +7079,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13733",
+          "value" : "_:genid6339",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13731",
+          "value" : "_:genid6337",
           "type" : "label"
         } ]
       },
@@ -7093,13 +7106,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13757",
+          "value" : "_:genid6363",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13755",
+          "value" : "_:genid6361",
           "type" : "label"
         } ]
       },
@@ -7204,12 +7217,17 @@
         "hasTopConcept" : [ {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Reward",
+          "value" : "https://ns.volunteeringdata.io/Skill",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Requirement",
+          "value" : "https://ns.volunteeringdata.io/Accessibility",
+          "type" : "iri"
+        }, {
+          "identifier" : "hasTopConcept",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/Reward",
           "type" : "iri"
         }, {
           "identifier" : "hasTopConcept",
@@ -7219,12 +7237,7 @@
         }, {
           "identifier" : "hasTopConcept",
           "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Skill",
-          "type" : "iri"
-        }, {
-          "identifier" : "hasTopConcept",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/Accessibility",
+          "value" : "https://ns.volunteeringdata.io/Requirement",
           "type" : "iri"
         } ],
         "title" : [ {
@@ -7270,13 +7283,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13749",
+          "value" : "_:genid6355",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13747",
+          "value" : "_:genid6353",
           "type" : "label"
         } ]
       },
@@ -7297,13 +7310,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13677",
+          "value" : "_:genid6283",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13675",
+          "value" : "_:genid6281",
           "type" : "label"
         } ]
       },
@@ -7324,13 +7337,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13725",
+          "value" : "_:genid6331",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13723",
+          "value" : "_:genid6329",
           "type" : "label"
         } ]
       },
@@ -7351,13 +7364,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13697",
+          "value" : "_:genid6303",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13695",
+          "value" : "_:genid6301",
           "type" : "label"
         } ]
       },
@@ -7378,13 +7391,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13713",
+          "value" : "_:genid6319",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13711",
+          "value" : "_:genid6317",
           "type" : "label"
         } ]
       },
@@ -7405,46 +7418,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13737",
+          "value" : "_:genid6343",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13735",
+          "value" : "_:genid6341",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SaturdayMorning",
         "en" : "Saturday morning"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13709",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13707",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayEvening",
-        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TuesdayAfternoon",
@@ -7459,19 +7445,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13693",
+          "value" : "_:genid6299",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13691",
+          "value" : "_:genid6297",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "TuesdayAfternoon",
         "en" : "Tuesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6315",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6313",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayEvening",
+        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SaturdayEvening",
@@ -7486,13 +7499,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13745",
+          "value" : "_:genid6351",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13743",
+          "value" : "_:genid6349",
           "type" : "label"
         } ]
       },
@@ -7513,13 +7526,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13753",
+          "value" : "_:genid6359",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13751",
+          "value" : "_:genid6357",
           "type" : "label"
         } ]
       },
@@ -7540,13 +7553,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13717",
+          "value" : "_:genid6323",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13715",
+          "value" : "_:genid6321",
           "type" : "label"
         } ]
       },
@@ -7567,13 +7580,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13721",
+          "value" : "_:genid6327",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13719",
+          "value" : "_:genid6325",
           "type" : "label"
         } ]
       },
@@ -7594,13 +7607,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13701",
+          "value" : "_:genid6307",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13699",
+          "value" : "_:genid6305",
           "type" : "label"
         } ]
       },
@@ -7621,13 +7634,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13741",
+          "value" : "_:genid6347",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13739",
+          "value" : "_:genid6345",
           "type" : "label"
         } ]
       },
@@ -7648,13 +7661,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13685",
+          "value" : "_:genid6291",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13683",
+          "value" : "_:genid6289",
           "type" : "label"
         } ]
       },
@@ -7675,13 +7688,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13689",
+          "value" : "_:genid6295",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13687",
+          "value" : "_:genid6293",
           "type" : "label"
         } ]
       },
@@ -7702,19 +7715,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13681",
+          "value" : "_:genid6287",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13679",
+          "value" : "_:genid6285",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "MondayAfternoon",
         "en" : "Monday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6339",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6337",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "FridayEvening",
+        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/FridayAfternoon",
@@ -7729,13 +7769,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13729",
+          "value" : "_:genid6335",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13727",
+          "value" : "_:genid6333",
           "type" : "label"
         } ]
       },
@@ -7756,46 +7796,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13705",
+          "value" : "_:genid6311",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13703",
+          "value" : "_:genid6309",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "WednesdayAfternoon",
         "en" : "Wednesday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/FridayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13733",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13731",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "FridayEvening",
-        "en" : "Friday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SundayEvening",
@@ -7810,13 +7823,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13757",
+          "value" : "_:genid6363",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13755",
+          "value" : "_:genid6361",
           "type" : "label"
         } ]
       },
@@ -8008,13 +8021,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13749",
+          "value" : "_:genid6355",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13747",
+          "value" : "_:genid6353",
           "type" : "label"
         } ]
       },
@@ -8035,13 +8048,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13677",
+          "value" : "_:genid6283",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13675",
+          "value" : "_:genid6281",
           "type" : "label"
         } ]
       },
@@ -8062,13 +8075,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13725",
+          "value" : "_:genid6331",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13723",
+          "value" : "_:genid6329",
           "type" : "label"
         } ]
       },
@@ -8089,13 +8102,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13697",
+          "value" : "_:genid6303",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13695",
+          "value" : "_:genid6301",
           "type" : "label"
         } ]
       },
@@ -8116,13 +8129,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13713",
+          "value" : "_:genid6319",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13711",
+          "value" : "_:genid6317",
           "type" : "label"
         } ]
       },
@@ -8143,46 +8156,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13737",
+          "value" : "_:genid6343",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13735",
+          "value" : "_:genid6341",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "SaturdayMorning",
         "en" : "Saturday morning"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13709",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13707",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayEvening",
-        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/TuesdayAfternoon",
@@ -8197,19 +8183,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13693",
+          "value" : "_:genid6299",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13691",
+          "value" : "_:genid6297",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "TuesdayAfternoon",
         "en" : "Tuesday afternoon"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayEvening",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6315",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6313",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayEvening",
+        "en" : "Wednesday evening"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SaturdayEvening",
@@ -8224,13 +8237,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13745",
+          "value" : "_:genid6351",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13743",
+          "value" : "_:genid6349",
           "type" : "label"
         } ]
       },
@@ -8251,13 +8264,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13753",
+          "value" : "_:genid6359",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13751",
+          "value" : "_:genid6357",
           "type" : "label"
         } ]
       },
@@ -8278,13 +8291,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13721",
+          "value" : "_:genid6327",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13719",
+          "value" : "_:genid6325",
           "type" : "label"
         } ]
       },
@@ -8305,13 +8318,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13717",
+          "value" : "_:genid6323",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13715",
+          "value" : "_:genid6321",
           "type" : "label"
         } ]
       },
@@ -8332,13 +8345,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13701",
+          "value" : "_:genid6307",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13699",
+          "value" : "_:genid6305",
           "type" : "label"
         } ]
       },
@@ -8359,13 +8372,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13741",
+          "value" : "_:genid6347",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13739",
+          "value" : "_:genid6345",
           "type" : "label"
         } ]
       },
@@ -8386,13 +8399,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13685",
+          "value" : "_:genid6291",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13683",
+          "value" : "_:genid6289",
           "type" : "label"
         } ]
       },
@@ -8413,13 +8426,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13689",
+          "value" : "_:genid6295",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13687",
+          "value" : "_:genid6293",
           "type" : "label"
         } ]
       },
@@ -8440,13 +8453,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13681",
+          "value" : "_:genid6287",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13679",
+          "value" : "_:genid6285",
           "type" : "label"
         } ]
       },
@@ -8467,46 +8480,19 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13729",
+          "value" : "_:genid6335",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13727",
+          "value" : "_:genid6333",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "FridayAfternoon",
         "en" : "Friday afternoon"
-      }
-    }, {
-      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
-      "baseIri" : "https://ns.volunteeringdata.io",
-      "annotations" : {
-        "isDefinedBy" : [ {
-          "identifier" : "isDefinedBy",
-          "language" : "undefined",
-          "value" : "https://ns.volunteeringdata.io/",
-          "type" : "iri"
-        } ],
-        "hasEnd" : [ {
-          "identifier" : "hasEnd",
-          "language" : "undefined",
-          "value" : "_:genid13705",
-          "type" : "label"
-        } ],
-        "hasBeginning" : [ {
-          "identifier" : "hasBeginning",
-          "language" : "undefined",
-          "value" : "_:genid13703",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "WednesdayAfternoon",
-        "en" : "Wednesday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/FridayEvening",
@@ -8521,19 +8507,46 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13733",
+          "value" : "_:genid6339",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13731",
+          "value" : "_:genid6337",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "FridayEvening",
         "en" : "Friday evening"
+      }
+    }, {
+      "iri" : "https://ns.volunteeringdata.io/WednesdayAfternoon",
+      "baseIri" : "https://ns.volunteeringdata.io",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://ns.volunteeringdata.io/",
+          "type" : "iri"
+        } ],
+        "hasEnd" : [ {
+          "identifier" : "hasEnd",
+          "language" : "undefined",
+          "value" : "_:genid6311",
+          "type" : "label"
+        } ],
+        "hasBeginning" : [ {
+          "identifier" : "hasBeginning",
+          "language" : "undefined",
+          "value" : "_:genid6309",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "WednesdayAfternoon",
+        "en" : "Wednesday afternoon"
       }
     }, {
       "iri" : "https://ns.volunteeringdata.io/SundayEvening",
@@ -8548,13 +8561,13 @@
         "hasEnd" : [ {
           "identifier" : "hasEnd",
           "language" : "undefined",
-          "value" : "_:genid13757",
+          "value" : "_:genid6363",
           "type" : "label"
         } ],
         "hasBeginning" : [ {
           "identifier" : "hasBeginning",
           "language" : "undefined",
-          "value" : "_:genid13755",
+          "value" : "_:genid6361",
           "type" : "label"
         } ]
       },
@@ -9154,7 +9167,7 @@
       "IRI-based" : "long"
     },
     "domain" : "15",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "63"
   }, {
     "iri" : "https://ns.volunteeringdata.io/maximumAge",
@@ -9318,7 +9331,7 @@
       "IRI-based" : "lat"
     },
     "domain" : "15",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "89"
   }, {
     "iri" : "https://ns.volunteeringdata.io/roleAccessibility",
@@ -9564,8 +9577,9 @@
     },
     "label" : {
       "IRI-based" : "locationSession",
-      "en" : "session has location"
+      "en" : "location has session"
     },
+    "superproperty" : [ "97" ],
     "domain" : "2",
     "attributes" : [ "object" ],
     "id" : "105"
@@ -9787,7 +9801,7 @@
       "IRI-based" : "hasGeometry"
     },
     "domain" : "15",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "125"
   }, {
     "iri" : "https://ns.volunteeringdata.io/description",
@@ -9874,7 +9888,7 @@
       "IRI-based" : "image"
     },
     "domain" : "15",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "129"
   }, {
     "iri" : "https://ns.volunteeringdata.io/accessbibility",
@@ -9914,7 +9928,7 @@
       "IRI-based" : "description"
     },
     "domain" : "15",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "133"
   }, {
     "range" : "124",
@@ -9976,7 +9990,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "5",
+    "range" : "32",
     "id" : "140",
     "label" : {
       "IRI-based" : "3",
@@ -10000,7 +10014,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "32",
+    "range" : "5",
     "id" : "143",
     "label" : {
       "IRI-based" : "6",
@@ -10253,7 +10267,7 @@
       "en" : "has session"
     },
     "domain" : "77",
-    "subproperty" : [ "122", "93" ],
+    "subproperty" : [ "122", "93", "105" ],
     "attributes" : [ "object" ],
     "id" : "97"
   }, {

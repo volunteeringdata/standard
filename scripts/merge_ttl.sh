@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to merge TTL files in assets/ttl into two batches: ontology and taxonomy
+# Script to merge all TTL files in assets/ttl into merged.ttl
 # Usage: ./scripts/merge_ttl.sh [output_dir]
 
 set -e
@@ -9,22 +9,17 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 TTL_DIR="$PROJECT_ROOT/assets/ttl"
 OUTPUT_DIR="${1:-$PROJECT_ROOT/assets/ttl}"
+OUTPUT_FILE="$OUTPUT_DIR/merged.ttl"
 
 # Extract the body of a TTL file (everything after the header block of comments and prefixes)
 get_body() {
     local file="$1"
     local in_header=true
-    local found_prefix=false
     while IFS= read -r line; do
         if $in_header; then
-            # Header consists of comments, prefix lines, and blank lines before content
             if [[ "$line" =~ ^prefix\  ]] || [[ "$line" =~ ^# ]] || [[ -z "$line" ]]; then
-                if [[ "$line" =~ ^prefix\  ]]; then
-                    found_prefix=true
-                fi
                 continue
             fi
-            # First non-header line: stop skipping
             in_header=false
             echo "$line"
         else
@@ -33,85 +28,71 @@ get_body() {
     done < "$file"
 }
 
-# Function to merge TTL files
-merge_ttl_files() {
-    local base_name="$1"   # e.g. "ontology" or "taxonomy"
-    local output_file="$2"
-    local base_file="$TTL_DIR/${base_name}.ttl"
+echo "Merging all TTL files into $OUTPUT_FILE..."
 
-    echo "Merging ${base_name} files into $output_file..."
-
-    # Find all matching files, excluding the merged output and the base file
-    local files=()
-    for f in "$TTL_DIR/${base_name}"*.ttl; do
-        [[ "$f" == *_merged.ttl ]] && continue
-        [[ "$f" == "$base_file" ]] && continue
-        [ -f "$f" ] && files+=("$f")
-    done
-
-    if [ ! -f "$base_file" ] && [ ${#files[@]} -eq 0 ]; then
-        echo "No files found for: $base_name"
-        return 1
+# Find all TTL files, excluding merged output
+files=()
+base_file=""
+for f in "$TTL_DIR"/*.ttl; do
+    [[ "$f" == */merged.ttl ]] && continue
+    [[ "$f" == *_merged.ttl ]] && continue
+    [ -f "$f" ] || continue
+    # Use ontology.ttl as base if it exists
+    if [[ "$f" == */ontology.ttl ]]; then
+        base_file="$f"
+    else
+        files+=("$f")
     fi
+done
 
-    # Use first sub-file as base if no base file exists
-    local has_base=true
-    if [ ! -f "$base_file" ]; then
-        has_base=false
-        base_file="${files[0]}"
-        files=("${files[@]:1}")
-    fi
+if [ -z "$base_file" ] && [ ${#files[@]} -eq 0 ]; then
+    echo "No TTL files found"
+    exit 1
+fi
 
-    local total=$(( ${#files[@]} + 1 ))
-    echo "Found $total files to merge:"
-    echo "  - ${base_file##*/} (base)"
-    printf '  - %s\n' "${files[@]##*/}"
+# If no ontology.ttl, use the first file as base
+if [ -z "$base_file" ]; then
+    base_file="${files[0]}"
+    files=("${files[@]:1}")
+fi
 
-    # Collect all unique prefix lines from all files
-    local temp_prefixes=$(mktemp)
-    grep -E '^prefix ' "$base_file" >> "$temp_prefixes" 2>/dev/null || true
-    for f in "${files[@]}"; do
-        grep -E '^prefix ' "$f" >> "$temp_prefixes" 2>/dev/null || true
-    done
-    local unique_prefixes
-    unique_prefixes=$(sort -u "$temp_prefixes")
-    rm -f "$temp_prefixes"
+local_total=$(( ${#files[@]} + 1 ))
+echo "Found $local_total files to merge:"
+echo "  - ${base_file##*/} (base)"
+printf '  - %s\n' "${files[@]##*/}"
 
-    # Build the output: header from base file (with merged prefixes), then all bodies
-    {
-        # Reproduce the comment header from the base file up to (but not including) the first prefix
-        while IFS= read -r line; do
-            if [[ "$line" =~ ^prefix\  ]]; then
-                break
-            fi
-            echo "$line"
-        done < "$base_file"
+# Collect all unique prefix lines from all files
+temp_prefixes=$(mktemp)
+grep -E '^prefix ' "$base_file" >> "$temp_prefixes" 2>/dev/null || true
+for f in "${files[@]}"; do
+    grep -E '^prefix ' "$f" >> "$temp_prefixes" 2>/dev/null || true
+done
+unique_prefixes=$(sort -u "$temp_prefixes")
+rm -f "$temp_prefixes"
 
-        # Write deduplicated prefixes
-        echo "$unique_prefixes"
-
-        # Body of the base file
-        echo ""
-        get_body "$base_file"
-
-        # Bodies of all sub-files
-        for f in "${files[@]}"; do
-            echo ""
-            get_body "$f"
-        done
-    } > "$output_file"
-
-    echo "Created: $output_file"
-    echo ""
-}
-
-# Create output directory if needed
+# Build the output
 mkdir -p "$OUTPUT_DIR"
+{
+    # Reproduce the comment header from the base file up to (but not including) the first prefix
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^prefix\  ]]; then
+            break
+        fi
+        echo "$line"
+    done < "$base_file"
 
-# Merge ontology files
-merge_ttl_files "ontology" "$OUTPUT_DIR/ontology_merged.ttl"
+    # Write deduplicated prefixes
+    echo "$unique_prefixes"
 
-# Merge taxonomy files
-merge_ttl_files "taxonomy" "$OUTPUT_DIR/taxonomy_merged.ttl"
+    # Body of the base file
+    echo ""
+    get_body "$base_file"
 
-echo "Done! Merged files created in: $OUTPUT_DIR"
+    # Bodies of all other files
+    for f in "${files[@]}"; do
+        echo ""
+        get_body "$f"
+    done
+} > "$OUTPUT_FILE"
+
+echo "Created: $OUTPUT_FILE"

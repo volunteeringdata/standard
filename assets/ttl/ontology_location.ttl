@@ -35,9 +35,11 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :locationSession
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :session ;
+    owl:inverseOf :sessionLocation ;
     rdfs:domain :Location ;
     rdfs:range :Session ;
-    rdfs:label "session has location"@en ;
+    rdfs:label "location has session"@en ;
 .
 
 
