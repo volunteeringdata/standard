@@ -16,6 +16,7 @@ prefix geo:             <http://www.w3.org/2003/01/geo/wgs84_pos#>
 prefix geosparql:       <http://www.opengis.net/ont/geosparql#>
 prefix og:              <http://ogp.me/ns#>
 prefix skos:            <http://www.w3.org/2004/02/skos/core#>
+prefix spdx:            <http://spdx.org/rdf/terms#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
 prefix vann:            <http://purl.org/vocab/vann/>
@@ -155,6 +156,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has latitude"@en ;
     rdfs:comment "The WGS84 latitude of a SpatialThing in decimal degrees (see WGS84 Geo Positioning)."@en ;
     rdfs:seeAlso <https://www.w3.org/2003/01/geo/wgs84_pos> ;
+.
+
+:license
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf spdx:licenseId ;
+    rdfs:comment "The SPDX license identifier for the license associated with data about volunteering activities and volunteer involving organisations."@en ;
+    rdfs:label "has license"@en ;
 .
 
 :longitude

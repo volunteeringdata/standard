@@ -251,3 +251,28 @@ breadcrumbs:
 }</pre>
 </div>
 
+
+<h2 id="metadata-publishing">Sharing opportunities with metadata</h2>
+
+<p>Volunteering opportunities can be shared with additional information about the data itself: license, publisher and so on.</p>
+
+<div class="example">
+  <h5 id="example-3">Example 3</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"CC-BY-NC-SA-4.0"</span>,
+  <span class="hljs-attr">"graph"</span>: [
+    {
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
+      <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky"</span>,
+      ...
+    }
+  ]
+}</pre>
+</div>
+
+<div class="note">
+  <h5>Note</h5>
+  <p>The <code>license</code> property value <code>"CC-BY-NC-SA-4.0"</code> is an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. SPDX (System Package Data Exchange) provides a standardised list of license identifiers that can be used to communicate licensing information in a concise and unambiguous way.</p>
+</div>
