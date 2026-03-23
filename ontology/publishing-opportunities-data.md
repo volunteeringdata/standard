@@ -8,6 +8,14 @@ breadcrumbs:
   - title: "Publishing Opportunities Data"
 ---
 
+<nav id="toc" class="toc">
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+  <li><a href="#multiple-organisations"><span class="secno">1. </span><span class="content">Sharing multiple organisations opportunities</span></a></li>
+  <li><a href="#single-organisation"><span class="secno">2. </span><span class="content">Sharing one organisation's opportunities</span></a></li>
+  <li><a href="#metadata-publishing"><span class="secno">3. </span><span class="content">Sharing opportunities with metadata</span></a></li>
+</ol>
+</nav>
 
 <h2 id="multiple-organisations">Sharing multiple organisations opportunities</h2>
 
@@ -144,7 +152,7 @@ breadcrumbs:
 </div>
 
 
-<h2 id="multiple-organisations">Sharing one organisations' opportunities</h2>
+<h2 id="single-organisation">Sharing one organisation's opportunities</h2>
 
 <p>A single organisation can publish its own opportunities as one object with multiple activities.</p>
 
