@@ -195,6 +195,14 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has minimum age"@en ;
 .
 
+:modified
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf dc:modified ;
+    rdfs:label "has modified date"@en ;
+    rdfs:comment "The date when the data about volunteering activities and volunteer involving organisations was last modified."@en ;
+.
+
 :name
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
