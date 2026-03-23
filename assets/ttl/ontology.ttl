@@ -28,12 +28,12 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:label "Volunteering and Social Action Ontology"@en ;
     dc:creator "Matthieu Bosquet" ;
-    dc:contributor "Volunteering Data Standard Working Group" ;
+    dc:contributor "Volunteering Data Standard Working Group", "Calum MacÙisdean" ;
     dc:title "Volunteering and Social Action Ontology"@en ;
     dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
     dc:issued "2025-11-20"^^xsd:date ;
     owl:versionIRI <https://ns.volunteeringdata.io/> ;
-    owl:versionInfo "2026-03-12" ;
+    owl:versionInfo "2026-03-23" ;
     vann:preferredNamespacePrefix "volunteering" ;
     vann:preferredNamespaceUri "https://ns.volunteeringdata.io/"^^xsd:anyURI ;
     rdfs:seeAlso <https://standard.volunteeringdata.io/ontology/> ;
