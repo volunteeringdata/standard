@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "sc": "http://schema.org/",
+    "wd": "http://www.wikidata.org/entity/",
+    "wdt": "http://www.wikidata.org/prop/direct/"
+  },
+  "@type": "sc:Dataset",
+  "name": "Volunteering Opportunity Locations",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "activity",
+      "contentUrl": "https://api.volunteeringdata.io/activity.json",
+      "encodingFormat": "application/json"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "activity/location",
+      "dataType": ["sc:GeoCoordinates"],
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "activity/location/name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": { "@id": "activity" },
+            "extract": {
+              "jsonpath": "location.name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "activity/location/country",
+          "dataType": "sc:Text",
+          "equivalentProperty": "wdt:P17",
+          "source": {
+            "fileObject": { "@id": "activity" },
+            "extract": {
+              "jsonpath": "location.country"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "activity/location/geo/latitude",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": { "@id": "activity" },
+            "extract": {
+              "jsonpath": "location.geo.latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "activity/location/geo/longitude",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": { "@id": "activity" },
+            "extract": {
+              "jsonpath": "location.geo.longitude"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
