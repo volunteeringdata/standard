@@ -262,7 +262,7 @@ breadcrumbs:
 
 <h2 id="metadata-publishing">Sharing opportunities with metadata</h2>
 
-<p>Volunteering opportunities can be shared with additional information about the data itself: license, publisher and so on.</p>
+<p>Volunteering opportunities can be shared with additional information about the data itself: license, publisher, conformance and last modified date.</p>
 
 <div class="example">
   <h5 id="example-3">Example 3</h5>
@@ -287,4 +287,10 @@ breadcrumbs:
   <h5>Note</h5>
   <p>The <code>license</code> property value <code>"CC-BY-NC-SA-4.0"</code> is an <a href="https://spdx.org/licenses/">SPDX license identifier</a>.</p>
   <p>SPDX (System Package Data Exchange) provides a standardised list of license identifiers that can be used to communicate licensing information in a concise and unambiguous way.</p>
+</div>
+
+<div class="note">
+  <h5>Note</h5>
+  <p>Additional metadata information could be added to describe the data. For example, <a href="https://www.w3.org/TR/vocab-dcat-3/#examples-data-service">data services can be described using DCAT</a>.</p>
+  <p>Other specifications can be used to describe data such as <a href="https://ekgf.github.io/dprod/#data-product-dprod-model">DPROD</a> that extends DCAT and focuses on data services or <a href="https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html">Croissant</a> that focuses on metadata for machine learning readiness.</p>
 </div>
