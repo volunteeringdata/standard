@@ -1,7 +1,8 @@
 {
   "@context": {
     "@vocab": "http://schema.org/",
-    "croissant": "http://mlcommons.org/croissant/",
+    "cr": "http://mlcommons.org/croissant/",
+    "sc": "http://schema.org/",
     "wd": "http://www.wikidata.org/entity/",
     "wdt": "http://www.wikidata.org/prop/direct/"
   },
