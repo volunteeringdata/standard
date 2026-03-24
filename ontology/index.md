@@ -53,12 +53,13 @@ breadcrumbs:
   </li>
   <li><a href="#taxonomies"><span class="secno">3. </span><span class="content">Taxonomies</span></a></li>
   <li><a href="#sharing-opportunities-data"><span class="secno">4. </span><span class="content">Sharing Opportunities Data</span></a></li>
-  <li><a href="#contributing-knowledge"><span class="secno">5. </span><span class="content">Contributing Knowledge</span></a>
+  <li><a href="#ai-readiness"><span class="secno">5. </span><span class="content">AI Readiness</span></a></li>
+  <li><a href="#contributing-knowledge"><span class="secno">6. </span><span class="content">Contributing Knowledge</span></a>
     <ol>
-      <li><a href="#discussion-topics"><span class="secno">5.1 </span><span class="content">Discussion Topics</span></a></li>
+      <li><a href="#discussion-topics"><span class="secno">6.1 </span><span class="content">Discussion Topics</span></a></li>
     </ol>
   </li>
-  <li><a href="#standardisation-history"><span class="secno">6. </span><span class="content">Standardisation History</span></a></li>
+  <li><a href="#standardisation-history"><span class="secno">7. </span><span class="content">Standardisation History</span></a></li>
 </ol>
 </nav>
 
@@ -455,11 +456,17 @@ breadcrumbs:
 
 
 
-<h2 id="contributing-knowledge"><span class="secno">5. </span>Contributing Knowledge to the Volunteering and Social Action Ontology</h2>
+<h2 id="ai-readiness"><span class="secno">5. </span>AI Readiness</h2>
+
+<p>See <a href="/ai-readiness">AI-Ready Data</a> for guidance on machine-readable dataset and API descriptions that support AI use.</p>
+
+
+
+<h2 id="contributing-knowledge"><span class="secno">6. </span>Contributing Knowledge to the Volunteering and Social Action Ontology</h2>
 
 <p>We welcome domain experts and people with varied experiences of volunteering to contribute their knowledge of the sector. Shared knowledge is the basis to ensure our standard adequately provides structure to address the volunteering sector's needs.</p>
 
-<h3 id="discussion-topics"><span class="secno">5.1 </span>Discussion Topics</h3>
+<h3 id="discussion-topics"><span class="secno">6.1 </span>Discussion Topics</h3>
 
 <p>Please don't hesitate to contribute to the <a href="https://github.com/orgs/volunteeringdata/discussions/">discussions</a> on the volunteering data model repository.</p>
 
@@ -477,6 +484,6 @@ breadcrumbs:
 </ul>
 
 
-<h2 id="standardisation-history"><span class="secno">6. </span>Standardisation History</h2>
+<h2 id="standardisation-history"><span class="secno">7. </span>Standardisation History</h2>
 
 <p>The data model's evolution is recorded as a <a href="../working-group/model-version/">series of versions</a>.</p>
