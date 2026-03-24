@@ -451,7 +451,8 @@ breadcrumbs:
 
 <h2 id="sharing-opportunities-data"><span class="secno">4. </span>Sharing Opportunities Data</h2>
 
-<p>See <a href="./publishing-opportunities-data">sharing volunteering opportunities data</a> for guidance on how to share volunteering opportunities using this standard.</p>
+<p>See <a href="/publishing-opportunities-data">sharing volunteering opportunities data</a> for guidance on how to share volunteering opportunities using this standard.</p>
+
 
 
 <h2 id="contributing-knowledge"><span class="secno">5. </span>Contributing Knowledge to the Volunteering and Social Action Ontology</h2>

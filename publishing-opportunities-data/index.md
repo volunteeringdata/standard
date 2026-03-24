@@ -1,10 +1,8 @@
 ---
-permalink: /ontology/publishing-opportunities-data
+permalink: /publishing-opportunities-data
 layout: default
 title: Publishing Opportunities Data
 breadcrumbs:
-  - title: "Ontology"
-    url: /ontology/
   - title: "Publishing Opportunities Data"
 ---
 

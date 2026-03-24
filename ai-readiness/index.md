@@ -1,4 +1,10 @@
-# AI-Ready Data
+---
+permalink: /ai-readiness/
+layout: default
+title: AI-ready data
+breadcrumbs:
+  - title: "AI-ready data"
+---
 
 For data to be AI-ready, it generally needs to be described in a machine-readable format.
 
