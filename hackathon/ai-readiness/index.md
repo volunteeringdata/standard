@@ -31,4 +31,4 @@ This should address:
 ## See also
 
 - [What’s New in Croissant 1.1: Extensible, Agent-Ready ML Dataset Standard](https://mlcommons.org/2026/02/croissant-1-1-standard/) (February 12, 2026)
-
+- [Croissant Recordset Typing](https://docs.mlcommons.org/croissant/docs/croissant-spec-1.1.html#recordset-typing)
