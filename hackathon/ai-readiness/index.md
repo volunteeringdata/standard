@@ -1,6 +1,6 @@
 # AI-Ready Data
 
-For Data to be AI-Ready it generally needs to be described in a machine readable format.
+For data to be AI-ready, it generally needs to be described in a machine-readable format.
 
 This should address:
 - the way by which the data is accessed (API)
