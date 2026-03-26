@@ -348,6 +348,18 @@ breadcrumbs:
   <p>Locations could be predefined and reused. For example, a council's boundary can be serialised as <a href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry">Well-Known Text (WKT)</a> and linked to via the <code>geometry</code> property. The <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">GeoSPARQL standard</a> defines how to link geometries to <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html#C.1.1.2.2">WKT literals</a>. For an example of such a boundary, see the <a href="https://mapit.mysociety.org/area/2508.html">geometry of the Hackney Borough Council</a>.</p>
 </div>
 
+<div class="example">
+  <h5 id="example-6">Example 6</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Location"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Aberdeen"</span>,
+  <span class="hljs-attr">"geometry"</span>: {
+    <span class="hljs-attr">"geosparql:asWKT"</span>: <span class="hljs-string">"MULTIPOLYGON (((385726.9995 815937.7998, 385745.5014 ... 395720.5 801236.85, 395721 801236.8, 395721.2 801236.6)))"</span>
+  }
+}</pre>
+</div>
+
 
 <h3 id="time"><span class="secno">2.6 </span>Time</h3>
 
