@@ -426,7 +426,7 @@ breadcrumbs:
 <h4 id="time-example"><span class="secno">2.6.3 </span>Example</h4>
 
 <div class="example">
-  <h5 id="example-6">Example 6</h5>
+  <h5 id="example-7">Example 7</h5>
   <pre class="hljs json">{
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Time"</span>,
