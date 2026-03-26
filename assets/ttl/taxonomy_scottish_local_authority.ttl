@@ -36,223 +36,255 @@ prefix vann:            <http://purl.org/vocab/vann/>
 :Aberdeen
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Aberdeen"@en, :name "Aberdeen"@en ;
+    skos:prefLabel "Aberdeen"@en ;
+    :name "Aberdeen"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Aberdeenshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Aberdeenshire"@en, :name "Aberdeenshire"@en ;
+    skos:prefLabel "Aberdeenshire"@en ;
+    :name "Aberdeenshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Angus
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Angus"@en, :name "Angus"@en ;
+    skos:prefLabel "Angus"@en ;
+    :name "Angus"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :ArgyllAndBute
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Argyll & Bute"@en, :name "Argyll & Bute"@en ;
+    skos:prefLabel "Argyll & Bute"@en ;
+    :name "Argyll & Bute"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Clackmannanshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Clackmannanshire"@en, :name "Clackmannanshire"@en ;
+    skos:prefLabel "Clackmannanshire"@en ;
+    :name "Clackmannanshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :DumfriesAndGalloway
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Dumfries & Galloway"@en, :name "Dumfries & Galloway"@en ;
+    skos:prefLabel "Dumfries & Galloway"@en ;
+    :name "Dumfries & Galloway"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Dundee
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Dundee"@en, :name "Dundee"@en ;
+    skos:prefLabel "Dundee"@en ;
+    :name "Dundee"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :EastAyrshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "East Ayrshire"@en, :name "East Ayrshire"@en ;
+    skos:prefLabel "East Ayrshire"@en ;
+    :name "East Ayrshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :EastDunbartonshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "East Dunbartonshire"@en, :name "East Dunbartonshire"@en ;
+    skos:prefLabel "East Dunbartonshire"@en ;
+    :name "East Dunbartonshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :EastLothian
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "East Lothian"@en, :name "East Lothian"@en ;
+    skos:prefLabel "East Lothian"@en ;
+    :name "East Lothian"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :EastRenfrewshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "East Renfrewshire"@en, :name "East Renfrewshire"@en ;
+    skos:prefLabel "East Renfrewshire"@en ;
+    :name "East Renfrewshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Edinburgh
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Edinburgh"@en, :name "Edinburgh"@en ;
+    skos:prefLabel "Edinburgh"@en ;
+    :name "Edinburgh"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Falkirk
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Falkirk"@en, :name "Falkirk"@en ;
+    skos:prefLabel "Falkirk"@en ;
+    :name "Falkirk"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Fife
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Fife"@en, :name "Fife"@en ;
+    skos:prefLabel "Fife"@en ;
+    :name "Fife"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Glasgow
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Glasgow"@en, :name "Glasgow"@en ;
+    skos:prefLabel "Glasgow"@en ;
+    :name "Glasgow"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Highland
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Highland"@en, :name "Highland"@en ;
+    skos:prefLabel "Highland"@en ;
+    :name "Highland"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Inverclyde
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Inverclyde"@en, :name "Inverclyde"@en ;
+    skos:prefLabel "Inverclyde"@en ;
+    :name "Inverclyde"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Midlothian
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Midlothian"@en, :name "Midlothian"@en ;
+    skos:prefLabel "Midlothian"@en ;
+    :name "Midlothian"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Moray
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Moray"@en, :name "Moray"@en ;
+    skos:prefLabel "Moray"@en ;
+    :name "Moray"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :NahEileananSiar
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Na h-Eileanan Siar"@en, :name "Na h-Eileanan Siar"@en ;
+    skos:prefLabel "Na h-Eileanan Siar"@en ;
+    :name "Na h-Eileanan Siar"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :NorthAyrshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "North Ayrshire"@en, :name "North Ayrshire"@en ;
+    skos:prefLabel "North Ayrshire"@en ;
+    :name "North Ayrshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :NorthLanarkshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "North Lanarkshire"@en, :name "North Lanarkshire"@en ;
+    skos:prefLabel "North Lanarkshire"@en ;
+    :name "North Lanarkshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Orkney
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Orkney"@en, :name "Orkney"@en ;
+    skos:prefLabel "Orkney"@en ;
+    :name "Orkney"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :PerthAndKinross
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Perth & Kinross"@en, :name "Perth & Kinross"@en ;
+    skos:prefLabel "Perth & Kinross"@en ;
+    :name "Perth & Kinross"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Renfrewshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Renfrewshire"@en, :name "Renfrewshire"@en ;
+    skos:prefLabel "Renfrewshire"@en ;
+    :name "Renfrewshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :ScottishBorders
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Scottish Borders"@en, :name "Scottish Borders"@en ;
+    skos:prefLabel "Scottish Borders"@en ;
+    :name "Scottish Borders"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Shetland
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Shetland"@en, :name "Shetland"@en ;
+    skos:prefLabel "Shetland"@en ;
+    :name "Shetland"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :SouthAyrshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "South Ayrshire"@en, :name "South Ayrshire"@en ;
+    skos:prefLabel "South Ayrshire"@en ;
+    :name "South Ayrshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :SouthLanarkshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "South Lanarkshire"@en, :name "South Lanarkshire"@en ;
+    skos:prefLabel "South Lanarkshire"@en ;
+    :name "South Lanarkshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :Stirling
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "Stirling"@en, :name "Stirling"@en ;
+    skos:prefLabel "Stirling"@en ;
+    :name "Stirling"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :WestDunbartonshire
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "West Dunbartonshire"@en, :name "West Dunbartonshire"@en ;
+    skos:prefLabel "West Dunbartonshire"@en ;
+    :name "West Dunbartonshire"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
 
 :WestLothian
     a skos:Concept, :Location ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    skos:prefLabel "West Lothian"@en, :name "West Lothian"@en ;
+    skos:prefLabel "West Lothian"@en ;
+    :name "West Lothian"@en ;
     skos:broader :ScottishLocalAuthority ;
 .
