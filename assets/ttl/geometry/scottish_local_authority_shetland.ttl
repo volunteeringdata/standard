@@ -1,0 +1,9 @@
+## Namespaces
+prefix :                <https://ns.volunteeringdata.io/>
+prefix geosparql:       <http://www.opengis.net/ont/geosparql#>
+
+:Shetland
+    :geometry [
+        geosparql:asWKT ""^^geosparql:wktLiteral ;
+    ] ;
+.
