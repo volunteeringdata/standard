@@ -217,6 +217,22 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:comment "The publisher of the data about volunteering activities and volunteer involving organisations."@en ;
 .
 
+:publishEndDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has publish end date"@en ;
+    rdfs:comment "The date at which publication of the data must end."@en ;
+    rdfs:range xsd:date ;
+.
+
+:publishStartDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has publish start date"@en ;
+    rdfs:comment "The date at which publication of the data must start."@en ;
+    rdfs:range xsd:date ;
+.
+
 :requiresEmergencyParticipation
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;

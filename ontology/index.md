@@ -156,6 +156,10 @@ breadcrumbs:
   <dd>Whether the activity requires emergency participation (boolean).</dd>
   <dt id="activity-image">image</dt>
   <dd>An image representing the activity.</dd>
+  <dt id="activity-image">publishStart</dt>
+  <dd>The date at which publishing the activity must start.</dd>
+  <dt id="activity-image">publishEnd</dt>
+  <dd>The date at which publishing the activity must end.</dd>
   <dt id="activity-organisation">organisation</dt>
   <dd>The organisation running the activity.</dd>
   <dt id="activity-role">role</dt>
@@ -174,6 +178,7 @@ breadcrumbs:
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Activity"</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Volunteer Skywalker"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home."</span>,
+  <span class="hljs-attr">"publishEnd"</span>: <span class="hljs-string">"2026-08-28"</span>,
   <span class="hljs-attr">"organisation"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
   <span class="hljs-attr">"role"</span>: {
     <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,

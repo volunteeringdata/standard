@@ -84,10 +84,26 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "activity has image"@en ;
 .
 
+:activityPublishEndDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :publishEndDate ;
+    rdfs:domain :Activity ;
+    rdfs:label "activity has publish end date"@en ;
+.
+
+:activityPublishStartDate
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :publishStartDate ;
+    rdfs:domain :Activity ;
+    rdfs:label "activity has publish start date"@en ;
+.
+
 :activityRequiresEmergencyParticipation
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :requiresEmergencyParticipation ; 
+    rdfs:subPropertyOf :requiresEmergencyParticipation ;
     rdfs:domain :Activity ;
     rdfs:range xsd:boolean ;
     rdfs:label "activity requires emergency participation"@en ;
