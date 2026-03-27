@@ -92,18 +92,24 @@ breadcrumbs:
   <dd>A description of the organisation.</dd>
   <dt id="organisation-website">website</dt>
   <dd>The URL of the organisation's website.</dd>
-  <dt id="organisation-charity-number">charityNumber</dt>
-  <dd>The UK charity registration number. See also:
-    <a href="https://register-of-charities.charitycommission.gov.uk/">Charity Commission for England and Wales</a>;
-    <a href="https://www.oscr.org.uk/about-charities/search-the-register/">Office of the Scottish Charity Regulator (OSCR)</a>;
-    <a href="https://www.charitycommissionni.org.uk/charity-search">The Charity Commission for Northern Ireland</a>.
-  </dd>
   <dt id="organisation-image">image</dt>
   <dd>An image representing the organisation (e.g. logo or photo).</dd>
   <dt id="organisation-activity">activity</dt>
   <dd>A volunteering opportunity offered by the organisation.</dd>
   <dt id="organisation-cause">cause</dt>
   <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a>.</dd>
+  <dt id="organisation-charity-number">charityRegistration</dt>
+  <dd>The charity registration number and registrar. See also UK charity registration authorities:
+    <a href="https://www.charitycommissionni.org.uk/">The Charity Commission for Northern Ireland</a>;
+    <a href="https://www.oscr.org.uk/about-charities/">Office of the Scottish Charity Regulator (OSCR)</a>;
+    <a href="https://register-of-charities.charitycommission.gov.uk/">Charity Commission for England and Wales</a>.
+    <dl>
+      <dt id="charity-registration-registrar">registrar</dt>
+      <dd>The charity registration authority.</dd>
+      <dt id="charity-registration-registration-number">registrationNumber</dt>
+      <dd>The charity registration number.</dd>
+    </dl>
+  </dd>
 </dl>
 
 <h4 id="organisation-example"><span class="secno">2.1.2 </span>Example</h4>
@@ -114,7 +120,7 @@ breadcrumbs:
   <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
   <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://example.org/organisation/oxfam-gb"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam GB"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
   <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
   <span class="hljs-attr">"charityNumber"</span>: <span class="hljs-string">"202918"</span>,
@@ -125,6 +131,20 @@ breadcrumbs:
   ],
   <span class="hljs-attr">"activity"</span>: [
     ... (see activity example)
+  ],
+  <span class="hljs-attr">"charityRegistration"</span>: [
+    {
+      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://register-of-charities.charitycommission.gov.uk"</span>,
+      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"202918"</span>
+    },
+    {
+      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://www.oscr.org.uk"</span>,
+      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"SC039042"</span>
+    },
+    {
+      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://www.charitycommissionni.org.uk"</span>,
+      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"100848"</span>
+    }
   ]
 }</pre>
 </div>
@@ -138,7 +158,6 @@ breadcrumbs:
     <li>The OSCR as <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC039042">SC039042</a></li>
     <li>The Charity commission for Northern Ireland as <a href="https://www.charitycommissionni.org.uk/charity-search/charity-details-page/?regId=100848&subId=0">100848</a></li>
   </ul>
-  <p>The model should accomodate a way to express that or simply use full URIs pointing to the corresponding registrar.</p>
 </div>
 
 <h3 id="activity"><span class="secno">2.2 </span>Activity</h3>
