@@ -48,6 +48,13 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has activity"@en ;
 .
 
+:charityRegistration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:range :CharityRegistration ;
+    rdfs:label "has charity registration"@en ;
+.
+
 :location
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -109,12 +116,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:label "has apply link"@en ;
-.
-
-:charityNumber
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "has charity number"@en ;
 .
 
 :commitment
@@ -231,6 +232,18 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has publish start date"@en ;
     rdfs:comment "The date at which publication of the data must start."@en ;
     rdfs:range xsd:date ;
+.
+
+:registrar
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has registrar"@en ;
+.
+
+:registrationNumber
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has registration number"@en ;
 .
 
 :requiresEmergencyParticipation

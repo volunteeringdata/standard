@@ -1,0 +1,56 @@
+# Volunteering vocabulary
+
+## Namespaces
+### Ontology Base URI
+prefix :                <https://ns.volunteeringdata.io/>
+
+### Core W3C ontologies (OWL 2 reserved vocabulary)
+prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:             <http://www.w3.org/2002/07/owl#>
+prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
+
+### Other namespaces used
+prefix dc:              <http://purl.org/dc/terms/>
+prefix skos:            <http://www.w3.org/2004/02/skos/core#>
+prefix time:            <http://www.w3.org/2006/time#>
+prefix vcard:           <http://www.w3.org/2006/vcard/ns#>
+prefix vann:            <http://purl.org/vocab/vann/>
+
+
+# Class
+:CharityRegistration
+    a owl:Class ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "Charity Registration"@en ;
+    rdfs:comment "A charity registration describes an volunteer involving organisation relationship with charity registration authorities."@en ;
+    dc:description "Charity Registration"@en ;
+.
+
+# Object Properties
+:charityRegistrationOrganisation
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :Registrar ;
+    owl:inverseOf :organisationCharityRegistration ;
+    rdfs:domain :CharityRegistration ;
+    rdfs:range :Organisation ;
+    rdfs:label "charity registration has organisation"@en ;
+.
+
+# Datatype Properties
+:charityRegistrationRegistrar
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :registrar ;
+    rdfs:domain :CharityRegistration ;
+    rdfs:label "charity registration has registrar"@en ;
+.
+
+:charityRegistrationRegistrationNumber
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :registrationNumber ;
+    rdfs:domain :CharityRegistration ;
+    rdfs:label "charity registration has registration number"@en ;
+.

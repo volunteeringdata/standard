@@ -39,6 +39,16 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "organisation has activity"@en ;
 .
 
+:organisationCharityRegistration
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :charityRegistration ;
+    owl:inverseOf :charityRegistrationOrganisation ;
+    rdfs:domain :Organisation ;
+    rdfs:range :CharityRegistration ;
+    rdfs:label "organisation has charity registration"@en ;
+.
+
 :organisationCause
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -81,12 +91,4 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:subPropertyOf :website ;
     rdfs:domain :Organisation ;
     rdfs:label "organisation has website"@en ;
-.
-
-:organisationCharityNumber
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :charityNumber ;
-    rdfs:domain :Organisation ;
-    rdfs:label "organisation has charity number"@en ;
 .
