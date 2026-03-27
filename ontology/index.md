@@ -176,9 +176,9 @@ breadcrumbs:
   <dt id="activity-image">image</dt>
   <dd>An image representing the activity.</dd>
   <dt id="activity-image">publishStart</dt>
-  <dd>The date at which publishing the activity must start.</dd>
+  <dd>The date at which publication of the activity must start.</dd>
   <dt id="activity-image">publishEnd</dt>
-  <dd>The date at which publishing the activity must end.</dd>
+  <dd>The date at which publication of the activity must end.</dd>
   <dt id="activity-organisation">organisation</dt>
   <dd>The organisation running the activity.</dd>
   <dt id="activity-role">role</dt>
