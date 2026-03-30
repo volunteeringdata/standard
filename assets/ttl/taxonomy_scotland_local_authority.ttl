@@ -20,11 +20,11 @@ prefix vann:            <http://purl.org/vocab/vann/>
 
 
 ## Taxonomy top concept
-:ScottishLocalAuthority
+:ScotlandLocalAuthority
     a skos:Concept ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:topConceptOf :Taxonomy ;
-    skos:prefLabel "Scottish Local Authority"@en ;
+    skos:prefLabel "Scotland Local Authority"@en ;
     skos:definition "The 32 local authorities of Scotland."@en ;
     rdfs:seeAlso <https://www.mygov.scot/organisations#scottish-local-authority> ;
 .
