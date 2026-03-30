@@ -38,7 +38,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Aberdeen"@en ;
     :name "Aberdeen"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Aberdeenshire
@@ -46,7 +46,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Aberdeenshire"@en ;
     :name "Aberdeenshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Angus
@@ -54,7 +54,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Angus"@en ;
     :name "Angus"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :ArgyllAndBute
@@ -62,7 +62,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Argyll & Bute"@en ;
     :name "Argyll & Bute"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Clackmannanshire
@@ -70,7 +70,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Clackmannanshire"@en ;
     :name "Clackmannanshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :DumfriesAndGalloway
@@ -78,7 +78,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Dumfries & Galloway"@en ;
     :name "Dumfries & Galloway"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Dundee
@@ -86,7 +86,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Dundee"@en ;
     :name "Dundee"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :EastAyrshire
@@ -94,7 +94,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "East Ayrshire"@en ;
     :name "East Ayrshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :EastDunbartonshire
@@ -102,7 +102,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "East Dunbartonshire"@en ;
     :name "East Dunbartonshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :EastLothian
@@ -110,7 +110,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "East Lothian"@en ;
     :name "East Lothian"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :EastRenfrewshire
@@ -118,7 +118,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "East Renfrewshire"@en ;
     :name "East Renfrewshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Edinburgh
@@ -126,7 +126,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Edinburgh"@en ;
     :name "Edinburgh"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Falkirk
@@ -134,7 +134,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Falkirk"@en ;
     :name "Falkirk"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Fife
@@ -142,7 +142,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Fife"@en ;
     :name "Fife"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Glasgow
@@ -150,7 +150,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Glasgow"@en ;
     :name "Glasgow"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Highland
@@ -158,7 +158,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Highland"@en ;
     :name "Highland"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Inverclyde
@@ -166,7 +166,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Inverclyde"@en ;
     :name "Inverclyde"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Midlothian
@@ -174,7 +174,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Midlothian"@en ;
     :name "Midlothian"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Moray
@@ -182,7 +182,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Moray"@en ;
     :name "Moray"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :NahEileananSiar
@@ -190,7 +190,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Na h-Eileanan Siar"@en ;
     :name "Na h-Eileanan Siar"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :NorthAyrshire
@@ -198,7 +198,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "North Ayrshire"@en ;
     :name "North Ayrshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :NorthLanarkshire
@@ -206,7 +206,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "North Lanarkshire"@en ;
     :name "North Lanarkshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Orkney
@@ -214,7 +214,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Orkney"@en ;
     :name "Orkney"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :PerthAndKinross
@@ -222,7 +222,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Perth & Kinross"@en ;
     :name "Perth & Kinross"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Renfrewshire
@@ -230,7 +230,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Renfrewshire"@en ;
     :name "Renfrewshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :ScottishBorders
@@ -238,7 +238,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Scottish Borders"@en ;
     :name "Scottish Borders"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Shetland
@@ -246,7 +246,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Shetland"@en ;
     :name "Shetland"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :SouthAyrshire
@@ -254,7 +254,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "South Ayrshire"@en ;
     :name "South Ayrshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :SouthLanarkshire
@@ -262,7 +262,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "South Lanarkshire"@en ;
     :name "South Lanarkshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :Stirling
@@ -270,7 +270,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "Stirling"@en ;
     :name "Stirling"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :WestDunbartonshire
@@ -278,7 +278,7 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "West Dunbartonshire"@en ;
     :name "West Dunbartonshire"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
 
 :WestLothian
@@ -286,5 +286,5 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     skos:prefLabel "West Lothian"@en ;
     :name "West Lothian"@en ;
-    skos:broader :ScottishLocalAuthority ;
+    skos:broader :ScotlandLocalAuthority ;
 .
