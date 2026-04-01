@@ -23,57 +23,58 @@ breadcrumbs:
 
 <div class="example">
   <h5 id="example-1">Example 1</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"graph"</span>: [
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "graph": [
     {
-      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
-      <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky"</span>,
-      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Under One Sky supports people experiencing homelessness through outreach, community meals, and practical assistance."</span>,
-      <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://underoneskytogether.com/"</span>,
-      <span class="hljs-attr">"cause"</span>: [
-          <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>
+      "type": "Organisation",
+      "id": "https://id.volunteeringdata.io/684059665d271835a2253c9d",
+      "name": "Under One Sky",
+      "description": "Under One Sky supports people experiencing homelessness through outreach, community meals, and practical assistance.",
+      "website": "https://underoneskytogether.com/",
+      "cause": [
+          "https://ns.volunteeringdata.io/AntiPoverty"
       ],
-      <span class="hljs-attr">"activity"</span>: [
+      "activity": [
           {
-          <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
-          <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Volunteer Skywalker"</span>,
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home."</span>,
-          <span class="hljs-attr">"role"</span>: [
+          "id": "https://id.volunteeringdata.io/686e542f7734eb69b0ec1516",
+          "title": "Volunteer Skywalker",
+          "description": "Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home.",
+          "role": [
               {
-              <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Outreach Volunteer"</span>,
-              <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services."</span>,
-              <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"One evening per week, 3-hour shift"</span>,
-              <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,
-              <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">false</span>,
-              <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"18"</span>,
-              <span class="hljs-attr">"requirement"</span>: [
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/DBSCheck"</span>
+              "title": "Outreach Volunteer",
+              "description": "Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services.",
+              "commitment": "One evening per week, 3-hour shift",
+              "applyLink": "https://underoneskytogether.com/get-involved/join-us",
+              "allowsRemoteParticipation": false,
+              "minimumAge": "18",
+              "requirement": [
+                  "https://ns.volunteeringdata.io/DBSCheck"
               ],
-              <span class="hljs-attr">"reward"</span>: [
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/ExpensesReimbursed"</span>
+              "reward": [
+                  "https://ns.volunteeringdata.io/TrainingProvided",
+                  "https://ns.volunteeringdata.io/ExpensesReimbursed"
               ],
-              <span class="hljs-attr">"skill"</span>: [
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/Communication"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/EmpathyAndCompassion"</span>
+              "skill": [
+                  "https://ns.volunteeringdata.io/Communication",
+                  "https://ns.volunteeringdata.io/EmpathyAndCompassion"
               ]
               }
           ],
-          <span class="hljs-attr">"session"</span>: [
+          "session": [
               {
-              <span class="hljs-attr">"location"</span>: {
-                  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
-                  <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
-                  <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
-                  <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+              "location": {
+                  "name": "Under One Sky Hub",
+                  "address": "127-128 Lower Marsh, London SE1 7AE, UK",
+                  "latitude": "51.5005014",
+                  "longitude": "-0.1136474"
               },
-              <span class="hljs-attr">"time"</span>: [
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/TuesdayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayAfternoon"</span>
+              "time": [
+                  "https://ns.volunteeringdata.io/MondayAfternoon",
+                  "https://ns.volunteeringdata.io/TuesdayAfternoon",
+                  "https://ns.volunteeringdata.io/SaturdayMorning",
+                  "https://ns.volunteeringdata.io/SaturdayAfternoon"
                 ]
               }
             ]
@@ -81,59 +82,59 @@ breadcrumbs:
         ]
       },
       {
-        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
-        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/64103c352a0eedb6aef42d3d"</span>,
-        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam GB"</span>,
-        <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
-        <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
-        <span class="hljs-attr">"charityNumber"</span>: <span class="hljs-string">"202918"</span>,
-        <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://example.org/images/oxfam-logo.png"</span>,
-        <span class="hljs-attr">"cause"</span>: [
-            <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>,
-            <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
+        "type": "Organisation",
+        "id": "https://id.volunteeringdata.io/64103c352a0eedb6aef42d3d",
+        "name": "Oxfam GB",
+        "description": "Oxfam is a global movement of people working together to end the injustice of poverty.",
+        "website": "https://www.oxfam.org.uk/",
+        "charityNumber": "202918",
+        "image": "https://example.org/images/oxfam-logo.png",
+        "cause": [
+            "https://ns.volunteeringdata.io/AntiPoverty",
+            "https://ns.volunteeringdata.io/CivilRights"
         ],
-        <span class="hljs-attr">"activity"</span>: [
+        "activity": [
           {
-            <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Shop Volunteer"</span>,
-            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help sort donations, serve customers, and keep the shop looking great. No experience needed."</span>,
-            <span class="hljs-attr">"role"</span>: [
+            "title": "Shop Volunteer",
+            "description": "Help sort donations, serve customers, and keep the shop looking great. No experience needed.",
+            "role": [
                 {
-                <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Shop Floor Volunteer"</span>,
-                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Sort and price donated items, assist customers, and help maintain the shop floor."</span>,
-                <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"Half a day per week"</span>,
-                <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/"</span>,
-                <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">false</span>,
-                <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"14"</span>,
-                <span class="hljs-attr">"reward"</span>: [
-                    <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>
+                "title": "Shop Floor Volunteer",
+                "description": "Sort and price donated items, assist customers, and help maintain the shop floor.",
+                "commitment": "Half a day per week",
+                "applyLink": "https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/",
+                "allowsRemoteParticipation": false,
+                "minimumAge": "14",
+                "reward": [
+                    "https://ns.volunteeringdata.io/TrainingProvided"
                 ],
-                <span class="hljs-attr">"skill"</span>: [
-                    <span class="hljs-string">"https://ns.volunteeringdata.io/CustomerService"</span>,
-                    <span class="hljs-string">"https://ns.volunteeringdata.io/Teamwork"</span>
+                "skill": [
+                    "https://ns.volunteeringdata.io/CustomerService",
+                    "https://ns.volunteeringdata.io/Teamwork"
                 ]
               }
             ],
-            <span class="hljs-attr">"session"</span>: [
+            "session": [
               {
-              <span class="hljs-attr">"location"</span>: {
-                  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam Shop Headingley"</span>,
-                  <span class="hljs-attr">"address"</span>: <span class="hljs-string">"3 North Lane, Headingley, Leeds LS6 3HG, UK"</span>,
-                  <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"53.8218"</span>,
-                  <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-1.5811"</span>
+              "location": {
+                  "name": "Oxfam Shop Headingley",
+                  "address": "3 North Lane, Headingley, Leeds LS6 3HG, UK",
+                  "latitude": "53.8218",
+                  "longitude": "-1.5811"
               },
-              <span class="hljs-attr">"time"</span>: [
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/MondayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/TuesdayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/TuesdayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/ThursdayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/ThursdayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/FridayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/FridayAfternoon"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayMorning"</span>,
-                  <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayAfternoon"</span>
+              "time": [
+                  "https://ns.volunteeringdata.io/MondayMorning",
+                  "https://ns.volunteeringdata.io/MondayAfternoon",
+                  "https://ns.volunteeringdata.io/TuesdayMorning",
+                  "https://ns.volunteeringdata.io/TuesdayAfternoon",
+                  "https://ns.volunteeringdata.io/WednesdayMorning",
+                  "https://ns.volunteeringdata.io/WednesdayAfternoon",
+                  "https://ns.volunteeringdata.io/ThursdayMorning",
+                  "https://ns.volunteeringdata.io/ThursdayAfternoon",
+                  "https://ns.volunteeringdata.io/FridayMorning",
+                  "https://ns.volunteeringdata.io/FridayAfternoon",
+                  "https://ns.volunteeringdata.io/SaturdayMorning",
+                  "https://ns.volunteeringdata.io/SaturdayAfternoon"
               ]
             }
           ]
@@ -141,7 +142,8 @@ breadcrumbs:
       ]
     }
   ]
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 <div class="note">
@@ -156,105 +158,107 @@ breadcrumbs:
 
 <div class="example">
   <h5 id="example-2">Example 2</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/64103c352a0eedb6aef42d3d"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam GB"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
-  <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
-  <span class="hljs-attr">"charityNumber"</span>: <span class="hljs-string">"202918"</span>,
-  <span class="hljs-attr">"cause"</span>: [
-      <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>,
-      <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Organisation",
+  "id": "https://id.volunteeringdata.io/64103c352a0eedb6aef42d3d",
+  "name": "Oxfam GB",
+  "description": "Oxfam is a global movement of people working together to end the injustice of poverty.",
+  "website": "https://www.oxfam.org.uk/",
+  "charityNumber": "202918",
+  "cause": [
+      "https://ns.volunteeringdata.io/AntiPoverty",
+      "https://ns.volunteeringdata.io/CivilRights"
   ],
-  <span class="hljs-attr">"activity"</span>: [
+  "activity": [
       {
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Shop Volunteer"</span>,
-      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help sort donations, serve customers, and keep the shop looking great. No experience needed."</span>,
-      <span class="hljs-attr">"role"</span>: [
+      "title": "Shop Volunteer",
+      "description": "Help sort donations, serve customers, and keep the shop looking great. No experience needed.",
+      "role": [
           {
-          <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Shop Floor Volunteer"</span>,
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Sort and price donated items, assist customers, and help maintain the shop floor."</span>,
-          <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"Half a day per week"</span>,
-          <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/"</span>,
-          <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">false</span>,
-          <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"14"</span>,
-          <span class="hljs-attr">"reward"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>
+          "title": "Shop Floor Volunteer",
+          "description": "Sort and price donated items, assist customers, and help maintain the shop floor.",
+          "commitment": "Half a day per week",
+          "applyLink": "https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/",
+          "allowsRemoteParticipation": false,
+          "minimumAge": "14",
+          "reward": [
+              "https://ns.volunteeringdata.io/TrainingProvided"
           ],
-          <span class="hljs-attr">"skill"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/CustomerService"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/Teamwork"</span>
+          "skill": [
+              "https://ns.volunteeringdata.io/CustomerService",
+              "https://ns.volunteeringdata.io/Teamwork"
           ]
           }
       ],
-      <span class="hljs-attr">"session"</span>: [
+      "session": [
           {
-          <span class="hljs-attr">"location"</span>: {
-              <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam Shop Headingley"</span>,
-              <span class="hljs-attr">"address"</span>: <span class="hljs-string">"3 North Lane, Headingley, Leeds LS6 3HG, UK"</span>,
-              <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"53.8218"</span>,
-              <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-1.5811"</span>
+          "location": {
+              "name": "Oxfam Shop Headingley",
+              "address": "3 North Lane, Headingley, Leeds LS6 3HG, UK",
+              "latitude": "53.8218",
+              "longitude": "-1.5811"
           },
-          <span class="hljs-attr">"time"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/MondayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/TuesdayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/TuesdayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/ThursdayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/ThursdayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/FridayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/FridayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayAfternoon"</span>
+          "time": [
+              "https://ns.volunteeringdata.io/MondayMorning",
+              "https://ns.volunteeringdata.io/MondayAfternoon",
+              "https://ns.volunteeringdata.io/TuesdayMorning",
+              "https://ns.volunteeringdata.io/TuesdayAfternoon",
+              "https://ns.volunteeringdata.io/WednesdayMorning",
+              "https://ns.volunteeringdata.io/WednesdayAfternoon",
+              "https://ns.volunteeringdata.io/ThursdayMorning",
+              "https://ns.volunteeringdata.io/ThursdayAfternoon",
+              "https://ns.volunteeringdata.io/FridayMorning",
+              "https://ns.volunteeringdata.io/FridayAfternoon",
+              "https://ns.volunteeringdata.io/SaturdayMorning",
+              "https://ns.volunteeringdata.io/SaturdayAfternoon"
           ]
           }
       ]
       },
       {
-      <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Online Shop Volunteer"</span>,
-      <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help list and sell donated items online. Photograph items, write descriptions, and manage listings from home or in-store."</span>,
-      <span class="hljs-attr">"role"</span>: [
+      "title": "Online Shop Volunteer",
+      "description": "Help list and sell donated items online. Photograph items, write descriptions, and manage listings from home or in-store.",
+      "role": [
           {
-          <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Online Listings Volunteer"</span>,
-          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Photograph donated items, write compelling descriptions, and list them for sale on Oxfam's online shop."</span>,
-          <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"Half a day per week"</span>,
-          <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/"</span>,
-          <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">true</span>,
-          <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"16"</span>,
-          <span class="hljs-attr">"reward"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>
+          "title": "Online Listings Volunteer",
+          "description": "Photograph donated items, write compelling descriptions, and list them for sale on Oxfam's online shop.",
+          "commitment": "Half a day per week",
+          "applyLink": "https://www.oxfam.org.uk/get-involved/volunteer-with-us/volunteer-in-our-shops/",
+          "allowsRemoteParticipation": true,
+          "minimumAge": "16",
+          "reward": [
+              "https://ns.volunteeringdata.io/TrainingProvided"
           ],
-          <span class="hljs-attr">"skill"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/Photography"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/Writing"</span>
+          "skill": [
+              "https://ns.volunteeringdata.io/Photography",
+              "https://ns.volunteeringdata.io/Writing"
           ]
           }
       ],
-      <span class="hljs-attr">"session"</span>: [
+      "session": [
           {
-          <span class="hljs-attr">"location"</span>: {
-              <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam Shop Headingley"</span>,
-              <span class="hljs-attr">"address"</span>: <span class="hljs-string">"3 North Lane, Headingley, Leeds LS6 3HG, UK"</span>,
-              <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"53.8218"</span>,
-              <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-1.5811"</span>
+          "location": {
+              "name": "Oxfam Shop Headingley",
+              "address": "3 North Lane, Headingley, Leeds LS6 3HG, UK",
+              "latitude": "53.8218",
+              "longitude": "-1.5811"
           },
-          <span class="hljs-attr">"time"</span>: [
-              <span class="hljs-string">"https://ns.volunteeringdata.io/MondayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/WednesdayAfternoon"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/FridayMorning"</span>,
-              <span class="hljs-string">"https://ns.volunteeringdata.io/FridayAfternoon"</span>
+          "time": [
+              "https://ns.volunteeringdata.io/MondayMorning",
+              "https://ns.volunteeringdata.io/MondayAfternoon",
+              "https://ns.volunteeringdata.io/WednesdayMorning",
+              "https://ns.volunteeringdata.io/WednesdayAfternoon",
+              "https://ns.volunteeringdata.io/FridayMorning",
+              "https://ns.volunteeringdata.io/FridayAfternoon"
           ]
           }
       ]
       }
   ]
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 
@@ -264,21 +268,23 @@ breadcrumbs:
 
 <div class="example">
   <h5 id="example-3">Example 3</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"conformsTo"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
-  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"CC-BY-NC-SA-4.0"</span>,
-  <span class="hljs-attr">"publisher"</span>: <span class="hljs-string">"https://scvo.scot/"</span>,
-  <span class="hljs-attr">"modified"</span>: <span class="hljs-string">"2026-03-23"</span>,
-  <span class="hljs-attr">"graph"</span>: [
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "conformsTo": "https://ns.volunteeringdata.io/",
+  "license": "CC-BY-NC-SA-4.0",
+  "publisher": "https://scvo.scot/",
+  "modified": "2026-03-23",
+  "graph": [
     {
-      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
-      <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky"</span>,
+      "type": "Organisation",
+      "id": "https://id.volunteeringdata.io/684059665d271835a2253c9d",
+      "name": "Under One Sky",
       ...
     }
   ]
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 <div class="note">

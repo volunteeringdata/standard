@@ -191,10 +191,6 @@ main > article :is(p, ul, ol, dl) {
   color: var(--highlight-2-color);
 }
 
-.example .hljs, .note .hljs {
-  background: transparent !important;
-}
-
 .example h5, .note h5 {
   display: block;
   font-size: 1rem;
