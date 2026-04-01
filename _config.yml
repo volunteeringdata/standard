@@ -14,9 +14,16 @@ nav:
     url: /use-cases/
   - title: Working Group
     url: /working-group/
+footer:
+  copyright:
+    title: Crown Copyright
+    url: http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/
+  license:
+    title: Open Government License v3
+    url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+excerpt_separator: "<!--more-->"
 plugins:
   - jekyll-feed
-excerpt_separator: "<!--more-->"
 include: 
   - _redirects
 exclude:

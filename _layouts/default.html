@@ -51,10 +51,10 @@
                 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                 {{ content }}
             </article>
-        </main>
-        <footer>
-            <p>© <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">Crown Copyright</a> under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License v3</a>.</p>
-        </footer>
+        </main>{% if site.footer %}
+        <footer>{% if site.footer.copyright or site.footer.license %}
+            <p>{% if site.footer.copyright %}© <a href="{{ site.footer.copyright.url }}">{{ site.footer.copyright.title }}</a> under the {% endif %}{% if site.footer.license %}<a href="{{ site.footer.license.url }}">{{ site.footer.license.title }}</a>{% endif %}</p>{% endif %}
+        </footer>{% endif %}
         <script src="/assets/js/menu.js"></script>
     </body>
 </html>
