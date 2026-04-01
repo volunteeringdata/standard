@@ -26,11 +26,11 @@ plugins:
   - jekyll-feed
 include: 
   - _redirects
+  - assets/css/styles.css
 exclude:
-  - scripts
+  - assets/css
   - docker-compose.yml
   - LICENSE
-  - LICENSE.MIT
   - README.md
 markdown: kramdown
 kramdown:
