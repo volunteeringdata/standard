@@ -151,6 +151,19 @@ breadcrumbs:
 }
 {% endhighlight %}
 
+{% highlight turtle %}
+prefix : <https://ns.volunteeringdata.io/>
+
+:Organisation
+    a owl:Class ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "Organisation"@en ;
+    rdfs:comment "Any organisation running activities that involve volunteers."@en ;
+    dc:description "Volunteer-Involving Organisation"@en ;
+.
+  
+{% endhighlight %}
+
 </div>
 
 
