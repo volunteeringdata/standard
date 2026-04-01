@@ -1,14 +1,16 @@
 :root {
-  --background-color: rgb(15, 75, 105);
-  --color: #fff;
-  --highlight-1-border: rgb(224, 203, 82);
-  --highlight-1-background: rgb(252, 250, 238);
-  --highlight-1-color: rgb(87, 75, 15);
-  --highlight-2-border: rgb(82, 224, 82);
-  --highlight-2-background: rgb(233, 251, 233);
-  --highlight-2-color: rgb(23, 130, 23);
+  --background: rgb(15, 75, 105);
+  --background-highlight: rgba(187, 188, 225, 0.08);
+  --color: rgb(255, 255, 255);
+  --main-highlight-1-border: rgb(224, 203, 82);
+  --main-highlight-1-background: rgb(252, 250, 238);
+  --main-highlight-1-color: rgb(87, 75, 15);
+  --main-highlight-2-border: rgb(82, 224, 82);
+  --main-highlight-2-background: rgb(233, 251, 233);
+  --main-highlight-2-color: rgb(23, 130, 23);
+  --main-text-background: rgb(255, 255, 255);
   --main-text-color: rgb(21, 35, 54);
-  --main-link-background-color: rgb(188, 231, 211);
+  --main-link-background: rgb(188, 231, 211);
   --main-link-color: rgb(10, 18, 28);
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
   --article-text-max-width: 50rem;
@@ -17,7 +19,7 @@
 
 /* Defaults */
 body {
-  background-color: var(--background-color);
+  background: var(--background);
   color: var(--color);
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: normal;
@@ -59,7 +61,7 @@ dt {
 /* Layout */
 header, footer {
   align-items: center;
-  background-color: var(--background-color);
+  background: var(--background);
   color: var(--color);
   display: flex;
   flex-direction: row;
@@ -77,14 +79,14 @@ header a, footer a {
 
 header a:hover, footer a:hover,
 header a:focus, footer a:focus {
-  color: #fff;
+  color: var(--color);
   transition: opacity 0.3s ease;
   opacity: 1;
 }
 
 main {
-  background-color: #fff;
-  color: #152336;
+  background-color: var(--main-text-background);
+  color: var(--main-text-color);
   min-height: 100%;
   padding: var(--main-padding);
 }
@@ -125,11 +127,11 @@ main > article :is(p, ul, ol, dl) {
 
 .section-separated {
   margin-top: 3rem;
-  border-top: 1px solid var(--background-color);
+  border-top: 1px solid var(--background);
 }
 
 .main-link {
-  background: var(--main-link-background-color);
+  background: var(--main-link-background);
   border-radius: 3rem;
   color: var(--main-link-color);
   cursor: pointer;
@@ -174,21 +176,21 @@ main > article :is(p, ul, ol, dl) {
 }
 
 .example {
-  background: var(--highlight-1-background);
-  border-left: .5rem solid var(--highlight-1-border);
+  background: var(--main-highlight-1-background);
+  border-left: .5rem solid var(--main-highlight-1-border);
 }
 
 .example h5 {
-  color: var(--highlight-1-color);
+  color: var(--main-highlight-1-color);
 }
 
 .note {
-  background: var(--highlight-2-background);
-  border-left: .5rem solid var(--highlight-2-border);
+  background: var(--main-highlight-2-background);
+  border-left: .5rem solid var(--main-highlight-2-border);
 }
 
 .note h5 {
-  color: var(--highlight-2-color);
+  color: var(--main-highlight-2-color);
 }
 
 .example h5, .note h5 {

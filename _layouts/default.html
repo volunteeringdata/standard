@@ -13,26 +13,21 @@
         <meta property="og:site_name" content="{{ site.title }}" />
         <meta property="og:locale" content="en" />
         <meta name="theme-color" content="#0f4b69">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
         <link type="application/atom+xml" rel="alternate" href="{{ site.base_url }}/feed.xml" title="{{ site.title }}" />
         <link rel="stylesheet" href="/assets/css/base.css" />
         <link rel="stylesheet" href="/assets/css/header.css" />
         <link rel="stylesheet" href="/assets/css/breadcrumb.css" />
         <link rel="stylesheet" href="/assets/css/toc.css" />
-        <link rel="stylesheet" href="/assets/css/syntax.css">
     </head>
     <body>
-        <header class="header">
-            <address class="homepage-link">
-                <a href="/">Volunteering Data</a>
-            </address>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/ontology/">Data Model</a></li>
-                    <li><a href="/use-cases/">Use Cases</a></li>
-                    <li><a href="/working-group/">Working Group</a></li>
+        <header class="header nojs">{% if site.homepage %}
+            <a class="home" href="{{ site.homepage.url }}">{{ site.homepage.title }}</a>{% endif %}{% if site.nav %}
+            <nav class="nav">
+                <ul>{% for link in site.nav %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}
                 </ul>
-            </nav>
+            </nav>{% endif %}
             <button class="hamburger-menu" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
