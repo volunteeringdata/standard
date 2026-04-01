@@ -116,38 +116,43 @@ breadcrumbs:
 
 <div class="example">
   <h5 id="example-1">Example 1</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Organisation"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://example.org/organisation/oxfam-gb"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Oxfam"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
-  <span class="hljs-attr">"website"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
-  <span class="hljs-attr">"charityNumber"</span>: <span class="hljs-string">"202918"</span>,
-  <span class="hljs-attr">"image"</span>: <span class="hljs-string">"https://example.org/images/oxfam-logo.png"</span>,
-  <span class="hljs-attr">"cause"</span>: [
-    <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>,
-    <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
+
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Organisation",
+  "id": "https://example.org/organisation/oxfam-gb",
+  "name": "Oxfam",
+  "description": "Oxfam is a global movement of people working together to end the injustice of poverty.",
+  "website": "https://www.oxfam.org.uk/",
+  "charityNumber": "202918",
+  "image": "https://example.org/images/oxfam-logo.png",
+  "cause": [
+    "https://ns.volunteeringdata.io/AntiPoverty",
+    "https://ns.volunteeringdata.io/CivilRights"
   ],
-  <span class="hljs-attr">"activity"</span>: [
+  "activity": [
     ... (see activity example)
   ],
-  <span class="hljs-attr">"charityRegistration"</span>: [
+  "charityRegistration": [
     {
-      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://register-of-charities.charitycommission.gov.uk"</span>,
-      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"202918"</span>
+      "registrar": "https://register-of-charities.charitycommission.gov.uk",
+      "registrationNumber": "202918"
     },
     {
-      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://www.oscr.org.uk"</span>,
-      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"SC039042"</span>
+      "registrar": "https://www.oscr.org.uk",
+      "registrationNumber": "SC039042"
     },
     {
-      <span class="hljs-attr">"registrar"</span>: <span class="hljs-string">"https://www.charitycommissionni.org.uk"</span>,
-      <span class="hljs-attr">"registrationNumber"</span>: <span class="hljs-string">"100848"</span>
+      "registrar": "https://www.charitycommissionni.org.uk",
+      "registrationNumber": "100848"
     }
   ]
-}</pre>
+}
+{% endhighlight %}
+
 </div>
+
 
 <div class="note">
   <h5 id="note-1">Note 1</h5>

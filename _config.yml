@@ -29,3 +29,9 @@ exclude:
   - LICENSE
   - LICENSE.MIT
   - README.md
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+rouge_theme: github

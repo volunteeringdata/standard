@@ -206,13 +206,8 @@ main > article :is(p, ul, ol, dl) {
   text-transform: none;
 }
 
-.example pre {
-  color: #333;
-  display: block;
+.example .highlight, .example .highlight .w {
+  background-color: transparent;
+  margin: 0;
   overflow-x: auto;
-  padding: 0.5em;
-}
-
-.example pre code {
-  background: transparent;
 }
