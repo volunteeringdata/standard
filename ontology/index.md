@@ -116,7 +116,6 @@ breadcrumbs:
 
 <div class="example">
   <h5 id="example-1">Example 1</h5>
-
 {% highlight json %}
 {
   "@context": "https://api.volunteeringdata.io/context/v1",
@@ -150,20 +149,6 @@ breadcrumbs:
   ]
 }
 {% endhighlight %}
-
-{% highlight turtle %}
-prefix : <https://ns.volunteeringdata.io/>
-
-:Organisation
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "Organisation"@en ;
-    rdfs:comment "Any organisation running activities that involve volunteers."@en ;
-    dc:description "Volunteer-Involving Organisation"@en ;
-.
-  
-{% endhighlight %}
-
 </div>
 
 
@@ -209,34 +194,36 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-2">Example 2</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Activity"</span>,
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Volunteer Skywalker"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home."</span>,
-  <span class="hljs-attr">"publishEnd"</span>: <span class="hljs-string">"2026-08-28"</span>,
-  <span class="hljs-attr">"organisation"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
-  <span class="hljs-attr">"role"</span>: {
-    <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,
-    <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"16"</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "id": "https://id.volunteeringdata.io/686e542f7734eb69b0ec1516",
+  "type": "Activity",
+  "title": "Volunteer Skywalker",
+  "description": "Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home.",
+  "publishEnd": "2026-08-28",
+  "organisation": "https://id.volunteeringdata.io/684059665d271835a2253c9d",
+  "role": {
+    "applyLink": "https://underoneskytogether.com/get-involved/join-us",
+    "minimumAge": "16"
   },
-  <span class="hljs-attr">"session"</span>: {
-    <span class="hljs-attr">"location"</span>: [
+  "session": {
+    "location": [
       {
-        <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
-        <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
-        <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+        "address": "127-128 Lower Marsh, London SE1 7AE, UK",
+        "latitude": "51.5005014",
+        "longitude": "-0.1136474"
       }
     ],
-    <span class="hljs-attr">"time"</span>: [
-      <span class="hljs-string">"volunteering:MondayAfternoon"</span>,
-      <span class="hljs-string">"volunteering:TuesdayAfternoon"</span>,
-      <span class="hljs-string">"volunteering:SaturdayMorning"</span>,
-      <span class="hljs-string">"https://ns.volunteeringdata.io/SaturdayAfternoon"</span>
+    "time": [
+      "volunteering:MondayAfternoon",
+      "volunteering:TuesdayAfternoon",
+      "volunteering:SaturdayMorning",
+      "https://ns.volunteeringdata.io/SaturdayAfternoon"
     ]
   }
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 <div class="note">
@@ -285,29 +272,31 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-3">Example 3</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Role"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://example.org/role/outreach-volunteer"</span>,
-  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Outreach Volunteer"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services."</span>,
-  <span class="hljs-attr">"commitment"</span>: <span class="hljs-string">"One evening per week, 3-hour shift"</span>,
-  <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,
-  <span class="hljs-attr">"allowsRemoteParticipation"</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"18"</span>,
-  <span class="hljs-attr">"activity"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
-  <span class="hljs-attr">"requirement"</span>: [
-    <span class="hljs-string">"https://ns.volunteeringdata.io/DBSCheck"</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Role",
+  "id": "https://example.org/role/outreach-volunteer",
+  "title": "Outreach Volunteer",
+  "description": "Walk set routes to engage with people sleeping rough, offering food, warm clothing, and signposting to support services.",
+  "commitment": "One evening per week, 3-hour shift",
+  "applyLink": "https://underoneskytogether.com/get-involved/join-us",
+  "allowsRemoteParticipation": false,
+  "minimumAge": "18",
+  "activity": "https://id.volunteeringdata.io/686e542f7734eb69b0ec1516",
+  "requirement": [
+    "https://ns.volunteeringdata.io/DBSCheck"
   ],
-  <span class="hljs-attr">"reward"</span>: [
-    <span class="hljs-string">"https://ns.volunteeringdata.io/TrainingProvided"</span>,
-    <span class="hljs-string">"https://ns.volunteeringdata.io/ExpensesReimbursed"</span>
+  "reward": [
+    "https://ns.volunteeringdata.io/TrainingProvided",
+    "https://ns.volunteeringdata.io/ExpensesReimbursed"
   ],
-  <span class="hljs-attr">"skill"</span>: [
-    <span class="hljs-string">"https://ns.volunteeringdata.io/Communication"</span>,
-    <span class="hljs-string">"https://ns.volunteeringdata.io/EmpathyAndCompassion"</span>
+  "skill": [
+    "https://ns.volunteeringdata.io/Communication",
+    "https://ns.volunteeringdata.io/EmpathyAndCompassion"
   ]
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 
@@ -330,18 +319,20 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-4">Example 4</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Session"</span>,
-  <span class="hljs-attr">"activity"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
-  <span class="hljs-attr">"location"</span>: {
-    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
-    <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
-    <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
-    <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Session",
+  "activity": "https://id.volunteeringdata.io/686e542f7734eb69b0ec1516",
+  "location": {
+    "name": "Under One Sky Hub",
+    "address": "127-128 Lower Marsh, London SE1 7AE, UK",
+    "latitude": "51.5005014",
+    "longitude": "-0.1136474"
   },
-  <span class="hljs-attr">"time"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/MondayAfternoon"</span>
-}</pre>
+  "time": "https://ns.volunteeringdata.io/MondayAfternoon"
+}
+{% endhighlight %}
 </div>
 
 <div class="note">
@@ -375,14 +366,16 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-5">Example 5</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Location"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Under One Sky Hub"</span>,
-  <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
-  <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
-  <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
-}</pre>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Location",
+  "name": "Under One Sky Hub",
+  "address": "127-128 Lower Marsh, London SE1 7AE, UK",
+  "latitude": "51.5005014",
+  "longitude": "-0.1136474"
+}
+{% endhighlight %}
 </div>
 
 <div class="note">
@@ -392,14 +385,16 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-6">Example 6</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Location"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Aberdeen"</span>,
-  <span class="hljs-attr">"geometry"</span>: {
-    <span class="hljs-attr">"geosparql:asWKT"</span>: <span class="hljs-string">"MULTIPOLYGON (((385726.9995 815937.7998, 385745.5014 ... 395720.5 801236.85, 395721 801236.8, 395721.2 801236.6)))"</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Location",
+  "name": "Aberdeen",
+  "geometry": {
+    "geosparql:asWKT": "MULTIPOLYGON (((385726.9995 815937.7998, 385745.5014 ... 395720.5 801236.85, 395721 801236.8, 395721.2 801236.6)))"
   }
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 
@@ -469,23 +464,25 @@ prefix : <https://ns.volunteeringdata.io/>
 
 <div class="example">
   <h5 id="example-7">Example 7</h5>
-  <pre class="hljs json">{
-  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
-  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Time"</span>,
-  <span class="hljs-attr">"rdfs:label"</span>: <span class="hljs-string">"Tuesday 2 to 4 pm"</span>,
-  <span class="hljs-attr">"time:hasBeginning"</span>: {
-    <span class="hljs-attr">"time:inDateTime"</span>: {
-      <span class="hljs-attr">"time:dayOfWeek"</span>: <span class="hljs-string">"time:Tuesday"</span>,
-      <span class="hljs-attr">"time:hour"</span>: <span class="hljs-number">14</span>
+{% highlight json %}
+{
+  "@context": "https://api.volunteeringdata.io/context/v1",
+  "type": "Time",
+  "rdfs:label": "Tuesday 2 to 4 pm",
+  "time:hasBeginning": {
+    "time:inDateTime": {
+      "time:dayOfWeek": "time:Tuesday",
+      "time:hour": 14
     }
   },
-  <span class="hljs-attr">"time:hasEnd"</span>: {
-    <span class="hljs-attr">"time:inDateTime"</span>: {
-      <span class="hljs-attr">"time:dayOfWeek"</span>: <span class="hljs-string">"time:Tuesday"</span>,
-      <span class="hljs-attr">"time:hour"</span>: <span class="hljs-number">16</span>
+  "time:hasEnd": {
+    "time:inDateTime": {
+      "time:dayOfWeek": "time:Tuesday",
+      "time:hour": 16
     }
   }
-}</pre>
+}
+{% endhighlight %}
 </div>
 
 <div class="note">
