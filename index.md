@@ -6,7 +6,7 @@ title: Volunteering Data
 <section class="left-block">
     <p>Standardise how volunteering opportunities are described to make them easily discoverable, governable, and usable across tools and platforms.</p>
     <p><a href="https://share.hsforms.com/17sQpFOMLTvK_7SpLL6dn8gg1jy" class="main-link">Join the Working Group</a></p>
-    <p>Contribute to the standard: <a href="https://github.com/volunteeringdata/standard" title="Volunteering Data schema on GitHub"><img src="/assets/img/icon/github.svg" alt="GitHub" class="icon-text"></a></p>
+    <p>Contribute to the standard: <a href="https://github.com/volunteeringdata/standard" title="Volunteering Data schema on GitHub"><img src="/assets/icon/github.svg" alt="GitHub" class="icon-text"></a></p>
 </section>
 
 <section class="section-separated">
