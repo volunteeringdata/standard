@@ -97,7 +97,7 @@ breadcrumbs:
   <dt id="organisation-activity">activity</dt>
   <dd>A volunteering opportunity offered by the organisation.</dd>
   <dt id="organisation-cause">cause</dt>
-  <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a>.</dd>
+  <dd>A charitable cause the organisation is involved with. See the <a href="./ontology/cause">Charitable Cause Taxonomy</a>.</dd>
   <dt id="organisation-charity-number">charityRegistration</dt>
   <dd>The charity registration number and registrar. See also UK charity registration authorities:
     <a href="https://www.charitycommissionni.org.uk/">The Charity Commission for Northern Ireland</a>;
@@ -261,11 +261,11 @@ breadcrumbs:
   <dt id="role-accessibility">accessibility</dt>
   <dd>Accessibility information for the role.</dd>
   <dt id="role-requirement">requirement</dt>
-  <dd>A requirement for the role. See the <a href="./requirement">Requirement Taxonomy</a>.</dd>
+  <dd>A requirement for the role. See the <a href="./ontology/requirement">Requirement Taxonomy</a>.</dd>
   <dt id="role-reward">reward</dt>
   <dd>A reward associated with the role.</dd>
   <dt id="role-skill">skill</dt>
-  <dd>A skill associated with the role. See the <a href="./skill">Skill Taxonomy</a>.</dd>
+  <dd>A skill associated with the role. See the <a href="./ontology/skill">Skill Taxonomy</a>.</dd>
 </dl>
 
 <h4 id="role-example"><span class="secno">2.3.2 </span>Example</h4>
@@ -495,9 +495,9 @@ breadcrumbs:
 <h2 id="taxonomies"><span class="secno">3. </span>Taxonomies</h2>
 
 <ul>
-  <li><a href="./cause">Charitable Cause Taxonomy</a></li>
-  <li><a href="./requirement">Requirement Taxonomy</a></li>
-  <li><a href="./skill">Skill Taxonomy</a></li>
+  <li><a href="./ontology/cause">Charitable Cause Taxonomy</a></li>
+  <li><a href="./ontology/requirement">Requirement Taxonomy</a></li>
+  <li><a href="./ontology/skill">Skill Taxonomy</a></li>
 </ul>
 
 

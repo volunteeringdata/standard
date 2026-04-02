@@ -25,9 +25,9 @@ title: Volunteering Data
     <h2 id="process">Process</h2>
     <p>Standards must be grounded in practical knowledge and experience of the sector they're designed for. Subject Matter Experts (SME), that is, a diverse group of people with varied and extensive experience of the sector, are the first point of contact in any standardisation effort. SMEs shared knowledge constitutes the base and justification for every data modelling decision in a standard.</p>
     <p>Following that principle, the volunteering and social action ontology is developed in the open with volunteering specialists, software providers, and data experts, bringing the necessary domain expertise to collaborate on the standardisation effort.</p>
-    <p>The landscape review of the VCSE sector helped identify <a href="./use-cases/">use cases</a> to inform the focus of the standardisation effort.</p>
-    <p>The <a href="./working-group/">volunteering data standards working group</a> was formed to gather feedback and drive the standard in the right direction.</p>
-    <p>A <a href="/article/2025-12-05">Hackathon</a> brought together SMEs to raise awareness of the standardisation effort, give practical usage to our <a href="./working-group/model-version/">first draft standard data model</a>, and inform the direction of our efforts (see also <a href="https://theodi.org/news-and-events/events/open-data-infrastructure-for-volunteering-hackathon/">open data infrastructure for volunteering hackathon</a>).</p>
+    <p>The landscape review of the VCSE sector helped identify <a href="./use-cases">use cases</a> to inform the focus of the standardisation effort.</p>
+    <p>The <a href="./working-group">volunteering data standards working group</a> was formed to gather feedback and drive the standard in the right direction.</p>
+    <p>A <a href="/article/2025-12-05">Hackathon</a> brought together SMEs to raise awareness of the standardisation effort, give practical usage to our <a href="./working-group/model-version">first draft standard data model</a>, and inform the direction of our efforts (see also <a href="https://theodi.org/news-and-events/events/open-data-infrastructure-for-volunteering-hackathon/">open data infrastructure for volunteering hackathon</a>).</p>
 </section>
 
 <section>
