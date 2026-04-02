@@ -13,8 +13,17 @@
   --main-link-background: rgb(188, 231, 211);
   --main-link-color: rgb(10, 18, 28);
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
+  --main-padding-narrow: .5rem 3.2rem .6rem 3rem;
   --article-text-max-width: 50rem;
   --article-main-image-max-width: 70rem;
+}
+
+/* Adaptive Layout */
+@media (max-width: 800px) {
+  :root {
+    --main-padding: 1.5rem 1.6rem 1.6rem 1.5rem;
+    --main-padding-narrow: .5rem 1.6rem .6rem 1.5rem;
+  }
 }
 
 /* Defaults */
