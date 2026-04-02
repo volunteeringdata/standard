@@ -1,0 +1,13 @@
+---
+permalink: /article/
+layout: default
+title: "Volunteering Data News"
+breadcrumbs:
+  - title: "Articles"
+---
+
+<ul>
+{% for post in site.posts %}
+  <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

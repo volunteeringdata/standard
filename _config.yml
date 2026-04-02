@@ -25,7 +25,7 @@ excerpt_separator: "<!--more-->"
 plugins:
   - jekyll-feed
 include: 
-  - _redirects
+  - _pages
   - assets/css/styles.css
 exclude:
   - assets/css
