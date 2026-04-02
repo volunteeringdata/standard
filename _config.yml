@@ -9,11 +9,11 @@ homepage:
   url: /
 nav:
   - title: Data Model
-    url: /ontology/
+    url: /ontology
   - title: Use Cases
-    url: /use-cases/
+    url: /use-cases
   - title: Working Group
-    url: /working-group/
+    url: /working-group
 footer:
   copyright:
     title: Crown Copyright
@@ -21,6 +21,7 @@ footer:
   license:
     title: Open Government License v3
     url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+syntax_highlighting_scheme: github
 excerpt_separator: "<!--more-->"
 plugins:
   - jekyll-feed
