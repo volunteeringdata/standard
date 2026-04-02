@@ -1,5 +1,5 @@
 ---
-permalink: /working-group/
+permalink: /working-group
 layout: default
 title: Volunteering Data Standards Working Group
 breadcrumbs:

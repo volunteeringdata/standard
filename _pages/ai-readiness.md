@@ -1,5 +1,5 @@
 ---
-permalink: /ai-readiness/
+permalink: /ai-readiness
 layout: default
 title: AI-ready data
 breadcrumbs:

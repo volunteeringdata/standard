@@ -1,5 +1,5 @@
 ---
-permalink: /ontology/
+permalink: /ontology
 layout: default
 title: Volunteering and Social Action Ontology
 breadcrumbs:

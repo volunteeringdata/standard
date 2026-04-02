@@ -1,5 +1,5 @@
 ---
-permalink: /use-cases/
+permalink: /use-cases
 layout: default
 title: Volunteering and Social Action Use Cases
 breadcrumbs:
