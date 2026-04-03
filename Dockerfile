@@ -1,19 +1,16 @@
-FROM ruby:3.3-alpine
+ARG RUBY_VERSION=3
 
-# Basic packages needed to build common Jekyll dependencies and serve the site.
+FROM ruby:${RUBY_VERSION}-alpine
+
 RUN apk add --no-cache \
     build-base \
     git \
-    nodejs \
     tzdata
 
 WORKDIR /srv/jekyll
 
-# Install Ruby gems first for better layer caching.
 COPY Gemfile ./
 RUN bundle install
-
-COPY . .
 
 EXPOSE 4000
 
