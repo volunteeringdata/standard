@@ -1,7 +1,9 @@
 services:
   jekyll:
-    image: jekyll/jekyll
-    command: jekyll serve --watch --incremental
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bundle exec jekyll serve --host 0.0.0.0 --watch --incremental
     ports:
       - 4000:4000
     volumes:
