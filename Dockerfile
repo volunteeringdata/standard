@@ -7,11 +7,11 @@ RUN apk add --no-cache \
     git \
     tzdata
 
-WORKDIR /srv/jekyll
+WORKDIR /site
 
-COPY Gemfile ./
+COPY Gemfile .
 RUN bundle install
 
 EXPOSE 4000
 
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--watch", "--incremental"]
+CMD ["jekyll", "serve", "--host", "0.0.0.0", "--watch", "--incremental"]
