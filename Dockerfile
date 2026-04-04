@@ -7,7 +7,7 @@ RUN apk add --no-cache \
     git \
     tzdata
 
-WORKDIR /site
+WORKDIR /dist
 
 COPY Gemfile .
 RUN bundle install

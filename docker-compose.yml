@@ -1,5 +1,6 @@
 services:
   jekyll:
+    image: volunteeringdata-jekyll
     build:
       context: .
       dockerfile: Dockerfile
@@ -7,4 +8,4 @@ services:
     ports:
       - 4000:4000
     volumes:
-      - .:/site
+      - .:/dist
