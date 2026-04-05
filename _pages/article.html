@@ -1,13 +1,18 @@
 ---
 permalink: /article/
 layout: default
-title: "Volunteering Data News"
+title: "Volunteering Data Updates"
 breadcrumbs:
   - title: "Articles"
 ---
 
-<ul>
+<p>Articles in this session relate to volunteering data standardisation.</p>
+
+<ul class="article-list">
 {% for post in site.posts %}
-  <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li>
+    <h2 class="heading"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+  </li>
 {% endfor %}
 </ul>

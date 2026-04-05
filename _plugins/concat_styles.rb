@@ -35,12 +35,30 @@ module Jekyll
       File.write(out, content)
       true
     end
+
+    def modified?
+      source_dir = File.join(@site.source, @input_dir)
+      out = File.join(@site.dest, @dir, @name)
+      return true unless File.exist?(out)
+
+      output_mtime = File.mtime(out)
+      Dir.glob(File.join(source_dir, '**', '*.css')).any? { |f| File.mtime(f) > output_mtime }
+    end
   end
 
   class ConcatStylesGenerator < Jekyll::Generator
     def generate(site)
       styles = site.config['styles']
       return unless styles && styles['input'] && styles['output']
+
+      input_dir = styles['input'].sub(/^\//, '')
+      output_path = styles['output'].sub(/^\//, '')
+
+      # Remove individual CSS source files from output (but keep the concatenated file)
+      site.static_files.reject! do |f|
+        path = f.relative_path.sub(/^\//, '')
+        path.start_with?(input_dir) && path != output_path
+      end
 
       minify = styles['minify'] != false
 

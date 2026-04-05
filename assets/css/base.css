@@ -178,6 +178,15 @@ main > article :is(p, ul, ol, dl) {
     right: 10px;
 }
 
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-list .heading {
+  margin-bottom: 0;
+}
+
 /* W3C spec notes and examples style boxes */
 .example, .note {
   padding: 0.5rem 1rem 0.6rem 1.1rem;

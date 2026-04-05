@@ -32,9 +32,7 @@ plugins:
   - jekyll-feed
 include: 
   - _pages
-  - assets/css/styles.css
 exclude:
-  - assets/css
   - docker-compose.yml
   - LICENSE
   - README.md
