@@ -43,11 +43,8 @@ Currently there are no planned meetings.
 ## Previous Meetings
 
 <ul>
-    <li><a href="/article/2026-03-18">2026-03-18: Meeting 6</a></li>
-    <li><a href="/article/2026-03-04">2026-03-04: Meeting 5</a></li>
-    <li><a href="/article/2026-02-26">2026-02-26: Meeting 4</a></li>
-    <li><a href="/article/2025-12-10">2025-12-10: Meeting 3</a></li>
-    <li><a href="/article/2025-11-26">2025-11-26: Meeting 2</a></li>
-    <li><a href="/article/2025-11-14">2025-11-14: Meeting 1</a></li>
+{% assign wg_posts = site.posts | where_exp: "post", "post.categories contains 'Working Group'" %}
+{% for post in wg_posts %}
+    <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
 </ul>
-

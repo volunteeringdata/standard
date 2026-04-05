@@ -11,7 +11,13 @@
   --main-text-background: rgb(255, 255, 255);
   --main-text-color: rgb(21, 35, 54);
   --main-link-background: rgb(188, 231, 211);
+  --main-link-background-hover: rgb(204, 246, 226);
   --main-link-color: rgb(10, 18, 28);
+  --main-link-color-hover: rgb(51, 69, 106);
+  --main-link-transition: all 0.3s ease;
+  --link-color: rgb(48, 86, 169);
+  --link-color-hover: rgb(56, 111, 196);
+  --link-transition: color 0.3s ease;
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
   --main-padding-narrow: .5rem 3.2rem .6rem 3rem;
   --article-text-max-width: 50rem;
@@ -51,12 +57,12 @@ h2 > .secno, h3 > .secno, h4 > .secno, h5 > .secno, h6 > .secno {
 }
 
 a {
-  color: #3056a9;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #386fc4;
-  transition: color 0.3s ease;
+  color: var(--link-color-hover);
+  transition: var(--link-color-transition);
 }
 
 img {
@@ -140,15 +146,30 @@ main > article :is(p, ul, ol, dl) {
 }
 
 .main-link {
-  background: var(--main-link-background);
   border-radius: 3rem;
+  font-size: 1.1rem;
+  padding: .9rem 1.6rem 1rem 1.5rem;
+}
+
+.category {
+  border-radius: 1rem;
+  font-size: .9rem;
+  margin-right: .6rem;
+  padding: .1rem .7rem .2rem .6rem;
+}
+
+.main-link, .category {
+  background: var(--main-link-background);
   color: var(--main-link-color);
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1rem;
   text-decoration: none;
-  opacity: 1;
-  padding: .9rem 1.6rem 1rem 1.5rem;
+}
+
+.main-link:hover, .category:hover {
+  background: var(--main-link-background-hover);
+  color: var(--main-link-color-hover);
+  transition: var(--main-link-transition);
 }
 
 .use-case-list, .use-case-list ol {
@@ -180,11 +201,16 @@ main > article :is(p, ul, ol, dl) {
 
 .article-list {
   list-style-type: none;
+  margin-top: 2rem;
   padding: 0;
 }
 
 .article-list .heading {
-  margin-bottom: 0;
+  margin-bottom: .25rem;
+}
+
+.article-list li span {
+  margin-right: .6rem;
 }
 
 /* W3C spec notes and examples style boxes */
