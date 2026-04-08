@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#0f4b69">{% if page.permalink %}
+        <meta name="theme-color" content="{{ site.theme_color }}">{% if page.permalink %}
 
         <link rel="canonical" href="{{ page.permalink | prepend: site.base_url }}">{% endif %}
 

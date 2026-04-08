@@ -1,7 +1,8 @@
 # Jekyll Configuration
 title: Volunteering and Social Action Ontology
 base_url: https://standard.volunteeringdata.io
-description: Standards for volunteering and social action.
+description: Standards for volunteering and social action
+theme_color: "#0f4b69"
 github_username: volunteeringdata
 repository: volunteeringdata/standard
 homepage:
