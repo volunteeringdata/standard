@@ -92,7 +92,7 @@ header {
 }
 
 header a, footer a {
-  color: #fff;
+  color: var(--color);
   opacity: 0.95;
   text-wrap: nowrap;
 }

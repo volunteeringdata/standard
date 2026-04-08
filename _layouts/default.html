@@ -54,8 +54,32 @@
                 {{ content }}
             </article>
         </main>{% if site.footer %}
-        <footer>{% if site.footer.copyright or site.footer.license %}
-            <p>{% if site.footer.copyright %}© <a href="{{ site.footer.copyright.url }}">{{ site.footer.copyright.title }}</a> under the {% endif %}{% if site.footer.license %}<a href="{{ site.footer.license.url }}">{{ site.footer.license.title }}</a>{% endif %}</p>{% endif %}
+        <footer class="footer">
+            <nav class="social-nav">
+                <ul>
+                    <li class="homepage-link">
+                        <a href="/" title="{{ site.title }} Homepage"><img alt="{{ site.title }}" src="/assets/icon/icon.png"></a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ site.contact }}" title="Get in touch for Info about {{ site.title }}">{{ site.contact }}</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}/" title="{{ site.title }} on GitHub" aria-label="GitHub">
+                            <svg class="icon-text" aria-hidden="true">
+                                <use href="/assets/icon/github.svg#root"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/feed.xml" title="{{ site.title }} RSS feed" aria-label="RSS">
+                            <svg class="icon-text" aria-hidden="true">
+                                <use href="/assets/icon/rss.svg#root"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>{% if site.footer.copyright or site.footer.license %}
+            <p class="copyright-notice">{% if site.footer.copyright %}© <a href="{{ site.footer.copyright.url }}">{{ site.footer.copyright.title }}</a> under the {% endif %}{% if site.footer.license %}<a href="{{ site.footer.license.url }}">{{ site.footer.license.title }}</a>{% endif %}</p>{% endif %}
         </footer>{% endif %}
         <script src="/assets/js/menu.js"></script>
     </body>

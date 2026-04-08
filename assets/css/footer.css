@@ -3,7 +3,8 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,23 +17,15 @@
 .footer .social-nav a {
     align-items: center;
     display: flex;
-    padding: 0.5rem 0.75rem;
 }
 
 .footer .social-nav .homepage-link a {
     padding: 0;
 }
 
-.footer .social-nav img {
+.footer .social-nav img, .footer .social-nav svg {
+    height: 2rem;
     width: 2rem;
-}
-
-.footer .social-nav .icon {
-    filter: invert(.9);
-}
-
-.footer .social-nav a:hover .icon {
-    filter: invert(1);
 }
 
 /* Copyright Notice */
