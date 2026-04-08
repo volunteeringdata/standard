@@ -6,7 +6,7 @@ breadcrumbs:
   - title: "Articles"
 ---
 
-<p>Articles in this session relate to volunteering data standardisation.</p>
+<p>Articles in this section relate to volunteering data standardisation.</p>
 
 {% assign categories = "" | split: "" %}
 {% for post in site.posts %}
@@ -17,13 +17,17 @@ breadcrumbs:
   {% endfor %}
 {% endfor %}
 
+{% unless categories.size == 0 %}
+{% assign sorted_categories = categories | sort %}
 <nav class="category-filter">
   <a class="category" href="/article/">All</a>
-  {% for cat in categories | sort %}
+  {% for cat in sorted_categories %}
     <a class="category" href="/article/?category={{ cat | url_encode }}">{{ cat }}</a>
   {% endfor %}
 </nav>
+{% endunless %}
 
+{% if site.posts.size > 0 %}
 <ul class="article-list">
 {% for post in site.posts %}
   <li data-categories="{{ post.categories | join: ',' }}">
@@ -35,6 +39,7 @@ breadcrumbs:
   </li>
 {% endfor %}
 </ul>
+{% endif %}
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
