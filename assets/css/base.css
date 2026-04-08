@@ -18,6 +18,8 @@
   --link-color: rgb(48, 86, 169);
   --link-color-hover: rgb(56, 111, 196);
   --link-transition: color 0.3s ease;
+  --main-margin: 1.5rem 0 1.6rem;
+  --main-margin-narrow: .5rem 0 .6rem;
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
   --main-padding-narrow: .5rem 3.2rem .6rem 3rem;
   --article-text-max-width: 50rem;
@@ -65,7 +67,7 @@ a:hover {
   transition: var(--link-color-transition);
 }
 
-img {
+main article img {
   max-width: 90%;
 }
 
@@ -78,12 +80,15 @@ header, footer {
   align-items: center;
   background: var(--background);
   color: var(--color);
+  padding: var(--main-padding);
+  position: relative;
+}
+
+header {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
-  padding: var(--main-padding);
-  position: relative;
 }
 
 header a, footer a {

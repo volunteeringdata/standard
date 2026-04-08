@@ -1,0 +1,43 @@
+/* Social Navigation */
+.footer .social-nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .social-nav li {
+    margin: 0;
+}
+
+.footer .social-nav a {
+    align-items: center;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+}
+
+.footer .social-nav .homepage-link a {
+    padding: 0;
+}
+
+.footer .social-nav img {
+    width: 2rem;
+}
+
+.footer .social-nav .icon {
+    filter: invert(.9);
+}
+
+.footer .social-nav a:hover .icon {
+    filter: invert(1);
+}
+
+/* Copyright Notice */
+.footer .copyright-notice {
+    border-top: 1px solid rgba(255, 255, 255, .7);
+    margin: var(--main-margin);
+    padding: var(--main-margin-narrow);
+}
