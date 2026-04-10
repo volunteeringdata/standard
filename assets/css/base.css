@@ -75,6 +75,14 @@ dt {
   font-weight: bold;
 }
 
+dd {
+  margin: 0 0 .6rem;
+}
+
+main article *:is(h1, h2, h3, h4, h5, h6, p, dl, ul, ol) {
+  max-width: 57rem;
+}
+
 /* Layout */
 header, footer {
   align-items: center;
@@ -92,7 +100,7 @@ header {
 }
 
 header a, footer a {
-  color: var(--color);
+  color: #fff;
   opacity: 0.95;
   text-wrap: nowrap;
 }

@@ -12,7 +12,7 @@ The Volunteering Data Standards Working Group is a community of subject matter e
 
 The group is open to all and will provide the real-world context and technical advice necessary to ensure the data standards and infrastructure we develop are robust, practical, and directly meet the needs of the volunteering community.
 
-The groups [Terms of Reference](./terms-of-reference) provide an overview of the Working Group and provide information on the management of intellectual property.
+The groups [Terms of Reference](/working-group/terms-of-reference) provide an overview of the Working Group and provide information on the management of intellectual property.
 
 
 ## What commitment am I making?
