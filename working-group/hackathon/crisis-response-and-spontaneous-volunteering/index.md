@@ -10,7 +10,7 @@ We are always looking to improve this data model. Please don't hesitate to [cont
 
 ### V1 of the Crisis Response and Spontaneous Volunteering Taxonomy
 
-![Crisis Response and Spontaneous Volunteering taxonomy v1](./crisis.png "Crisis Response and Spontaneous Volunteering taxonomy v1")
+![Crisis Response and Spontaneous Volunteering taxonomy v1](/working-group/hackathon/crisis-response-and-spontaneous-volunteering/crisis.png "Crisis Response and Spontaneous Volunteering taxonomy v1")
 
 Note: The model image was generated using the [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) ontology visualisation tool.
 

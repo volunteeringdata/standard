@@ -67,7 +67,7 @@ breadcrumbs:
 <h2 id="introduction"><span class="secno">1. </span>Introduction</h2>
 
 
-<p>The volunteering and social action ontology can be <a href="../webvowl/#opts=doc=0;filter_sco=true;mode_compact=true">visualized through WebVOWL</a>, a web-based ontology visualization tool.</p>
+<p>The volunteering and social action ontology can be <a href="/webvowl/#opts=doc=0;filter_sco=true;mode_compact=true">visualized through WebVOWL</a>, a web-based ontology visualization tool.</p>
 
 <p>The volunteering and social action ontology is implemented using RDF, a native data format for the semantic web. RDF enables the <a href="https://5stardata.info/en/">5-star</a> deployment scheme for Open Data; a scheme suggested by Tim Berners-Lee, the inventor of the Web and <a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a> initiator.</p>
 
@@ -76,7 +76,7 @@ breadcrumbs:
 
 <p>The following diagram illustrates the main elements of the Volunteering and Social Action Ontology.</p>
 
-<p class="data-model-diagram"><img src="../assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" /></p>
+<p class="data-model-diagram"><img src="/assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" /></p>
 
 
 <h3 id="organisation"><span class="secno">2.1 </span>Organisation</h3>
@@ -97,7 +97,7 @@ breadcrumbs:
   <dt id="organisation-activity">activity</dt>
   <dd>A volunteering opportunity offered by the organisation.</dd>
   <dt id="organisation-cause">cause</dt>
-  <dd>A charitable cause the organisation is involved with. See the <a href="./ontology/cause">Charitable Cause Taxonomy</a>.</dd>
+  <dd>A charitable cause the organisation is involved with. See the <a href="/ontology/cause">Charitable Cause Taxonomy</a>.</dd>
   <dt id="organisation-charity-number">charityRegistration</dt>
   <dd>The charity registration number and registrar. See also UK charity registration authorities:
     <a href="https://www.charitycommissionni.org.uk/">The Charity Commission for Northern Ireland</a>;
@@ -261,11 +261,11 @@ breadcrumbs:
   <dt id="role-accessibility">accessibility</dt>
   <dd>Accessibility information for the role.</dd>
   <dt id="role-requirement">requirement</dt>
-  <dd>A requirement for the role. See the <a href="./ontology/requirement">Requirement Taxonomy</a>.</dd>
+  <dd>A requirement for the role. See the <a href="/ontology/requirement">Requirement Taxonomy</a>.</dd>
   <dt id="role-reward">reward</dt>
   <dd>A reward associated with the role.</dd>
   <dt id="role-skill">skill</dt>
-  <dd>A skill associated with the role. See the <a href="./ontology/skill">Skill Taxonomy</a>.</dd>
+  <dd>A skill associated with the role. See the <a href="/ontology/skill">Skill Taxonomy</a>.</dd>
 </dl>
 
 <h4 id="role-example"><span class="secno">2.3.2 </span>Example</h4>
@@ -495,9 +495,9 @@ breadcrumbs:
 <h2 id="taxonomies"><span class="secno">3. </span>Taxonomies</h2>
 
 <ul>
-  <li><a href="./ontology/cause">Charitable Cause Taxonomy</a></li>
-  <li><a href="./ontology/requirement">Requirement Taxonomy</a></li>
-  <li><a href="./ontology/skill">Skill Taxonomy</a></li>
+  <li><a href="/ontology/cause">Charitable Cause Taxonomy</a></li>
+  <li><a href="/ontology/requirement">Requirement Taxonomy</a></li>
+  <li><a href="/ontology/skill">Skill Taxonomy</a></li>
 </ul>
 
 
@@ -537,4 +537,4 @@ breadcrumbs:
 
 <h2 id="standardisation-history"><span class="secno">7. </span>Standardisation History</h2>
 
-<p>The data model's evolution is recorded as a <a href="../working-group/model-version/">series of versions</a>.</p>
+<p>The data model's evolution is recorded as a <a href="/working-group/model-version/">series of versions</a>.</p>

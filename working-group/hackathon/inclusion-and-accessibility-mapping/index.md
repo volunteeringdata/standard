@@ -14,6 +14,6 @@ considerations for organisations when advertising volunteering opportunities.
 
 ### V1 of the Accessibility and Inclusion Taxonomy
 
-![accessibility and inclusion taxonomy v1](./accessibility.png "accessibility and inclusion taxonomy v1")
+![accessibility and inclusion taxonomy v1](/working-group/hackathon/inclusion-and-accessibility-mapping/accessibility.png "accessibility and inclusion taxonomy v1")
 
 Note: The model image was generated using the [WebVOWL](https://github.com/VisualDataWeb/WebVOWL) ontology visualisation tool.
