@@ -69,10 +69,17 @@
                 <ul>
                     <li class="homepage-link">
                         <a href="/" title="{{ site.title }} Homepage"><img alt="{{ site.title }}" src="/assets/icon/icon.png"></a>
-                    </li>
+                    </li>{% if site.contact %}
                     <li>
                         <a href="mailto:{{ site.contact }}" title="Get in touch for Info about {{ site.title }}">{{ site.contact }}</a>
-                    </li>
+                    </li>{% endif %}{% if site.newsletter %}
+                    <li>
+                        <a href="{{ site.newsletter }}" title="Sign up to receive news about the {{ site.title }}" aria-label="Contact">
+                            <svg class="icon-text" aria-hidden="true">
+                                <use href="/assets/icon/envelope.svg#root"></use>
+                            </svg>
+                        </a>
+                    </li>{% endif %}
                     <li>
                         <a href="https://github.com/{{ site.github_username }}/" title="{{ site.title }} on GitHub" aria-label="GitHub">
                             <svg class="icon-text" aria-hidden="true">
