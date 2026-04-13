@@ -18,6 +18,11 @@ jobs:
       - name: Build Jekyll
         run: bundle exec jekyll build
 
+      - uses: actions/setup-node@v6
+
+      - name: Create Search Index with Pagefind
+        run: npx pagefind --site _site
+
       - uses: actions/upload-pages-artifact@v4
         with:
           path: ./_site

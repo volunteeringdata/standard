@@ -101,6 +101,7 @@ header {
 
 header a, footer a {
   color: #fff;
+  line-height: 1.6rem;
   opacity: 0.95;
   text-wrap: nowrap;
 }
@@ -140,6 +141,7 @@ main > article :is(p, ul, ol, dl) {
 
 .icon-text {
   vertical-align: top;
+  height: 1.6rem;
   width: 1.6rem;
 }
 

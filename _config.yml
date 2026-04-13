@@ -16,6 +16,7 @@ nav:
     url: /use-cases
   - title: Working Group
     url: /working-group
+pagefind: true
 footer:
   copyright:
     title: Crown Copyright
