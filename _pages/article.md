@@ -1,6 +1,7 @@
 ---
 permalink: /article/
 layout: default
+regenerate: true
 title: "Volunteering Data Updates"
 breadcrumbs:
   - title: "Articles"
