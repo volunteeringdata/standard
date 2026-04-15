@@ -35,7 +35,7 @@ breadcrumbs:
     <h2 class="heading"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <span>{{ post.date | date: "%Y-%m-%d" }}</span>
     {% if post.categories.size > 0 %}
-      <span class="post-categories">{% for cat in post.categories %}<a class="category" href="/article/?category={{ cat | url_encode }}">{{ cat }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}</span>
+      <span>{% for cat in post.categories %}<a class="category" href="/article/?category={{ cat | url_encode }}">{{ cat }}</a>{% unless forloop.last %} {% endunless %}{% endfor %}</span>
     {% endif %}
   </li>
 {% endfor %}
