@@ -45,19 +45,8 @@
                 <span></span>
                 <span></span>
             </button>
-        </header>{% if page.breadcrumbs %}
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ol>
-            <li><a href="/">Home</a></li>
-            {% for breadcrumb in page.breadcrumbs %}
-            {% if forloop.last %}
-                <li><a href="#" aria-current="page">{{ breadcrumb.title }}</a></li>
-            {% else %}
-                <li><a href="{{ breadcrumb.url }}">{{ breadcrumb.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ol>
-        </nav>{% endif %}
+        </header>
+        {% include breadcrumbs.html %}
         <main>
             <article>
                 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
