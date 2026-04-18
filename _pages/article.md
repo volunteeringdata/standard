@@ -18,15 +18,9 @@ breadcrumbs:
   {% endfor %}
 {% endfor %}
 
-{% unless categories.size == 0 %}
-{% assign sorted_categories = categories | sort %}
-<nav class="category-filter">
-  <a class="category" href="/article/">All</a>
-  {% for cat in sorted_categories %}
-    <a class="category" href="/article/?category={{ cat | url_encode }}">{{ cat }}</a>
-  {% endfor %}
-</nav>
-{% endunless %}
+{% unless categories.size == 0 %}{% assign sorted_categories = categories | sort %}<nav class="category-filter">
+<a class="category" href="/article/">All</a>{% for cat in sorted_categories %}<a class="category" href="/article/?category={{ cat | url_encode }}">{{ cat }}</a>{% endfor %}
+</nav>{% endunless %}
 
 {% if site.posts.size > 0 %}
 <ul class="article-list">

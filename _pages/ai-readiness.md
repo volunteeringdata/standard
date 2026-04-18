@@ -6,6 +6,14 @@ breadcrumbs:
   - title: "AI-ready data"
 ---
 
+<nav id="toc" class="toc">
+<h2 id="table-of-contents">Table of Contents</h2>
+
+1. TOC
+{:toc}
+
+</nav>
+
 For data to be AI-ready, it generally needs to be described in a machine-readable format.
 
 This should address:

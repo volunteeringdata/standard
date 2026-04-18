@@ -6,65 +6,18 @@ breadcrumbs:
   - title: "Ontology"
 ---
 
-<nav id="toc" class="toc">
+
+<nav id="toc" class="toc numbered">
 <h2 id="table-of-contents">Table of Contents</h2>
-<ol>
-  <li><a href="#introduction"><span class="secno">1. </span><span class="content">Introduction</span></a></li>
-  <li><a href="#volunteering-data-model"><span class="secno">2. </span><span class="content">Volunteering Data Model</span></a>
-    <ol>
-      <li><a href="#organisation"><span class="secno">2.1 </span><span class="content">Organisation</span></a>
-        <ol>
-          <li><a href="#organisation-properties"><span class="secno">2.1.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#organisation-example"><span class="secno">2.1.2 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-      <li><a href="#activity"><span class="secno">2.2 </span><span class="content">Activity</span></a>
-        <ol>
-          <li><a href="#activity-properties"><span class="secno">2.2.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#activity-example"><span class="secno">2.2.2 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-      <li><a href="#role"><span class="secno">2.3 </span><span class="content">Role</span></a>
-        <ol>
-          <li><a href="#role-properties"><span class="secno">2.3.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#role-example"><span class="secno">2.3.2 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-      <li><a href="#session"><span class="secno">2.4 </span><span class="content">Session</span></a>
-        <ol>
-          <li><a href="#session-properties"><span class="secno">2.4.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#session-example"><span class="secno">2.4.2 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-      <li><a href="#location"><span class="secno">2.5 </span><span class="content">Location</span></a>
-        <ol>
-          <li><a href="#location-properties"><span class="secno">2.5.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#location-example"><span class="secno">2.5.2 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-      <li><a href="#time"><span class="secno">2.6 </span><span class="content">Time</span></a>
-        <ol>
-          <li><a href="#time-properties"><span class="secno">2.6.1 </span><span class="content">Properties</span></a></li>
-          <li><a href="#time-defined-temporal-entities"><span class="secno">2.6.2 </span><span class="content">Defined temporal entities</span></a></li>
-          <li><a href="#time-example"><span class="secno">2.6.3 </span><span class="content">Example</span></a></li>
-        </ol>
-      </li>
-    </ol>
-  </li>
-  <li><a href="#taxonomies"><span class="secno">3. </span><span class="content">Taxonomies</span></a></li>
-  <li><a href="#sharing-opportunities-data"><span class="secno">4. </span><span class="content">Sharing Opportunities Data</span></a></li>
-  <li><a href="#ai-readiness"><span class="secno">5. </span><span class="content">AI Readiness</span></a></li>
-  <li><a href="#contributing-knowledge"><span class="secno">6. </span><span class="content">Contributing Knowledge</span></a>
-    <ol>
-      <li><a href="#discussion-topics"><span class="secno">6.1 </span><span class="content">Discussion Topics</span></a></li>
-    </ol>
-  </li>
-  <li><a href="#standardisation-history"><span class="secno">7. </span><span class="content">Standardisation History</span></a></li>
-</ol>
+
+1. TOC
+{:toc}
+
 </nav>
 
+<article>
 
-<h2 id="introduction"><span class="secno">1. </span>Introduction</h2>
+## Introduction
 
 
 <p>The volunteering and social action ontology can be <a href="/webvowl/#opts=doc=0;filter_sco=true;mode_compact=true">visualized through WebVOWL</a>, a web-based ontology visualization tool.</p>
@@ -72,47 +25,47 @@ breadcrumbs:
 <p>The volunteering and social action ontology is implemented using RDF, a native data format for the semantic web. RDF enables the <a href="https://5stardata.info/en/">5-star</a> deployment scheme for Open Data; a scheme suggested by Tim Berners-Lee, the inventor of the Web and <a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a> initiator.</p>
 
 
-<h2 id="volunteering-data-model"><span class="secno">2. </span>Volunteering Data Model</h2>
+## Volunteering Data Model
 
 <p>The following diagram illustrates the main elements of the Volunteering and Social Action Ontology.</p>
 
 <p class="data-model-diagram"><img src="/assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" /></p>
 
 
-<h3 id="organisation"><span class="secno">2.1 </span>Organisation</h3>
+### Organisation
 
 <p>Any organisation running activities that involve volunteers.</p>
 
-<h4 id="organisation-properties"><span class="secno">2.1.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="organisation-name">name</dt>
-  <dd>The organisation's name.</dd>
-  <dt id="organisation-description">description</dt>
-  <dd>A description of the organisation.</dd>
-  <dt id="organisation-website">website</dt>
-  <dd>The URL of the organisation's website.</dd>
-  <dt id="organisation-image">image</dt>
-  <dd>An image representing the organisation (e.g. logo or photo).</dd>
-  <dt id="organisation-activity">activity</dt>
-  <dd>A volunteering opportunity offered by the organisation.</dd>
-  <dt id="organisation-cause">cause</dt>
-  <dd>A charitable cause the organisation is involved with. See the <a href="/ontology/cause">Charitable Cause Taxonomy</a>.</dd>
-  <dt id="organisation-charity-number">charityRegistration</dt>
-  <dd>The charity registration number and registrar. See also UK charity registration authorities:
-    <a href="https://www.charitycommissionni.org.uk/">The Charity Commission for Northern Ireland</a>;
-    <a href="https://www.oscr.org.uk/about-charities/">Office of the Scottish Charity Regulator (OSCR)</a>;
-    <a href="https://register-of-charities.charitycommission.gov.uk/">Charity Commission for England and Wales</a>.
-    <dl>
-      <dt id="charity-registration-registrar">registrar</dt>
-      <dd>The charity registration authority.</dd>
-      <dt id="charity-registration-registration-number">registrationNumber</dt>
-      <dd>The charity registration number.</dd>
-    </dl>
-  </dd>
-</dl>
+<span id="organisation-name">name</span>
+: The organisation's name.
 
-<h4 id="organisation-example"><span class="secno">2.1.2 </span>Example</h4>
+<span id="organisation-description">description</span>
+: A description of the organisation.
+
+<span id="organisation-website">website</span>
+: The URL of the organisation's website.
+
+<span id="organisation-image">image</span>
+: An image representing the organisation (e.g. logo or photo).
+
+<span id="organisation-activity">activity</span>
+: A volunteering opportunity offered by the organisation.
+
+<span id="organisation-cause">cause</span>
+: A charitable cause the organisation is involved with. See the <a href="/ontology/cause">Charitable Cause Taxonomy</a>.
+
+<span id="organisation-charity-number">charityRegistration</span>
+: The charity registration number and registrar. See also UK charity registration authorities: <a href="https://www.charitycommissionni.org.uk/">The Charity Commission for Northern Ireland</a>; <a href="https://www.oscr.org.uk/about-charities/">Office of the Scottish Charity Regulator (OSCR)</a>; <a href="https://register-of-charities.charitycommission.gov.uk/">Charity Commission for England and Wales</a>.
+
+<span id="charity-registration-registrar">registrar</span>
+: The charity registration authority.
+
+<span id="charity-registration-registration-number">registrationNumber</span>
+: The charity registration number.
+
+#### Example
 
 <div class="example">
   <h5 id="example-1">Example 1</h5>
@@ -163,34 +116,40 @@ breadcrumbs:
   </ul>
 </div>
 
-<h3 id="activity"><span class="secno">2.2 </span>Activity</h3>
+### Activity
 
 <p>Any kind of activity that involves volunteers.</p>
 
-<h4 id="activity-properties"><span class="secno">2.2.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="activity-title">title</dt>
-  <dd>The activity's title.</dd>
-  <dt id="activity-description">description</dt>
-  <dd>A description of the activity.</dd>
-  <dt id="activity-requires-emergency-participation">requiresEmergencyParticipation</dt>
-  <dd>Whether the activity requires emergency participation (boolean).</dd>
-  <dt id="activity-image">image</dt>
-  <dd>An image representing the activity.</dd>
-  <dt id="activity-image">publishStart</dt>
-  <dd>The date at which publication of the activity must start.</dd>
-  <dt id="activity-image">publishEnd</dt>
-  <dd>The date at which publication of the activity must end.</dd>
-  <dt id="activity-organisation">organisation</dt>
-  <dd>The organisation running the activity.</dd>
-  <dt id="activity-role">role</dt>
-  <dd>A volunteer role associated with the activity.</dd>
-  <dt id="activity-session">session</dt>
-  <dd>A session when the activity takes place.</dd>
-</dl>
+<span id="activity-title">title</span>
+: The activity's title.
 
-<h4 id="activity-example"><span class="secno">2.2.2 </span>Example</h4>
+<span id="activity-description">description</span>
+: A description of the activity.
+
+<span id="activity-requires-emergency-participation">requiresEmergencyParticipation</span>
+: Whether the activity requires emergency participation (boolean).
+
+<span id="activity-image">image</span>
+: An image representing the activity.
+
+<span id="activity-publish-start">publishStart</span>
+: The date at which publication of the activity must start.
+
+<span id="activity-publish-end">publishEnd</span>
+: The date at which publication of the activity must end.
+
+<span id="activity-organisation">organisation</span>
+: The organisation running the activity.
+
+<span id="activity-role">role</span>
+: A volunteer role associated with the activity.
+
+<span id="activity-session">session</span>
+: A session when the activity takes place.
+
+#### Example
 
 <div class="example">
   <h5 id="example-2">Example 2</h5>
@@ -235,40 +194,49 @@ breadcrumbs:
 </div>
 
 
-<h3 id="role"><span class="secno">2.3 </span>Role</h3>
+### Role
 
 <p>Any kind of role related to a volunteering activity.</p>
 
-<h4 id="role-properties"><span class="secno">2.3.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="role-title">title</dt>
-  <dd>The role's title.</dd>
-  <dt id="role-description">description</dt>
-  <dd>A description of the role.</dd>
-  <dt id="role-commitment">commitment</dt>
-  <dd>The time commitment expected for the role.</dd>
-  <dt id="role-apply-link">applyLink</dt>
-  <dd>A link to apply for the role.</dd>
-  <dt id="role-allows-remote-participation">allowsRemoteParticipation</dt>
-  <dd>Whether the role allows remote participation (boolean).</dd>
-  <dt id="role-minimum-age">minimumAge</dt>
-  <dd>The minimum age requirement for the role.</dd>
-  <dt id="role-maximum-age">maximumAge</dt>
-  <dd>The maximum age requirement for the role.</dd>
-  <dt id="role-activity">activity</dt>
-  <dd>The activity this role is part of.</dd>
-  <dt id="role-accessibility">accessibility</dt>
-  <dd>Accessibility information for the role.</dd>
-  <dt id="role-requirement">requirement</dt>
-  <dd>A requirement for the role. See the <a href="/ontology/requirement">Requirement Taxonomy</a>.</dd>
-  <dt id="role-reward">reward</dt>
-  <dd>A reward associated with the role.</dd>
-  <dt id="role-skill">skill</dt>
-  <dd>A skill associated with the role. See the <a href="/ontology/skill">Skill Taxonomy</a>.</dd>
-</dl>
+<span id="role-title">title</span>
+: The role's title.
 
-<h4 id="role-example"><span class="secno">2.3.2 </span>Example</h4>
+<span id="role-description">description</span>
+: A description of the role.
+
+<span id="role-commitment">commitment</span>
+: The time commitment expected for the role.
+
+<span id="role-apply-link">applyLink</span>
+: A link to apply for the role.
+
+<span id="role-allows-remote-participation">allowsRemoteParticipation</span>
+: Whether the role allows remote participation (boolean).
+
+<span id="role-minimum-age">minimumAge</span>
+: The minimum age requirement for the role.
+
+<span id="role-maximum-age">maximumAge</span>
+: The maximum age requirement for the role.
+
+<span id="role-activity">activity</span>
+: The activity this role is part of.
+
+<span id="role-accessibility">accessibility</span>
+: Accessibility information for the role.
+
+<span id="role-requirement">requirement</span>
+: A requirement for the role. See the <a href="/ontology/requirement">Requirement Taxonomy</a>.
+
+<span id="role-reward">reward</span>
+: A reward associated with the role.
+
+<span id="role-skill">skill</span>
+: A skill associated with the role. See the <a href="/ontology/skill">Skill Taxonomy</a>.
+
+#### Example
 
 <div class="example">
   <h5 id="example-3">Example 3</h5>
@@ -300,22 +268,22 @@ breadcrumbs:
 </div>
 
 
-<h3 id="session"><span class="secno">2.4 </span>Session</h3>
+### Session
 
 <p>A session describes a time and place for an activity that involves volunteers.</p>
 
-<h4 id="session-properties"><span class="secno">2.4.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="session-activity">activity</dt>
-  <dd>The activity this session is for.</dd>
-  <dt id="session-location">location</dt>
-  <dd>The location where the session takes place.</dd>
-  <dt id="session-time">time</dt>
-  <dd>The time when the session occurs.</dd>
-</dl>
+<span id="session-activity">activity</span>
+: The activity this session is for.
 
-<h4 id="session-example"><span class="secno">2.4.2 </span>Example</h4>
+<span id="session-location">location</span>
+: The location where the session takes place.
+
+<span id="session-time">time</span>
+: The time when the session occurs.
+
+#### Example
 
 <div class="example">
   <h5 id="example-4">Example 4</h5>
@@ -341,28 +309,31 @@ breadcrumbs:
 </div>
 
 
-<h3 id="location"><span class="secno">2.5 </span>Location</h3>
+### Location
 
 <p>Any location related to volunteering activities.</p>
 
-<h4 id="location-properties"><span class="secno">2.5.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="location-name">name</dt>
-  <dd>A name for the location.</dd>
-  <dt id="location-address">address</dt>
-  <dd>The location's address as free text. This can be a partial (e.g. postcode) or full address.</dd>
-  <dt id="location-geometry">geometry</dt>
-  <dd>A generic geometry object to support interfaces common to all geographically referenced geometric objects. Sub-property of <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html#_property_geohasgeometry">geosparql:hasGeometry</a>. See the <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">GeoSPARQL standard</a>.</dd>
-  <dt id="location-latitude">latitude</dt>
-  <dd>The location's latitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.</dd>
-  <dt id="location-longitude">longitude</dt>
-  <dd>The location's longitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.</dd>
-  <dt id="location-session">session</dt>
-  <dd>A session that takes place at this location.</dd>
-</dl>
+<span id="location-name">name</span>
+: A name for the location.
 
-<h4 id="location-example"><span class="secno">2.5.2 </span>Example</h4>
+<span id="location-address">address</span>
+: The location's address as free text. This can be a partial (e.g. postcode) or full address.
+
+<span id="location-geometry">geometry</span>
+: A generic geometry object to support interfaces common to all geographically referenced geometric objects. Sub-property of <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html#_property_geohasgeometry">geosparql:hasGeometry</a>. See the <a href="https://docs.ogc.org/is/22-047r1/22-047r1.html">GeoSPARQL standard</a>.
+
+<span id="location-latitude">latitude</span>
+: The location's latitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.
+
+<span id="location-longitude">longitude</span>
+: The location's longitude in decimal degree. Sub-property of <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:long</a>. See <a href="https://www.w3.org/2003/01/geo/wgs84_pos">WGS84 Geo Positioning</a>.
+
+<span id="location-session">session</span>
+: A session that takes place at this location.
+
+#### Example
 
 <div class="example">
   <h5 id="example-5">Example 5</h5>
@@ -398,69 +369,87 @@ breadcrumbs:
 </div>
 
 
-<h3 id="time"><span class="secno">2.6 </span>Time</h3>
+### Time
 
 <p>Any time information related to volunteering activities modeled as a OWL time temporal entity.</p>
 
-<h4 id="time-properties"><span class="secno">2.6.1 </span>Properties</h4>
+#### Properties
 
-<dl>
-  <dt id="time-label">rdfs:label</dt>
-  <dd>The temporal entity's name. See <a href="https://www.w3.org/TR/owl-time/#time:TemporalEntity">OWL Time Temporal Entity</a>.</dd>
-  <dt id="time-beginning">time:hasBeginning</dt>
-  <dd>The beginning of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasBeginning">OWL Time has beginning</a>.</dd>
-  <dt id="time-end">time:hasEnd</dt>
-  <dd>The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.</dd>
-</dl>
+<span id="time-label">rdfs:label</span>
+: The temporal entity's name. See <a href="https://www.w3.org/TR/owl-time/#time:TemporalEntity">OWL Time Temporal Entity</a>.
 
-<h4 id="time-defined-temporal-entities"><span class="secno">2.6.2 </span>Defined temporal entities</h4>
+<span id="time-beginning">time:hasBeginning</span>
+: The beginning of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasBeginning">OWL Time has beginning</a>.
 
-<dl>
-  <dt id="time-monday-morning">MondayMorning</dt>
-  <dd>The time period between 6am and 12pm on Monday.</dd>
-  <dt id="time-monday-afternoon">MondayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Monday.</dd>
-  <dt id="time-monday-evening">MondayEvening</dt>
-  <dd>The time period between 6pm and 12am on Monday.</dd>
-  <dt id="time-tuesday-morning">TuesdayMorning</dt>
-  <dd>The time period between 6am and 12pm on Tuesday.</dd>
-  <dt id="time-tuesday-afternoon">TuesdayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Tuesday.</dd>
-  <dt id="time-tuesday-evening">TuesdayEvening</dt>
-  <dd>The time period between 6pm and 12am on Tuesday.</dd>
-  <dt id="time-wednesday-morning">WednesdayMorning</dt>
-  <dd>The time period between 6am and 12pm on Wednesday.</dd>
-  <dt id="time-wednesday-afternoon">WednesdayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Wednesday.</dd>
-  <dt id="time-wednesday-evening">WednesdayEvening</dt>
-  <dd>The time period between 6pm and 12am on Wednesday.</dd>
-  <dt id="time-thursday-morning">ThursdayMorning</dt>
-  <dd>The time period between 6am and 12pm on Thursday.</dd>
-  <dt id="time-thursday-afternoon">ThursdayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Thursday.</dd>
-  <dt id="time-thursday-evening">ThursdayEvening</dt>
-  <dd>The time period between 6pm and 12am on Thursday.</dd>
-  <dt id="time-friday-morning">FridayMorning</dt>
-  <dd>The time period between 6am and 12pm on Friday.</dd>
-  <dt id="time-friday-afternoon">FridayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Friday.</dd>
-  <dt id="time-friday-evening">FridayEvening</dt>
-  <dd>The time period between 6pm and 12am on Friday.</dd>
-  <dt id="time-saturday-morning">SaturdayMorning</dt>
-  <dd>The time period between 6am and 12pm on Saturday.</dd>
-  <dt id="time-saturday-afternoon">SaturdayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Saturday.</dd>
-  <dt id="time-saturday-evening">SaturdayEvening</dt>
-  <dd>The time period between 6pm and 12am on Saturday.</dd>
-  <dt id="time-sunday-morning">SundayMorning</dt>
-  <dd>The time period between 6am and 12pm on Sunday.</dd>
-  <dt id="time-sunday-afternoon">SundayAfternoon</dt>
-  <dd>The time period between 12pm and 6pm on Sunday.</dd>
-  <dt id="time-sunday-evening">SundayEvening</dt>
-  <dd>The time period between 6pm and 12am on Sunday.</dd>
-</dl>
+<span id="time-end">time:hasEnd</span>
+: The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.
 
-<h4 id="time-example"><span class="secno">2.6.3 </span>Example</h4>
+#### Defined temporal entities
+
+<span id="time-monday-morning">MondayMorning</span>
+: The time period between 6am and 12pm on Monday.
+
+<span id="time-monday-afternoon">MondayAfternoon</span>
+: The time period between 12pm and 6pm on Monday.
+
+<span id="time-monday-evening">MondayEvening</span>
+: The time period between 6pm and 12am on Monday.
+
+<span id="time-tuesday-morning">TuesdayMorning</span>
+: The time period between 6am and 12pm on Tuesday.
+
+<span id="time-tuesday-afternoon">TuesdayAfternoon</span>
+: The time period between 12pm and 6pm on Tuesday.
+
+<span id="time-tuesday-evening">TuesdayEvening</span>
+: The time period between 6pm and 12am on Tuesday.
+
+<span id="time-wednesday-morning">WednesdayMorning</span>
+: The time period between 6am and 12pm on Wednesday.
+
+<span id="time-wednesday-afternoon">WednesdayAfternoon</span>
+: The time period between 12pm and 6pm on Wednesday.
+
+<span id="time-wednesday-evening">WednesdayEvening</span>
+: The time period between 6pm and 12am on Wednesday.
+
+<span id="time-thursday-morning">ThursdayMorning</span>
+: The time period between 6am and 12pm on Thursday.
+
+<span id="time-thursday-afternoon">ThursdayAfternoon</span>
+: The time period between 12pm and 6pm on Thursday.
+
+<span id="time-thursday-evening">ThursdayEvening</span>
+: The time period between 6pm and 12am on Thursday.
+
+<span id="time-friday-morning">FridayMorning</span>
+: The time period between 6am and 12pm on Friday.
+
+<span id="time-friday-afternoon">FridayAfternoon</span>
+: The time period between 12pm and 6pm on Friday.
+
+<span id="time-friday-evening">FridayEvening</span>
+: The time period between 6pm and 12am on Friday.
+
+<span id="time-saturday-morning">SaturdayMorning</span>
+: The time period between 6am and 12pm on Saturday.
+
+<span id="time-saturday-afternoon">SaturdayAfternoon</span>
+: The time period between 12pm and 6pm on Saturday.
+
+<span id="time-saturday-evening">SaturdayEvening</span>
+: The time period between 6pm and 12am on Saturday.
+
+<span id="time-sunday-morning">SundayMorning</span>
+: The time period between 6am and 12pm on Sunday.
+
+<span id="time-sunday-afternoon">SundayAfternoon</span>
+: The time period between 12pm and 6pm on Sunday.
+
+<span id="time-sunday-evening">SundayEvening</span>
+: The time period between 6pm and 12am on Sunday.
+
+#### Example
 
 <div class="example">
   <h5 id="example-7">Example 7</h5>
@@ -492,49 +481,49 @@ breadcrumbs:
 </div>
 
 
-<h2 id="taxonomies"><span class="secno">3. </span>Taxonomies</h2>
+## Taxonomies
 
-<ul>
-  <li><a href="/ontology/cause">Charitable Cause Taxonomy</a></li>
-  <li><a href="/ontology/requirement">Requirement Taxonomy</a></li>
-  <li><a href="/ontology/skill">Skill Taxonomy</a></li>
-</ul>
+* [Charitable Cause Taxonomy](/ontology/cause)
+* [Requirement Taxonomy](/ontology/requirement)
+* [Skill Taxonomy](/ontology/skill)
 
-
-<h2 id="sharing-opportunities-data"><span class="secno">4. </span>Sharing Opportunities Data</h2>
-
-<p>See <a href="/publishing-opportunities-data">sharing volunteering opportunities data</a> for guidance on how to share volunteering opportunities using this standard.</p>
+See also the [European Skills, Competences, Qualifications and Occupations (ESCO)](https://esco.ec.europa.eu/en/classification/skill_main).
 
 
+## Sharing Opportunities Data
 
-<h2 id="ai-readiness"><span class="secno">5. </span>AI Readiness</h2>
-
-<p>See <a href="/ai-readiness">AI-Ready Data</a> for guidance on machine-readable dataset and API descriptions that support AI use.</p>
+See <a href="/publishing-opportunities-data">sharing volunteering opportunities data</a> for guidance on how to share volunteering opportunities using this standard.
 
 
 
-<h2 id="contributing-knowledge"><span class="secno">6. </span>Contributing Knowledge to the Volunteering and Social Action Ontology</h2>
+## AI Readiness
 
-<p>We welcome domain experts and people with varied experiences of volunteering to contribute their knowledge of the sector. Shared knowledge is the basis to ensure our standard adequately provides structure to address the volunteering sector's needs.</p>
-
-<h3 id="discussion-topics"><span class="secno">6.1 </span>Discussion Topics</h3>
-
-<p>Please don't hesitate to contribute to the <a href="https://github.com/orgs/volunteeringdata/discussions/">discussions</a> on the volunteering data model repository.</p>
-
-<p>We created 8 categories for focused discussions on specific modeling and requirements topics:</p>
-
-<ul>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/accessibility">Accessibility</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/data-governance">Data Governance</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/emergency-response">Emergency Response</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/geographical-location">Geographical Location</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/roles-and-skills">Roles and Skills</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/value-typology">Value Mapping</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/volunteer-involving-organisation">Volunteer Involving Organisation</a></li>
-  <li><a href="https://github.com/orgs/volunteeringdata/discussions/categories/volunteering-opportunities">Volunteering Opportunities</a></li>
-</ul>
+See <a href="/ai-readiness">AI-Ready Data</a> for guidance on machine-readable dataset and API descriptions that support AI use.
 
 
-<h2 id="standardisation-history"><span class="secno">7. </span>Standardisation History</h2>
 
-<p>The data model's evolution is recorded as a <a href="/working-group/model-version/">series of versions</a>.</p>
+## Contributing Knowledge
+
+We welcome domain experts and people with varied experiences of volunteering to contribute their knowledge of the sector to the Volunteering and Social Action Ontology. Shared knowledge is the basis to ensure our standard adequately provides structure to address the volunteering sector's needs.
+
+### Discussion Topics
+
+Please don't hesitate to contribute to the <a href="https://github.com/orgs/volunteeringdata/discussions/">discussions</a> on the volunteering data model repository.
+
+We created 8 categories for focused discussions on specific modeling and requirements topics:
+
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/accessibility">Accessibility</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/data-governance">Data Governance</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/emergency-response">Emergency Response</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/geographical-location">Geographical Location</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/roles-and-skills">Roles and Skills</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/value-typology">Value Mapping</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/volunteer-involving-organisation">Volunteer Involving Organisation</a>
+* <a href="https://github.com/orgs/volunteeringdata/discussions/categories/volunteering-opportunities">Volunteering Opportunities</a>
+
+
+## Standardisation History
+
+The data model's evolution is recorded as a <a href="/working-group/model-version/">series of versions</a>.
+
+</article>
