@@ -7,7 +7,7 @@ description: How to access volunteering data through the Volunteering Data API a
 
 The Volunteering Data API gives access to volunteering opportunities, organisations and the data model. It is described by an [OpenAPI description document](https://api.volunteeringdata.io/openapi.json).
 
-[Explore and try out the API endpoints](/api/swagger).
+[Explore and try out the API endpoints](/swagger).
 
 
 ## MCP server
@@ -21,5 +21,7 @@ Add it to any MCP client that supports remote servers. For example, with [Claude
 ```sh
 claude mcp add --transport http volunteering https://api.volunteeringdata.io/mcp
 ```
+
+To see MCP tool calls working from a web page, try the [MCP demo](/mcp), which finds activities by keyword or location.
 
 See [AI-Ready Data](/ai-readiness) for more on how the data is made available to AI tools.
