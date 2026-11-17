@@ -5,9 +5,28 @@ title: Volunteering Data API
 description: How to access volunteering data through the Volunteering Data API and its MCP server.
 ---
 
-The Volunteering Data API gives access to volunteering opportunities, organisations and the data model. It is described by an [OpenAPI description document](https://api.volunteeringdata.io/openapi.json).
+The Volunteering Data API gives access to volunteering opportunities, organisations and the data model through a RESTful API, a SPARQL endpoint and an MCP server.
+
+## RESTful API
+
+The RESTful API is built with [NamedQuery](https://github.com/theodi/NamedQuery). It is a collection of SPARQL queries, each given a name and published as an HTTP endpoint. Calling an endpoint runs its query against the [SPARQL endpoint](#sparql-endpoint), with any request parameters filled in, and returns the results. This means you can use the data without having to write SPARQL.
+
+The response format can be chosen with the `Accept` header, for example `text/turtle` for [Turtle](https://www.w3.org/TR/turtle/).
+
+API base URL: `https://api.volunteeringdata.io`
+
+The API is described by an [OpenAPI description document](https://api.volunteeringdata.io/openapi.json).
 
 [Explore and try out the API endpoints](/swagger).
+
+
+## SPARQL endpoint
+
+The data is also available as a knowledge graph that can be queried with [SPARQL](https://www.w3.org/TR/sparql11-query/).
+
+SPARQL endpoint: `https://sparql.volunteeringdata.io/sparql`
+
+[Write and run SPARQL queries in the browser](/sparql).
 
 
 ## MCP server

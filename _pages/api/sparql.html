@@ -1,0 +1,62 @@
+---
+permalink: /sparql
+layout: bare
+title: SPARQL Query Editor
+description: Query volunteering data with SPARQL, using the Volunteering Data SPARQL endpoint directly in the browser.
+breadcrumbs:
+  - title: "Volunteering Data API"
+    url: /api
+---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@zazuko/yasgui@4/build/yasgui.min.css">
+<style>
+  .sparql-editor {
+    background-color: var(--main-text-background);
+    color: var(--main-text-color);
+    padding: 1rem var(--main-padding) 2rem;
+  }
+  .sparql-editor > p {
+    margin: 0 0 1rem;
+  }
+</style>
+
+<div class="sparql-editor" data-pagefind-ignore>
+  <p>Write a SPARQL query and run it against <code>https://sparql.volunteeringdata.io/sparql</code>.</p>
+  <div id="yasgui"><p>Loading the query editor…</p></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@zazuko/yasgui@4/build/yasgui.min.js"></script>
+<script>
+  (function () {
+    var endpoint = "https://sparql.volunteeringdata.io/sparql";
+    var target = document.getElementById("yasgui");
+
+    if (typeof Yasgui === "undefined") {
+      target.innerHTML = '<p>The query editor could not be loaded. You can send SPARQL queries directly to <a href="' +
+        endpoint + '">' + endpoint + '</a>.</p>';
+      return;
+    }
+
+    Yasgui.Yasqe.defaults.value = [
+      "PREFIX vd: <https://ns.volunteeringdata.io/>",
+      "",
+      "# Count the instances of each class in the Volunteering Data namespace",
+      "SELECT ?class (COUNT(?s) AS ?count)",
+      "WHERE {",
+      "  ?s a ?class .",
+      "  FILTER(STRSTARTS(STR(?class), STR(vd:)))",
+      "}",
+      "GROUP BY ?class",
+      "ORDER BY DESC(?count)",
+      ""
+    ].join("\n");
+
+    target.innerHTML = "";
+    new Yasgui(target, {
+      requestConfig: { endpoint: endpoint, method: "POST" },
+      copyEndpointOnNewTab: true,
+      endpointCatalogueOptions: {
+        getData: function () { return [{ endpoint: endpoint }]; }
+      }
+    });
+  })();
+</script>
