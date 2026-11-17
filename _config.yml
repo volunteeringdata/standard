@@ -12,6 +12,8 @@ homepage:
 nav:
   - title: Data Model
     url: /ontology
+  - title: API
+    url: /api
   - title: Use Cases
     url: /use-cases
   - title: Working Group

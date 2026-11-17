@@ -1,0 +1,56 @@
+---
+permalink: /api/swagger
+layout: bare
+title: Volunteering Data API Explorer
+description: Interactive documentation of the Volunteering Data API, generated from its OpenAPI description.
+---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.34.1/swagger-ui.css">
+<style>
+  .api-explorer {
+    background-color: var(--main-text-background);
+    color: var(--main-text-color);
+    padding: 1rem 0 2rem;
+  }
+  .api-explorer > p {
+    padding: var(--main-padding);
+    margin: 0;
+  }
+</style>
+
+<div id="swagger-ui" class="api-explorer" data-pagefind-ignore>
+  <p>Loading the API description…</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.34.1/swagger-ui-bundle.js"></script>
+<script>
+  (function () {
+    var apiBase = "https://api.volunteeringdata.io";
+    var target = document.getElementById("swagger-ui");
+
+    fetch(apiBase + "/openapi.json")
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (spec) {
+        // The description has no servers, so requests would otherwise go to this site.
+        if (!spec.servers || spec.servers.length === 0) {
+          spec.servers = [{ url: apiBase }];
+        }
+        target.innerHTML = "";
+        SwaggerUIBundle({
+          spec: spec,
+          domNode: target,
+          deepLinking: true,
+          docExpansion: "list",
+          defaultModelsExpandDepth: 1,
+          validatorUrl: null,
+          supportedSubmitMethods: ["get"]
+        });
+      })
+      .catch(function (error) {
+        target.innerHTML = '<p>The API description could not be loaded (' + error.message +
+          '). You can view it directly at <a href="' + apiBase + '/openapi.json">' + apiBase + '/openapi.json</a>.</p>';
+      });
+  })();
+</script>
