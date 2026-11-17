@@ -1,0 +1,21 @@
+<header class="header nojs">{% if site.homepage %}
+            <a class="home" href="{{ site.homepage.url }}">{{ site.homepage.title }}</a>{% endif %}{% if site.nav %}
+            <nav class="nav">
+                <ul>{% for link in site.nav %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}{% if site.pagefind %}
+                    <li>
+                        <a href="#" aria-label="Search" onclick="document.querySelector('pagefind-modal').open()">
+                            <svg class="icon-text" aria-hidden="true">
+                                <use href="/assets/icon/search.svg#root"></use>
+                            </svg>
+                        </a>
+                        <pagefind-modal></pagefind-modal>
+                    </li>{% endif %}
+                </ul>
+            </nav>{% endif %}
+            <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>

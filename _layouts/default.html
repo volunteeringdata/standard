@@ -1,93 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="{{ site.theme_color }}">{% if page.permalink %}
-
-        <link rel="canonical" href="{{ page.permalink | prepend: site.base_url }}">{% endif %}
-
-        <link rel="icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
-
-        <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />{% if page.description %}
-        <meta property="og:description" content="{{ page.description }}" />{% endif %}{% if page.image %}
-        <meta property="og:image" content="{{ page.image | prepend: site.base_url }}" />{% endif %}{% if page.permalink %}
-        <meta property="og:url" content="{{ page.permalink | prepend: site.base_url }}" />{% endif %}
-        <meta property="og:site_name" content="{{ site.title }}" />
-        <meta property="og:locale" content="en" />
-
-        <link type="application/atom+xml" rel="alternate" href="{{ site.base_url }}/feed.xml" title="{{ site.title }}" />
-
-        <link rel="stylesheet" href="{{ site.styles.output }}" />{% if site.pagefind %}
-
-        <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">{% endif %}
+        {% include head.html %}
     </head>
     <body>
-        <header class="header nojs">{% if site.homepage %}
-            <a class="home" href="{{ site.homepage.url }}">{{ site.homepage.title }}</a>{% endif %}{% if site.nav %}
-            <nav class="nav">
-                <ul>{% for link in site.nav %}
-                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}{% if site.pagefind %}
-                    <li>
-                        <a href="#" aria-label="Search" onclick="document.querySelector('pagefind-modal').open()">
-                            <svg class="icon-text" aria-hidden="true">
-                                <use href="/assets/icon/search.svg#root"></use>
-                            </svg>
-                        </a>
-                        <pagefind-modal></pagefind-modal>
-                    </li>{% endif %}
-                </ul>
-            </nav>{% endif %}
-            <button class="hamburger-menu" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </header>{% unless page.permalink == "/" %}
+        {% include header.html %}{% unless page.permalink == "/" %}
         {% include breadcrumbs.html %}{% endunless %}
         <main>
             <article>
                 {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
                 {{ content }}
             </article>
-        </main>{% if site.footer %}
-        <footer class="footer">
-            <nav class="social-nav">
-                <ul>
-                    <li class="homepage-link">
-                        <a href="/" title="{{ site.title }} Homepage"><img alt="{{ site.title }}" src="/assets/icon/icon.png"></a>
-                    </li>{% if site.contact %}
-                    <li>
-                        <a href="mailto:{{ site.contact }}" title="Get in touch for Info about {{ site.title }}">{{ site.contact }}</a>
-                    </li>{% endif %}{% if site.newsletter %}
-                    <li>
-                        <a href="{{ site.newsletter }}" title="Sign up to receive news about the {{ site.title }}" aria-label="Contact">
-                            <svg class="icon-text" aria-hidden="true">
-                                <use href="/assets/icon/envelope.svg#root"></use>
-                            </svg>
-                        </a>
-                    </li>{% endif %}
-                    <li>
-                        <a href="https://github.com/{{ site.github_username }}/" title="{{ site.title }} on GitHub" aria-label="GitHub">
-                            <svg class="icon-text" aria-hidden="true">
-                                <use href="/assets/icon/github.svg#root"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/feed.xml" title="{{ site.title }} RSS feed" aria-label="RSS">
-                            <svg class="icon-text" aria-hidden="true">
-                                <use href="/assets/icon/rss.svg#root"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>{% if site.footer.copyright or site.footer.license %}
-            <p class="copyright-notice">{% if site.footer.copyright %}© <a href="{{ site.footer.copyright.url }}">{{ site.footer.copyright.title }}</a> under the {% endif %}{% if site.footer.license %}<a href="{{ site.footer.license.url }}">{{ site.footer.license.title }}</a>{% endif %}</p>{% endif %}
-        </footer>{% endif %}
-        <script src="/assets/js/menu.js"></script>{% if site.pagefind %}
-        <script src="/pagefind/pagefind-component-ui.js" type="module"></script>{% endif %}
+        </main>
+        {% include footer.html %}
+        {% include scripts.html %}
     </body>
 </html>
