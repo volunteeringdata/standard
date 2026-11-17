@@ -1,0 +1,348 @@
+---
+permalink: /mcp
+layout: default
+title: MCP Demo
+description: Find volunteering activities by keyword or location, using tools from the Volunteering Data MCP server directly in the browser.
+breadcrumbs:
+  - title: "API"
+    url: /api
+---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  .mcp-demo { --demo-border: rgb(206, 212, 222); --demo-muted: rgb(84, 96, 114); }
+  .mcp-demo form {
+    border: 1px solid var(--demo-border);
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    max-width: var(--article-text-max-width);
+    padding: 1rem 1.25rem 1.25rem;
+  }
+  .mcp-demo form h2 { margin-top: 0; }
+  .mcp-demo .fields { display: flex; flex-wrap: wrap; gap: .75rem; align-items: flex-end; }
+  .mcp-demo label { display: flex; flex-direction: column; font-size: .9rem; font-weight: bold; gap: .25rem; }
+  .mcp-demo label.grow { flex: 1 1 16rem; }
+  .mcp-demo input {
+    border: 1px solid var(--demo-border);
+    border-radius: 4px;
+    font: inherit;
+    font-weight: normal;
+    padding: .4rem .6rem;
+    width: 100%;
+  }
+  .mcp-demo input[type=number] { width: 9rem; }
+  .mcp-demo button {
+    background: var(--background);
+    border: 1px solid var(--background);
+    border-radius: 4px;
+    color: var(--color);
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    padding: .4rem 1rem;
+  }
+  .mcp-demo button.secondary { background: transparent; color: var(--main-text-color); border-color: var(--demo-border); font-weight: normal; }
+  .mcp-demo button:disabled { cursor: progress; opacity: .6; }
+  .mcp-demo .hint { color: var(--demo-muted); font-size: .9rem; margin: .5rem 0 0; }
+  .mcp-demo #map { border: 1px solid var(--demo-border); border-radius: 4px; height: 22rem; margin-top: 1rem; }
+  .mcp-demo .status { font-weight: bold; }
+  .mcp-demo .status.error { color: rgb(170, 30, 30); }
+  .mcp-demo .results { list-style: none; margin: 0; max-width: var(--article-text-max-width); padding: 0; }
+  .mcp-demo .results li { border-bottom: 1px solid var(--demo-border); padding: .9rem 0; }
+  .mcp-demo .results h3 { font-size: 1.05rem; margin: 0 0 .25rem; }
+  .mcp-demo .results p { margin: .25rem 0; }
+  .mcp-demo .meta { color: var(--demo-muted); font-size: .9rem; }
+  .mcp-demo mark { background: var(--main-highlight-1-background); color: var(--main-highlight-1-color); padding: 0 .1em; }
+  .mcp-demo details { margin: 1rem 0; max-width: var(--article-text-max-width); }
+  .mcp-demo details pre { background: var(--main-highlight-3-background); font-size: .85rem; overflow-x: auto; padding: .75rem; white-space: pre-wrap; word-break: break-word; }
+</style>
+
+<div class="mcp-demo">
+  <p>This page calls two tools of the <a href="/api#mcp-server">Volunteering Data MCP server</a> straight from your browser: <code>activity_search</code> and <code>activity_by_location</code>. Each search sends one JSON-RPC <code>tools/call</code> request to <code>https://api.volunteeringdata.io/mcp</code>; open "MCP exchange" below the results to see it.</p>
+
+  <form id="search-form">
+    <h2>Search by keyword</h2>
+    <div class="fields">
+      <label class="grow">Keywords
+        <input name="query" type="search" required value="biodiversity" placeholder="e.g. gardening, befriending">
+      </label>
+      <button type="submit">Search</button>
+    </div>
+    <p class="hint">Uses <code>activity_search</code>. Lucene syntax works, e.g. <code>garden*</code> or <code>dog AND walking</code>.</p>
+  </form>
+
+  <form id="location-form">
+    <h2>Search near a location</h2>
+    <div class="fields">
+      <label>Latitude
+        <input name="lat" type="number" step="any" min="-90" max="90" required value="51.509">
+      </label>
+      <label>Longitude
+        <input name="lon" type="number" step="any" min="-180" max="180" required value="-0.118">
+      </label>
+      <label>Distance (metres)
+        <input name="distance" type="number" step="100" min="100" max="5000" required value="1000">
+      </label>
+      <button type="submit">Search</button>
+      <button type="button" class="secondary" id="locate">Use my location</button>
+    </div>
+    <p class="hint">Uses <code>activity_by_location</code>. Click the map to choose a point. The distance is limited to 5&nbsp;km to keep responses small.</p>
+    <div id="map" role="application" aria-label="Map for choosing the search location"></div>
+  </form>
+
+  <section aria-live="polite">
+    <p class="status" id="status"></p>
+    <ul class="results" id="results"></ul>
+    <details id="exchange" hidden>
+      <summary>MCP exchange</summary>
+      <p>Request</p>
+      <pre id="exchange-request"></pre>
+      <p>Response (first 3,000 characters of the tool result)</p>
+      <pre id="exchange-response"></pre>
+    </details>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/n3@2.13.12/browser/n3.min.js"></script>
+<script>
+(function () {
+  var MCP_ENDPOINT = "https://api.volunteeringdata.io/mcp";
+  var NS = "https://ns.volunteeringdata.io/";
+  var RDF_TYPE = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
+
+  var statusEl = document.getElementById("status");
+  var resultsEl = document.getElementById("results");
+  var exchangeEl = document.getElementById("exchange");
+  var buttons = document.querySelectorAll(".mcp-demo button");
+
+  /* MCP client: one stateless JSON-RPC request per tool call */
+
+  async function callTool(name, args) {
+    var request = { jsonrpc: "2.0", id: Date.now(), method: "tools/call", params: { name: name, arguments: args } };
+    document.getElementById("exchange-request").textContent = JSON.stringify(request, null, 2);
+    document.getElementById("exchange-response").textContent = "";
+
+    var response = await fetch(MCP_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json, text/event-stream" },
+      body: JSON.stringify(request)
+    });
+    if (!response.ok) throw new Error("The MCP server answered HTTP " + response.status + ".");
+
+    // Responses arrive as server-sent events; the JSON-RPC message is on the data line(s).
+    var body = await response.text();
+    var data = body.split("\n").filter(function (l) { return l.indexOf("data:") === 0; })
+      .map(function (l) { return l.slice(5).trim(); }).join("");
+    var message = JSON.parse(data || body);
+    if (message.error) throw new Error(message.error.message);
+
+    var text = (message.result.content || [])
+      .filter(function (c) { return c.type === "text"; })
+      .map(function (c) { return c.text; }).join("\n");
+    document.getElementById("exchange-response").textContent =
+      text.length > 3000 ? text.slice(0, 3000) + "\n…" : text;
+    exchangeEl.hidden = false;
+    if (message.result.isError) throw new Error(text || "The tool reported an error.");
+    return text;
+  }
+
+  /* Rendering helpers */
+
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) { node.setAttribute(k, attrs[k]); });
+    (children || []).forEach(function (c) {
+      if (c != null) node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+    });
+    return node;
+  }
+
+  // Search matches mark hits as literal "<mark>" text; render only those tags, everything else as text.
+  function highlighted(text) {
+    var span = el("span");
+    text.split(/(<mark>.*?<\/mark>)/).forEach(function (part) {
+      var m = part.match(/^<mark>(.*)<\/mark>$/);
+      span.appendChild(m ? el("mark", {}, [m[1]]) : document.createTextNode(part));
+    });
+    return span;
+  }
+
+  function truncate(text, max) {
+    return text.length > max ? text.slice(0, max).replace(/\s+\S*$/, "") + "…" : text;
+  }
+
+  function setBusy(busy, message) {
+    buttons.forEach(function (b) { b.disabled = busy; });
+    statusEl.className = "status";
+    statusEl.textContent = message || "";
+  }
+
+  function showError(error) {
+    buttons.forEach(function (b) { b.disabled = false; });
+    statusEl.className = "status error";
+    statusEl.textContent = "Search failed: " + error.message;
+  }
+
+  /* activity_search: the result is an HTML table of SPARQL results */
+
+  function parseSearchResults(html) {
+    var doc = new DOMParser().parseFromString(html, "text/html");
+    var headers = Array.from(doc.querySelectorAll("thead th")).map(function (th) { return th.textContent.trim(); });
+    return Array.from(doc.querySelectorAll("tbody tr")).map(function (tr) {
+      var row = {};
+      tr.querySelectorAll("td").forEach(function (td, i) {
+        var value = td.querySelector("a.uri, span.literal");
+        row[headers[i]] = value ? value.textContent.trim() : "";
+      });
+      return row;
+    });
+  }
+
+  async function runSearch(query) {
+    setBusy(true, "Searching…");
+    resultsEl.replaceChildren();
+    clearMarkers();
+    try {
+      var rows = parseSearchResults(await callTool("activity_search", { query: query }));
+      setBusy(false, rows.length + (rows.length === 1 ? " activity" : " activities") + " matching “" + query + "”.");
+      rows.forEach(function (row) {
+        resultsEl.appendChild(el("li", {}, [
+          el("h3", {}, [el("a", { href: row.activity_id }, [row.activity_title || row.activity_id])]),
+          row.search_match ? el("p", {}, [highlighted(row.search_match)]) : null,
+          row.search_score ? el("p", { class: "meta" }, ["Relevance " + Number(row.search_score).toFixed(2)]) : null
+        ]));
+      });
+    } catch (error) {
+      showError(error);
+    }
+  }
+
+  /* activity_by_location: the result is Turtle, parsed into a subject index */
+
+  function parseGraph(turtle) {
+    var quads = new N3.Parser().parse(turtle);
+    var graph = {};
+    quads.forEach(function (q) {
+      var s = graph[q.subject.value] = graph[q.subject.value] || {};
+      (s[q.predicate.value] = s[q.predicate.value] || []).push(q.object);
+    });
+    return graph;
+  }
+
+  function first(node, prop) {
+    var values = node && node[NS + prop];
+    return values && values.length ? values[0].value : null;
+  }
+
+  function all(node, prop) {
+    return (node && node[NS + prop] || []).map(function (o) { return o.value; });
+  }
+
+  function activitiesFrom(graph) {
+    return Object.keys(graph).filter(function (id) {
+      return (graph[id][RDF_TYPE] || []).some(function (t) { return t.value === NS + "Activity"; });
+    }).map(function (id) {
+      var a = graph[id];
+      var organisation = graph[first(a, "organisation")];
+      var places = all(a, "session").map(function (sid) { return graph[first(graph[sid], "location")]; })
+        .filter(function (loc) { return loc && first(loc, "latitude") && first(loc, "longitude"); });
+      var labels = function (prop) { return all(a, prop).map(function (x) { return first(graph[x], "label"); }).filter(Boolean); };
+      return {
+        id: id,
+        title: first(a, "title") || id,
+        description: first(a, "description") || "",
+        distance: Number(first(a, "distanceFromSearchLocation")),
+        organisation: first(organisation, "name"),
+        organisationWebsite: first(organisation, "website"),
+        applyLink: first(a, "applyLink"),
+        causes: labels("cause"),
+        requirements: labels("requirement"),
+        places: places.map(function (loc) {
+          return { lat: Number(first(loc, "latitude")), lon: Number(first(loc, "longitude")), address: first(loc, "address") };
+        })
+      };
+    }).sort(function (x, y) { return x.distance - y.distance; });
+  }
+
+  async function runLocation(lat, lon, distance) {
+    setBusy(true, "Searching…");
+    resultsEl.replaceChildren();
+    clearMarkers();
+    try {
+      var activities = activitiesFrom(parseGraph(await callTool("activity_by_location", { lat: lat, lon: lon, distance: distance })));
+      setBusy(false, activities.length + (activities.length === 1 ? " activity" : " activities") + " within " + distance + " m.");
+      activities.forEach(function (a) {
+        var address = a.places.length ? a.places[0].address : null;
+        resultsEl.appendChild(el("li", {}, [
+          el("h3", {}, [el("a", { href: a.id }, [a.title])]),
+          el("p", { class: "meta" }, [
+            Math.round(a.distance) + " m away",
+            a.organisation ? " · " : null,
+            a.organisation ? (a.organisationWebsite ? el("a", { href: a.organisationWebsite }, [a.organisation]) : a.organisation) : null,
+            address ? " · " + address : null
+          ]),
+          a.description ? el("p", {}, [truncate(a.description, 280)]) : null,
+          a.causes.length || a.requirements.length
+            ? el("p", { class: "meta" }, [a.causes.concat(a.requirements).join(" · ")]) : null,
+          a.applyLink ? el("p", {}, [el("a", { href: a.applyLink }, ["Apply"])]) : null
+        ]));
+        a.places.forEach(function (p) {
+          markers.addLayer(L.marker([p.lat, p.lon], { title: a.title })
+            .bindPopup(el("a", { href: a.id }, [a.title])));
+        });
+      });
+      if (markers.getLayers().length) map.fitBounds(markers.getBounds().extend(searchCircle.getBounds()), { maxZoom: 16 });
+    } catch (error) {
+      showError(error);
+    }
+  }
+
+  /* Map */
+
+  var form = document.getElementById("location-form");
+  var map = L.map("map").setView([form.elements.lat.value, form.elements.lon.value], 14);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  var markers = L.featureGroup().addTo(map);
+  var searchCircle = L.circle([form.elements.lat.value, form.elements.lon.value], { radius: Number(form.elements.distance.value), weight: 1 }).addTo(map);
+
+  function clearMarkers() { markers.clearLayers(); }
+
+  function syncCircle() {
+    var lat = Number(form.elements.lat.value), lon = Number(form.elements.lon.value), r = Number(form.elements.distance.value);
+    if (isFinite(lat) && isFinite(lon) && r > 0) searchCircle.setLatLng([lat, lon]).setRadius(r);
+  }
+
+  map.on("click", function (e) {
+    form.elements.lat.value = e.latlng.lat.toFixed(5);
+    form.elements.lon.value = e.latlng.lng.toFixed(5);
+    syncCircle();
+  });
+  ["lat", "lon", "distance"].forEach(function (n) { form.elements[n].addEventListener("input", syncCircle); });
+
+  document.getElementById("locate").addEventListener("click", function () {
+    if (!navigator.geolocation) return showError(new Error("Your browser does not share its location."));
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      form.elements.lat.value = pos.coords.latitude.toFixed(5);
+      form.elements.lon.value = pos.coords.longitude.toFixed(5);
+      syncCircle();
+      map.setView([pos.coords.latitude, pos.coords.longitude], 14);
+    }, function (err) { showError(new Error(err.message)); });
+  });
+
+  /* Forms */
+
+  document.getElementById("search-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    runSearch(e.target.elements.query.value.trim());
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    syncCircle();
+    runLocation(Number(form.elements.lat.value), Number(form.elements.lon.value), Number(form.elements.distance.value));
+  });
+})();
+</script>
