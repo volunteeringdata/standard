@@ -494,7 +494,34 @@
     <script src="js/d3.min.js"></script>
     <script src="js/webvowl.js"></script>
     <script src="js/webvowl.app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/n3@2/browser/n3.min.js"></script>
+    <script src="js/schema-to-vowl.js"></script>
     <script>
+        // Serve the preset ontology from the live schema instead of a pre-converted VOWL JSON file.
+        (function () {
+            var schemaUrl = "https://api.volunteeringdata.io/schema";
+            var presetFile = "./data/volunteering.json";
+            var originalXhr = d3.xhr;
+
+            d3.xhr = function (url, mimeType, callback) {
+                if (url !== presetFile || typeof callback !== "function") {
+                    return originalXhr.apply(this, arguments);
+                }
+                fetch(schemaUrl, { headers: { Accept: "text/turtle" } })
+                    .then(function (response) {
+                        if (!response.ok) throw { status: response.status };
+                        return response.text();
+                    })
+                    .then(function (turtle) {
+                        callback(null, { responseText: JSON.stringify(schemaToVowl(turtle)) });
+                    })
+                    .catch(function (error) {
+                        console.error("Could not load " + schemaUrl, error);
+                        callback({ status: error && error.status || 0 });
+                    });
+            };
+        })();
+
         window.onload = webvowl.app().initialize;
     </script>
 </body>
